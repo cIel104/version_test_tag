@@ -2,7 +2,7 @@
 ::  by Christoph Schwarzweller
 :: 
 :: Received June 30, 2021
-:: Copyright (c) 2021 Association of Mizar Users
+:: Copyright (c) 2021-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -33,7 +33,7 @@ environ
       FIELD_1, FIELD_4, FIELD_6, FIELD_7;
  constructors POLYNOM4, RELSET_1, ABIAN, NAT_D, VFUNCT_1, RATFUNC1, GCD_1,
       REALSET1, RINGCAT1, RING_3, ALGSEQ_1, VECTSP_9, MATRLIN2, GROUP_4,
-      ALGNUM_1, RING_5, FIELD_6, FIELD_7;
+      ALGNUM_1, RING_5, FIELD_6, FIELD_7, WSIERP_1;
  registrations XBOOLE_0, ORDINAL1, RELSET_1, FUNCOP_1, XCMPLX_0, XXREAL_0,
       XREAL_0, NAT_1, INT_1, MEMBERED, STRUCT_0, VECTSP_1, ALGSTR_1, FINSET_1,
       FUNCT_2, SUBSET_1, RLVECT_1, QUOFIELD, FUNCT_1, CARD_1, RATFUNC1,

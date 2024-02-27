@@ -2,7 +2,7 @@
 ::  by Yuichi Futa , Hiroyuki Okazaki and Yasunari Shidama
 ::
 :: Received August 14, 2015
-:: Copyright (c) 2015-2021 Association of Mizar Users
+:: Copyright (c) 2015-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -20,8 +20,8 @@ environ
       ARYTM_1, NAT_1, FUNCT_2, FINSET_1, VALUED_1, RLSUB_1, ZFMISC_1, INT_1,
       ORDINAL1, RLVECT_2, ZMODUL01, ZMODUL03, ORDERS_1, RLVECT_3, RMOD_2,
       RANKNULL, UNIALG_1, MSAFREE2, INT_3, VECTSP_1, XCMPLX_0, MESFUNC1, MOD_3,
-      MONOID_0, VECTSP10, ZMODUL02, ZMODUL05, ZMODUL06, ZMODUL07, INT_2,
-      FUNCSDOM, VECTSP_2;
+      MONOID_0, VECTSP10, ZMODUL05, ZMODUL06, ZMODUL07, INT_2, FUNCSDOM,
+      VECTSP_2;
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, RELAT_1, FUNCT_1, ORDINAL1,
       RELSET_1, PARTFUN1, FUNCT_2, BINOP_1, DOMAIN_1, FINSET_1, ORDERS_1,
       INT_2, CARD_1, NUMBERS, XCMPLX_0, XXREAL_0, NAT_1, INT_1, RAT_1,
@@ -216,8 +216,7 @@ registration
 end;
 
 theorem :: ZMODUL07:16
-  for s being Element of Rat-Module holds
-  Lin{s} <> Rat-Module;
+  for s being Element of Rat-Module holds Lin{s} <> Rat-Module;
 
 theorem :: ZMODUL07:17
   for s, t being Element of Rat-Module st s <> t

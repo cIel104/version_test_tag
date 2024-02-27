@@ -2,7 +2,7 @@
 ::  by Adam Grabowski and Damian Sawicki
 :: 
 :: Received June 29, 2018
-:: Copyright (c) 2018-2021 Association of Mizar Users
+:: Copyright (c) 2018-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -173,8 +173,6 @@ registration
       satisfying_McKenzie_4 -> satisfying_4_McKenzie_axioms
          for non empty LattStr;
 end;
-
- reserve L for non empty LattStr;
 
 theorem :: ROBBINS5:15
   L is Lattice iff

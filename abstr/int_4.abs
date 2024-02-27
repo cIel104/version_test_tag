@@ -2,7 +2,7 @@
 ::  by Xiquan Liang , Li Yan and Junjie Zhao
 ::
 :: Received August 28, 2007
-:: Copyright (c) 2007-2021 Association of Mizar Users
+:: Copyright (c) 2007-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -40,8 +40,7 @@ reserve a,b,m,x,y,i1,i2,i3,i for Integer,
   z for set;
 
 theorem :: INT_4:1
-  for X being real-membered set, a being Real holds X, a ++
-  X are_equipotent;
+  for X being real-membered set, a being Real holds X, a ++ X are_equipotent;
 
 registration
   let X be finite real-membered set, a be Real;
@@ -49,8 +48,7 @@ registration
 end;
 
 theorem :: INT_4:2
-  for X being real-membered set, a being Real holds card X =
-  card (a ++ X);
+  for X being real-membered set, a being Real holds card X = card (a ++ X);
 
 theorem :: INT_4:3
   for X being real-membered set, a being Real st a <> 0
@@ -78,7 +76,7 @@ theorem :: INT_4:7
   for i3 st i3 <> 0 holds i1 divides i2 iff i1*i3 divides i2*i3;
 
 theorem :: INT_4:8
-  for a,b,m being Nat for n being Element of NAT st a mod m = b mod m
+  for a,b,m,n being Nat st a mod m = b mod m
   holds (a|^n) mod m = (b|^n) mod m;
 
 theorem :: INT_4:9

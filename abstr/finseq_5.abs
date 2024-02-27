@@ -2,7 +2,7 @@
 ::  by Czes\law Byli\'nski
 ::
 :: Received January 25, 1995
-:: Copyright (c) 1995-2021 Association of Mizar Users
+:: Copyright (c) 1995-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -338,7 +338,7 @@ theorem :: FINSEQ_5:64
   for f,g being FinSequence holds Rev(f^g) = (Rev g)^(Rev f);
 
 definition
-  let D be set, f be FinSequence of D;
+  let D be set, f be D-valued FinSequence;
   redefine func Rev f -> FinSequence of D;
 end;
 
@@ -395,6 +395,7 @@ begin :: Addenda
 :: from JORDAN4, 2005.11.16, A.T.
 
 theorem :: FINSEQ_5:77
+  for f being FinSequence holds
   for i1,i2 be Nat st i1<=i2 holds (f|i1)|i2=f|i1 & (f|i2)|i1=f|i1;
 
 theorem :: FINSEQ_5:78

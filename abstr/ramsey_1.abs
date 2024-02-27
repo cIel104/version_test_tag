@@ -2,7 +2,7 @@
 ::  by Marco Riccardi
 ::
 :: Received April 18, 2008
-:: Copyright (c) 2008-2021 Association of Mizar Users
+:: Copyright (c) 2008-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -99,42 +99,41 @@ theorem :: RAMSEY_1:7
   X c= Y implies the_subsets_of_card(Z,X) c= the_subsets_of_card(Z,Y);
 
 theorem :: RAMSEY_1:8
-  X is finite & Y is finite & card Y = X implies the_subsets_of_card(X,Y
-  ) = {Y};
+  X is finite & Y is finite & card Y = X implies the_subsets_of_card(X,Y) = {Y}
+;
 
 theorem :: RAMSEY_1:9
-  X is non empty & Y is non empty implies (f is constant iff ex y being
-  Element of Y st rng f = {y});
+  X is non empty & Y is non empty implies
+  (f is constant iff ex y being Element of Y st rng f = {y});
 
 theorem :: RAMSEY_1:10
-  for X being finite set st k <= card X holds ex Y being Subset of
-  X st card Y = k;
+  for X being finite set st k <= card X ex Y being Subset of X st card Y = k;
 
 theorem :: RAMSEY_1:11
-  m>=1 implies n+1 <= (n+m) choose m;
+  m >= 1 implies n+1 <= (n+m) choose m;
 
 theorem :: RAMSEY_1:12
-  m>=1 & n>=1 implies m+1 <= (n+m) choose m;
+  m >= 1 & n >= 1 implies m+1 <= (n+m) choose m;
 
 theorem :: RAMSEY_1:13
-  for X being non empty set, p1,p2 being Element of X, P being
-  a_partition of X, A being Element of P st p1 in A & (proj P).p1=(proj P).p2
+  for X being non empty set, p1,p2 being Element of X
+  for P being a_partition of X, A being Element of P
+  st p1 in A & (proj P).p1 = (proj P).p2
   holds p2 in A;
 
 begin :: Infinite Ramsey Theorem
 
 theorem :: RAMSEY_1:14
-  for F being Function of the_subsets_of_card(n,X),k st k<>0 & X
-  is infinite holds ex H st H is infinite & F|the_subsets_of_card(n,H) is
-  constant;
+  for F being Function of the_subsets_of_card(n,X),k st k<>0 & X is infinite
+  ex H st H is infinite & F|the_subsets_of_card(n,H) is constant;
 
 :: theorem 9.1 Set Theory T.Jech
 
 ::$N Ramsey's Theorem
 theorem :: RAMSEY_1:15
-  for X being infinite set, P being a_partition of the_subsets_of_card(n
-  ,X) st card P = k holds ex H being Subset of X st H is infinite & H
-  is_homogeneous_for P;
+  for X being infinite set, P being a_partition of the_subsets_of_card(n,X)
+  st card P = k
+  ex H being Subset of X st H is infinite & H is_homogeneous_for P;
 
 begin :: Ramsey's Theorem
 
@@ -147,15 +146,17 @@ provided
 :: Chapter 35 proof from THE BOOK Aigner-Ziegler
 
 theorem :: RAMSEY_1:16
-  m >= 2 & n >= 2 implies ex r being Nat st r <= (m + n
-  -' 2) choose (m -' 1) & r >= 2 & for X being finite set, F being Function of
-the_subsets_of_card(2,X), Seg 2 st card X >= r holds ex S being Subset of X st
-  card S >= m & rng(F|the_subsets_of_card(2,S)) = {1} or card S >= n & rng(F|
-  the_subsets_of_card(2,S)) = {2};
+  m >= 2 & n >= 2 implies ex r being Nat st r <= (m + n -' 2) choose (m -' 1) &
+  r >= 2 & for X being finite set,
+  F being Function of the_subsets_of_card(2,X), Seg 2 st card X >= r
+  ex S being Subset of X
+   st card S >= m & rng(F|the_subsets_of_card(2,S)) = {1} or card S >= n &
+   rng(F|the_subsets_of_card(2,S)) = {2};
 
 ::$N Ramsey's Theorem (finite case)
 theorem :: RAMSEY_1:17
-  for m being Nat holds ex r being Nat st for X
-being finite set, P being a_partition of the_subsets_of_card(2,X) st card X >=
-  r & card P = 2 holds ex S being Subset of X st card S >= m & S
-  is_homogeneous_for P;
+  for m being Nat holds
+  ex r being Nat st
+  for X being finite set, P being a_partition of the_subsets_of_card(2,X)
+  st card X >= r & card P = 2 holds ex S being Subset of X st card S >= m &
+  S is_homogeneous_for P;

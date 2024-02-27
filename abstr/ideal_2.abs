@@ -2,7 +2,7 @@
 ::  by Yasushige Watase
 :: 
 :: Received June 30, 2021
-:: Copyright (c) 2021 Association of Mizar Users
+:: Copyright (c) 2021-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -27,7 +27,7 @@ environ
       GROUP_1, VECTSP_1, BINOM, VECTSP10, IDEAL_1, RING_1, RING_2, TOPZARI1,
       RINGFRAC, COHSP_1;
  constructors RELSET_1, FINSEQOP, NEWTON, RINGCAT1, MOD_4, GCD_1, BINOM,
-      COHSP_1, RINGFRAC;
+      COHSP_1, RINGFRAC, WSIERP_1;
  registrations XBOOLE_0, ORDINAL1, RELSET_1, XREAL_0, NAT_1, STRUCT_0, CARD_1,
       VECTSP_1, ALGSTR_1, SUBSET_1, ALGSTR_0, RLVECT_1, IDEAL_1, RING_2, MOD_4,
       RING_1, TOPZARI1, FINSEQ_1, INT_1;

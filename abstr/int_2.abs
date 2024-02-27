@@ -2,7 +2,7 @@
 ::  by Rafa{\l} Kwiatek and Grzegorz Zwara
 ::
 :: Received July 10, 1990
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -15,7 +15,7 @@
 environ
 
  vocabularies NUMBERS, INT_1, ORDINAL1, COMPLEX1, SUBSET_1, XXREAL_0, CARD_1,
-      ARYTM_3, ARYTM_1, RELAT_1, NAT_1, XCMPLX_0, INT_2;
+      ARYTM_3, ARYTM_1, RELAT_1, NAT_1, XCMPLX_0, INT_2, NEWTON;
  notations SUBSET_1, ORDINAL1, NUMBERS, XCMPLX_0, INT_1, NAT_1, COMPLEX1,
       XXREAL_0;
  constructors XXREAL_0, REAL_1, NAT_1, COMPLEX1, INT_1, CARD_1;
@@ -161,14 +161,14 @@ theorem :: INT_2:26
 reserve p,p1,q,l for Nat;
 
 definition
-  let p be integer Number;
+  let p be Integer;
   attr p is prime means
 :: INT_2:def 4
   p > 1 & for n being Nat st n divides p holds n = 1 or n = p;
 end;
 
 registration
-  cluster prime -> natural for integer Number;
+  cluster prime -> natural for Integer;
 end;
 
 theorem :: INT_2:27
@@ -183,6 +183,10 @@ theorem :: INT_2:29
 registration
   cluster prime for Nat;
   cluster non zero non prime for Nat;
+end;
+
+definition
+  mode Prime is prime Nat;
 end;
 
 theorem :: INT_2:30

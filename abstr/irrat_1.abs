@@ -2,7 +2,7 @@
 ::  by Freek Wiedijk
 ::
 :: Received July 2, 1999
-:: Copyright (c) 1999-2021 Association of Mizar Users
+:: Copyright (c) 1999-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -225,7 +225,7 @@ end;
 begin :: number_e is irrational
 
 theorem :: IRRAT_1:31
-  x is rational implies ex n st n>=2 & n!*x is integer;
+  x is rational implies ex n st n >= 2 & n!*x is integer;
 
 theorem :: IRRAT_1:32
   n!*eseq.k = (n!)/(k!);

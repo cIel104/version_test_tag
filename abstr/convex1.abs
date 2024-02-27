@@ -2,7 +2,7 @@
 ::  by Noboru Endou , Takashi Mitsuishi and Yasunari Shidama
 ::
 :: Received November 5, 2002
-:: Copyright (c) 2002-2021 Association of Mizar Users
+:: Copyright (c) 2002-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -233,9 +233,10 @@ theorem :: CONVEX1:30
 begin  :: Miscellaneous
 
 theorem :: CONVEX1:31
-  for p being FinSequence, x,y,z being set st p is one-to-one & rng p =
-{x,y,z} & x <> y & y <> z & z <> x holds p = <* x,y,z *> or p = <* x,z,y *> or
-  p = <* y,x,z *> or p = <* y,z,x *> or p = <* z,x,y *> or p = <* z,y,x *>;
+  for p being FinSequence, x,y,z being object st
+  p is one-to-one & rng p = {x,y,z} & x <> y & y <> z & z <> x holds
+  p = <* x,y,z *> or p = <* x,z,y *> or p = <* y,x,z *> or
+  p = <* y,z,x *> or p = <* z,x,y *> or p = <* z,y,x *>;
 
 theorem :: CONVEX1:32
   for V being vector-distributive scalar-distributive scalar-associative

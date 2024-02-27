@@ -2,7 +2,7 @@
 ::  by Yoshinori Fujisawa and Yasushi Fuwa
 ::
 :: Received December 10, 1997
-:: Copyright (c) 1997-2021 Association of Mizar Users
+:: Copyright (c) 1997-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -110,5 +110,4 @@ theorem :: EULER_1:20
   n is prime implies Euler n = n - 1;
 
 theorem :: EULER_1:21
-  m > 1 & n > 1 & m,n are_coprime implies
-  Euler (m*n) = Euler m * Euler n;
+  m,n are_coprime implies Euler (m*n) = Euler m * Euler n;

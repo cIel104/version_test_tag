@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received September 19, 1989
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -109,8 +109,7 @@ theorem :: CARD_1:5
   X,Y are_equipotent iff card X = card Y;
 
 theorem :: CARD_1:6
-  R is well-ordering implies field R,order_type_of R
-  are_equipotent;
+  R is well-ordering implies field R,order_type_of R are_equipotent;
 
 theorem :: CARD_1:7
   X c= M implies card X c= M;
@@ -375,8 +374,8 @@ theorem :: CARD_1:58
 :: Moved from FRECHET2 by AK on 27.12.2006
 
 theorem :: CARD_1:59
-  for f being Function st dom f is infinite & f is one-to-one holds rng
-  f is infinite;
+  for f being Function
+  st dom f is infinite & f is one-to-one holds rng f is infinite;
 
 :: from ALGSEQ_1, 2007.03.18, A.T.
 

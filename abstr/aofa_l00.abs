@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received September 15, 2014
-:: Copyright (c) 2014-2021 Association of Mizar Users
+:: Copyright (c) 2014-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -1836,8 +1836,9 @@ theorem :: AOFA_L00:145
   \ex(x,A\orA)\iff\ex(x,A) in G;
 
 reserve
-  L for non-empty T-extension Language of
-  X extended_by ({},the carrier of S1), S1,
+  L for
+    non-empty T-extension Language of X extended_by ({},the carrier of S1), S1,
+  G for QC-theory of L,
   G1 for QC-theory_with_equality of L,
   A,B,C,D for Formula of L,
   s,s1 for SortSymbol of S1,

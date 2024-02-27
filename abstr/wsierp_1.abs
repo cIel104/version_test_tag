@@ -2,7 +2,7 @@
 ::  by Andrzej Kondracki
 ::
 :: Received December 30, 1997
-:: Copyright (c) 1997-2021 Association of Mizar Users
+:: Copyright (c) 1997-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -17,7 +17,7 @@ environ
  vocabularies NUMBERS, NAT_1, INT_1, RAT_1, NEWTON, RELAT_1, ARYTM_1, ARYTM_3,
       XXREAL_0, CARD_1, PREPOWER, INT_2, COMPLEX1, SUBSET_1, FINSEQ_1, FUNCT_1,
       XBOOLE_0, ORDINAL4, TARSKI, CARD_3, FINSEQ_3, REAL_1, SQUARE_1, ORDINAL1,
-      XCMPLX_0;
+      XCMPLX_0, VALUED_0;
  notations TARSKI, XBOOLE_0, SUBSET_1, ORDINAL1, RELAT_1, NUMBERS, XCMPLX_0,
       XREAL_0, INT_1, REAL_1, NAT_1, NAT_D, RAT_1, INT_2, XXREAL_0, VALUED_0,
       PREPOWER, SQUARE_1, FUNCT_1, FINSEQ_1, FINSEQ_3, RVSUM_1, FINSEQ_4,
@@ -105,7 +105,7 @@ reserve D for non empty set,
   ft for FinSequence of REAL;
 
 registration
-  let fr;
+  let fr be integer-valued FinSequence;
   cluster Product fr -> integer;
 end;
 
@@ -114,9 +114,19 @@ definition
   redefine func Sum(fp) -> Element of NAT;
 end;
 
+registration
+  let fp be natural-valued FinSequence;
+  cluster Sum fp -> natural;
+end;
+
 definition
   let fp;
   redefine func Product fp -> Element of NAT;
+end;
+
+registration
+  let fp be natural-valued FinSequence;
+  cluster Product fp -> natural;
 end;
 
 definition
@@ -132,7 +142,7 @@ end;
 definition
   let D;
   let a be Nat;
-  let fs be FinSequence of D;
+  let fs be D-valued FinSequence;
   redefine func Del(fs,a) -> FinSequence of D;
 end;
 
@@ -140,7 +150,7 @@ definition
   let D;
   let D1 be non empty Subset of D;
   let a be Nat;
-  let fs be FinSequence of D1;
+  let fs be D1-valued FinSequence;
   redefine func Del(fs,a) -> FinSequence of D1;
 end;
 

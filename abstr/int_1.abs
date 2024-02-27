@@ -2,7 +2,7 @@
 ::  by Micha{\l} J. Trybulec
 ::
 :: Received February 7, 1990
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -16,12 +16,12 @@ environ
 
  vocabularies NUMBERS, SUBSET_1, XREAL_0, ORDINAL1, ZFMISC_1, CARD_1, XBOOLE_0,
       ARYTM_1, TARSKI, ARYTM_2, ARYTM_3, ARYTM_0, REAL_1, XXREAL_0, NAT_1,
-      RELAT_1, INT_1, FUNCT_7, XCMPLX_0;
+      RELAT_1, INT_1, FUNCT_7, XCMPLX_0, SQUARE_1;
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, ORDINAL1, ARYTM_2, ARYTM_1,
-      NUMBERS, ARYTM_0, XCMPLX_0, XREAL_0, REAL_1, NAT_1, XXREAL_0;
+      NUMBERS, ARYTM_0, XCMPLX_0, XREAL_0, REAL_1, NAT_1, XXREAL_0, SQUARE_1;
  constructors FUNCT_4, ARYTM_1, ARYTM_0, XXREAL_0, REAL_1, NAT_1, FINSET_1,
-      CARD_1, XREAL_0, NUMBERS;
- registrations ORDINAL1, NUMBERS, XXREAL_0, XREAL_0, NAT_1, CARD_1;
+      CARD_1, XREAL_0, NUMBERS, SQUARE_1;
+ registrations ORDINAL1, NUMBERS, XXREAL_0, XREAL_0, NAT_1, CARD_1, SQUARE_1;
  requirements REAL, NUMERALS, SUBSET, BOOLE, ARITHM;
 
 
@@ -238,6 +238,11 @@ end;
 theorem :: INT_1:25
   [\ r /] = r iff r is integer;
 
+registration
+  let i be Integer;
+  reduce [\ i /] to i;
+end;
+
 theorem :: INT_1:26
   [\ r /] < r iff r is not integer;
 
@@ -261,6 +266,11 @@ end;
 
 theorem :: INT_1:30
   [/ r \] = r iff r is integer;
+
+registration
+  let i be Integer;
+  reduce [/ i \] to i;
+end;
 
 theorem :: INT_1:31
   r < [/ r \] iff r is not integer;
@@ -341,6 +351,12 @@ theorem :: INT_1:47
 
 theorem :: INT_1:48
   for i being Integer holds i div 0 = 0;
+
+registration
+  let i be Integer;
+  reduce i div 0 to 0;
+  reduce 0 div i to 0;
+end;
 
 theorem :: INT_1:49
   for i being Integer st i <> 0 holds i div i = 1;
@@ -500,3 +516,6 @@ theorem :: INT_1:73 ::: INT_4:12
 theorem :: INT_1:74 :: moved from CHORD:1
   for n being non zero Nat holds n-1 is Nat & 1 <= n;
 
+theorem :: INT_1:75
+  for m,n being natural Number holds
+  m^2 <= n < (m+1)^2 implies [\ sqrt n /] = m;

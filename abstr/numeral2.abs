@@ -2,7 +2,7 @@
 ::  by Adam Naumowicz and Rados{\l}aw Piliszek
 ::
 :: Received May 19, 2013
-:: Copyright (c) 2013-2021 Association of Mizar Users
+:: Copyright (c) 2013-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -193,14 +193,14 @@ theorem :: NUMERAL2:36
 begin :: Divisibility criteria for primes up to 101
 
 theorem :: NUMERAL2:37
-  for p being prime Nat, n,f,b being Nat st
+  for p being Prime, n,f,b being Nat st
   (ex k being Nat st b*f + 1 = p*k)
   & b > 1 &  p,b are_coprime holds
   p divides n iff p divides
   value(mid(digits(n,b),2,len(digits(n,b))),b) - f*digits(n,b).0;
 
 theorem :: NUMERAL2:38
-  for p being prime Nat, n,f,b being Nat st
+  for p being Prime, n,f,b being Nat st
   (ex k being Nat st b*f - 1 = p*k)
   & b > 1 &  p,b are_coprime holds
   p divides n iff p divides

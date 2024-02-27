@@ -2,7 +2,7 @@
 ::  by Marco Riccardi
 ::
 :: Received May 17, 2006
-:: Copyright (c) 2006-2021 Association of Mizar Users
+:: Copyright (c) 2006-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -279,7 +279,7 @@ begin :: Bertrand's postulate.
 
 ::$N Bertrand's postulate
 theorem :: NAT_4:56
-  for n being Element of NAT st n>=1 holds ex p being Prime st n<p & p<= 2*n;
+  for n being Nat st n >= 1 ex p being Prime st n < p & p <= 2*n;
 
 theorem :: NAT_4:57
   not 6 is prime & not 8 is prime & not 9 is prime & not 10 is prime &

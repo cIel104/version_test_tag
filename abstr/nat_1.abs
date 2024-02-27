@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received January 11, 1989
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -184,7 +184,7 @@ theorem :: NAT_1:18
   n = m*k+t & t < m & n = m*k1+t1 & t1 < m implies k = k1 & t = t1;
 
 registration
-  cluster -> ordinal for natural Number;
+  cluster -> ordinal for natural number;
 end;
 
 registration
@@ -215,7 +215,7 @@ registration
 end;
 
 registration
-  cluster -> non negative for Element of NAT;
+  cluster -> non negative for Nat;
 end;
 
 registration

@@ -3,7 +3,7 @@
 ::  by Hiroyuki Okazaki and Yasunari Shidama
 ::
 :: Received March 16, 2010
-:: Copyright (c) 2010-2021 Association of Mizar Users
+:: Copyright (c) 2010-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -26,9 +26,9 @@ environ
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, RELAT_1, FUNCT_1, RELSET_1,
       PARTFUN1, FUNCT_2, FUNCT_4, FUNCOP_1, FINSEQ_1, ORDINAL1, REAL_1, CARD_1,
       FINSET_1, NUMBERS, SUPINF_1, XXREAL_0, XCMPLX_0, COMPLEX1, XREAL_0,
-      SUPINF_2, VALUED_0, VALUED_1, FINSEQ_2, NAT_D, RFINSEQ, FINSOP_1,
-      STRUCT_0, IDEAL_1, BINOP_1, BINOP_2, RLVECT_1, FUNCSDOM, SEQ_2, SQUARE_1,
-      GROUP_1, POWER, PROB_1, PROB_4, EXTREAL1, MESFUNC1, MEASURE6, MESFUNC5,
+      SUPINF_2, VALUED_0, FINSEQ_2, NAT_D, RFINSEQ, FINSOP_1, STRUCT_0,
+      IDEAL_1, BINOP_1, BINOP_2, RLVECT_1, FUNCSDOM, SEQ_2, SQUARE_1, GROUP_1,
+      POWER, PROB_1, PROB_4, EXTREAL1, MESFUNC1, VALUED_1, MEASURE6, MESFUNC5,
       MESFUNC6, MESFUNC2, RVSUM_1, UPROOTS, MESFUN6C, C0SP1, RANDOM_1, BHSP_5;
  constructors EXTREAL1, REAL_1, IDEAL_1, MEASURE6, MESFUNC2, MESFUNC5,
       MESFUNC6, SUPINF_1, REALSET1, RVSUM_1, MESFUNC1, RELSET_1, RANDOM_1,

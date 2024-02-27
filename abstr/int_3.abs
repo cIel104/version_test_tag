@@ -2,7 +2,7 @@
 ::  by Christoph Schwarzweller
 ::
 :: Received February 4, 1999
-:: Copyright (c) 1999-2021 Association of Mizar Users
+:: Copyright (c) 1999-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -79,6 +79,11 @@ end;
 registration
   let a be Element of INT.Ring, b be Integer;
   identify -a with -b when a = b;
+end;
+
+registration
+  let a,b be Element of INT.Ring, c,d be Integer;
+  identify a - b with c - d when a = c, b = d;
 end;
 
 definition

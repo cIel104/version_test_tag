@@ -2,7 +2,7 @@
 ::  by Karol P\kak
 :: 
 :: Received May 27, 2019
-:: Copyright (c) 2019-2021 Association of Mizar Users
+:: Copyright (c) 2019-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -31,7 +31,7 @@ environ
       VALUED_0, VALUED_1, RELSET_1, INT_1, STRUCT_0, VECTSP_1, MEMBERED,
       AFINSQ_1, HILB10_2, XXREAL_0, NUMBERS, XCMPLX_0, NEWTON, NEWTON02, NAT_6,
       FINSEQ_1, FINSEQ_2, RVSUM_1, NEWTON04, MOEBIUS2, EUCLID_9, AFINSQ_2,
-      PARTFUN3, BINOP_2, FUNCT_2, RFUNCT_2, RVSUM_4;
+      PARTFUN3, BINOP_2, FUNCT_2, RFUNCT_2, RVSUM_4, INT_2;
  requirements NUMERALS, SUBSET, ARITHM, REAL;
 
 

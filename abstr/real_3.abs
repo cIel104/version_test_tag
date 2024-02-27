@@ -2,7 +2,7 @@
 ::  by Bo Li , Yan Zhang and Artur Korni{\l}owicz
 ::
 :: Received August 18, 2006
-:: Copyright (c) 2006-2021 Association of Mizar Users
+:: Copyright (c) 2006-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -77,7 +77,7 @@ theorem :: REAL_3:6
   frac(m/n) = (m mod n) / n;
 
 theorem :: REAL_3:7
-  p >= 0 implies ex m,n being Nat st n <> 0 & p = m/n;
+  p >= 0 implies ex m,n being Nat st n > 0 & p = m/n;
 
 registration
   cluster INT-valued for Real_Sequence;

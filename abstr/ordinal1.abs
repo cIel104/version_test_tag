@@ -3,7 +3,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received March 20, 1989
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -84,10 +84,10 @@ registration
 end;
 
 definition
-  let IT be object;
+  let IT be set;
   attr IT is ordinal means
 :: ORDINAL1:def 4
-  IT is epsilon-transitive epsilon-connected set;
+  IT is epsilon-transitive epsilon-connected;
 end;
 
 registration
@@ -102,10 +102,6 @@ end;
 
 registration
   cluster ordinal for number;
-end;
-
-registration
-  cluster ordinal for Number;
 end;
 
 definition

@@ -2,7 +2,7 @@
 ::  by Tao Sun , Junjie Zhao and Xiquan Liang
 ::
 :: Received November 24, 2007
-:: Copyright (c) 2007-2021 Association of Mizar Users
+:: Copyright (c) 2007-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -25,7 +25,7 @@ environ
  constructors BINOP_1, VECTSP_2, FINSOP_1, SETWISEO, FINSEQ_4, BCIALG_2,
       FUNCT_5, NAT_1;
  registrations BCIALG_1, RELAT_1, STRUCT_0, ORDINAL1, XXREAL_0, VECTSP_1,
-      BCIALG_2, CARD_1;
+      BCIALG_2, CARD_1, FINSEQ_1;
  requirements SUBSET, BOOLE, NUMERALS, ARITHM;
 
 

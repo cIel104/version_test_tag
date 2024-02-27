@@ -2,7 +2,7 @@
 ::  by Akihiro Kubo
 ::
 :: Received August 8, 2003
-:: Copyright (c) 2003-2021 Association of Mizar Users
+:: Copyright (c) 2003-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -112,7 +112,7 @@ theorem :: EUCLID_4:14 :: AFF_1:32
 theorem :: EUCLID_4:15 :: EUCLID_2:13
   for x being Element of REAL n holds |.x.| = sqrt |(x,x)|;
 
-theorem :: EUCLID_4:16  :: EUCLID_2:16
+theorem :: EUCLID_4:16 :: EUCLID_2:16
   for x being Element of REAL n holds |(x,x)| = 0 iff |.x.| = 0;
 
 theorem :: EUCLID_4:17  :: EUCLID_2:15

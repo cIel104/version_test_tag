@@ -2,7 +2,7 @@
 ::  by Yasunari Shidama and Noboru Endou
 ::
 :: Received October 27, 2006
-:: Copyright (c) 2006-2021 Association of Mizar Users
+:: Copyright (c) 2006-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -21,14 +21,14 @@ environ
       ZFMISC_1, INTEGRA5, XCMPLX_0;
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, ORDINAL1, NUMBERS, XXREAL_3,
       XCMPLX_0, DOMAIN_1, XREAL_0, REAL_1, RAT_1, NAT_1, NAT_D, FUNCT_1,
-      RELSET_1, PARTFUN1, FINSEQ_1, VALUED_1, SUPINF_2, COMPLEX1, XXREAL_0,
-      VALUED_0, RFUNCT_3, MEASURE6, FUNCT_2, SUPINF_1, MEASURE1, EXTREAL1,
-      MESFUNC1, MESFUNC2, MESFUNC3, SETFAM_1, PROB_1, MESFUNC5;
+      RELSET_1, PARTFUN1, FINSEQ_1, SUPINF_2, COMPLEX1, XXREAL_0, VALUED_0,
+      RFUNCT_3, MEASURE6, FUNCT_2, SUPINF_1, MEASURE1, EXTREAL1, MESFUNC1,
+      VALUED_1, MESFUNC2, MESFUNC3, SETFAM_1, PROB_1, MESFUNC5;
  constructors DOMAIN_1, REAL_1, SQUARE_1, NAT_D, MEASURE3, MEASURE6, EXTREAL1,
       MESFUNC1, BINARITH, MESFUNC2, MESFUNC3, MESFUNC5, SUPINF_1, RELSET_1,
       ABSVALUE, RFUNCT_3, FUNCT_4, SEQFUNC;
  registrations SUBSET_1, RELSET_1, XXREAL_0, XREAL_0, NAT_1, RAT_1, MEMBERED,
-      MEASURE1, VALUED_0, ORDINAL1, XXREAL_3;
+      MEASURE1, VALUED_0, ORDINAL1, XXREAL_3, VALUED_1;
  requirements NUMERALS, REAL, BOOLE, SUBSET, ARITHM;
 
 
@@ -259,7 +259,6 @@ definition
   let X,S,f;
   pred f is_simple_func_in S means
 :: MESFUNC6:def 2
-
   ex F being Finite_Sep_Sequence of S
 st (dom f = union rng F & for n being Nat,x,y being Element of X st n in dom F
   & x in F.n & y in F.n holds f.x = f.y);
@@ -329,7 +328,7 @@ theorem :: MESFUNC6:66
   max+(f|Y)=max+f|Y & max-(f|Y)=max-f|Y;
 
 theorem :: MESFUNC6:67
-  Y c= dom(f+g) implies dom((f+g)|Y) =Y & dom(f|Y+g|Y)=Y & (f+g)|Y = f|Y +g|Y;
+  Y c= dom(f+g) implies dom((f+g)|Y) = Y & dom(f|Y+g|Y)=Y & (f+g)|Y = f|Y +g|Y;
 
 theorem :: MESFUNC6:68
   eq_dom(f,r) = f"{r};

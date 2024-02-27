@@ -2,7 +2,7 @@
 ::  by Wojciech A. Trybulec
 ::
 :: Received August 10, 1990
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -32,22 +32,26 @@ begin
 reserve x,y,y1,y2 for set,
   D for non empty set,
   d,d1,d2,d3 for Element of D,
-  F ,G,H,H1,H2 for FinSequence of D,
+  F,G,H,H1,H2 for FinSequence of D,
   f,f1,f2 for sequence of D,
   g for BinOp of D,
   k,n,i,l for Nat,
   P for Permutation of dom F;
 
 definition
-  let D,F,g;
+  let D;
+  let F be D-valued FinSequence;
+  let g be BinOp of D;
   assume
  g is having_a_unity or len F >= 1;
   func g "**" F -> Element of D means
 :: FINSOP_1:def 1
 
   it = the_unity_wrt g if g is having_a_unity & len F = 0
-   otherwise ex f st f.1 = F.1 & (for n being Nat st 0 <> n & n <
-    len F holds f.(n + 1) = g.(f.n,F.(n + 1))) & it = f.(len F);
+   otherwise
+  ex f st f.1 = F.1 &
+  (for n being Nat st 0 <> n & n < len F holds f.(n + 1) = g.(f.n,F.(n + 1)))
+  & it = f.(len F);
 end;
 
 theorem :: FINSOP_1:1

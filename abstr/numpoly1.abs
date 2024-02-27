@@ -2,7 +2,7 @@
 ::  by Adam Grabowski
 ::
 :: Received May 19, 2013
-:: Copyright (c) 2013-2021 Association of Mizar Users
+:: Copyright (c) 2013-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -29,7 +29,8 @@ environ
       PYTHTRIP, FINSET_1;
  registrations RELSET_1, FINSEQ_2, INT_1, XREAL_0, NAT_1, MEMBERED, FINSEQ_1,
       RVSUM_1, XXREAL_0, NEWTON, SEQ_1, XCMPLX_0, NUMBERS, SEQ_2, POWER, ABIAN,
-      PYTHTRIP, SQUARE_1, ORDINAL1, XBOOLE_0, FUNCT_2, VALUED_0, VALUED_1;
+      PYTHTRIP, SQUARE_1, ORDINAL1, XBOOLE_0, FUNCT_2, VALUED_0, VALUED_1,
+      NAT_2, WSIERP_1;
  requirements REAL, NUMERALS, SUBSET, ARITHM;
 
 
@@ -52,8 +53,7 @@ registration let n be Integer;
 end;
 
 theorem :: NUMPOLY1:2
-  for n being even Integer holds
-    n / 2 is Integer;
+  for n being even Integer holds n / 2 is Integer;
 
 registration let n be even Nat;
   cluster n / 2 -> natural;
@@ -104,14 +104,19 @@ registration
 end;
 
 registration
-  cluster 4_or_greater for Nat;
-  cluster 3_or_greater for Nat;
+  let n be Real;
+  cluster n_or_greater for Real;
+end;
+
+registration
+  let n be Nat;
+  cluster n_or_greater for Nat;
 end;
 
 begin :: Triangular Numbers
 
-definition let n be Nat;
-  func Triangle n -> Real equals
+definition let n be natural Number;
+  func Triangle n -> Nat equals
 :: NUMPOLY1:def 1
     Sum idseq n;
 end;
@@ -167,10 +172,6 @@ registration let n be non zero Nat;
   cluster Triangle n -> positive;
 end;
 
-registration let n be Nat;
-  cluster Triangle n -> natural;
-end;
-
 theorem :: NUMPOLY1:21
   Triangle (n -' 1) = n * (n - 1) / 2;
 
@@ -221,7 +222,7 @@ theorem :: NUMPOLY1:27
 theorem :: NUMPOLY1:28
   Polygon (s,n) = (n * (s - 2) * (n - 1)) / 2 + n;
 
-definition let s be Nat;
+definition let s be natural Number;
            let x be object;
   attr x is s-gonal means
 :: NUMPOLY1:def 4
@@ -232,6 +233,11 @@ definition let x be object;
   attr x is polygonal means
 :: NUMPOLY1:def 5
     ex s being Nat st x is s-gonal;
+end;
+
+registration
+  let s, n be natural Number;
+  cluster Polygon(s,n) -> s-gonal;
 end;
 
 theorem :: NUMPOLY1:29
@@ -346,6 +352,11 @@ registration
   cluster triangular -> non prime for 4_or_greater Nat;
 end;
 
+registration
+  let n be positive Nat;
+  cluster n_or_greater non zero for Nat;
+end;
+
 registration let s be 4_or_greater non zero Nat,
                  x be non zero s-gonal number;
   cluster IndexPoly (s,x) -> natural;
@@ -353,7 +364,7 @@ end;
 
 theorem :: NUMPOLY1:47
   for s being 4_or_greater Nat,
-      x being non zero s-gonal number st s <> 2 holds
+      x being non zero s-gonal number holds
     Polygon (s, IndexPoly (s,x)) = x;
 
 theorem :: NUMPOLY1:48
@@ -618,8 +629,7 @@ end;
 definition
   func ReciTriangRS -> Real_Sequence means
 :: NUMPOLY1:def 13
-    for i being Nat holds
-      it.i = 1 / Triangle i;
+    for i being Nat holds it.i = 1 / Triangle i;
 end;
 
 registration

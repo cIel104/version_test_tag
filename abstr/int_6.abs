@@ -2,7 +2,7 @@
 ::  by Christoph Schwarzweller
 ::
 :: Received May 13, 2008
-:: Copyright (c) 2008-2021 Association of Mizar Users
+:: Copyright (c) 2008-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -30,7 +30,7 @@ environ
  requirements REAL, NUMERALS, SUBSET, BOOLE, ARITHM;
 
 
-begin
+begin  :: Preliminaries
 
 registration
   let f be complex-valued FinSequence, n be Nat;
@@ -74,7 +74,7 @@ theorem :: INT_6:4
   k being Nat st k <= len m1 holds (m1(#)m2)|k = (m1|k) (#) (m2|k);
 
 registration
-  let F be INT-valued FinSequence;
+  let F be integer-valued FinSequence;
   cluster Sum F -> integer;
   cluster Product F -> integer;
 end;

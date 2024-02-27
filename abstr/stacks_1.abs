@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received February 22, 2011
-:: Copyright (c) 2011-2021 Association of Mizar Users
+:: Copyright (c) 2011-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -194,7 +194,6 @@ registration
   let A;
   cluster -> FinSequence-like for stack of StandardStackSystem A;
 end;
-::$H-
 
 reserve X for non empty non void StackSystem;
 reserve s,s1,s2 for stack of X;
@@ -204,29 +203,24 @@ definition
   let X;
   attr X is pop-finite means
 :: STACKS_1:def 8
-
-  for f being sequence of  the carrier' of X
+  for f being sequence of the carrier' of X
   ex i being Nat, s st f.i = s &
   (not emp s implies f.(i+1) <> pop s);
 
   attr X is push-pop means
 :: STACKS_1:def 9
-
   not emp s implies s = push(top s, pop s);
 
   attr X is top-push means
 :: STACKS_1:def 10
-
   e = top push(e,s);
 
   attr X is pop-push means
 :: STACKS_1:def 11
-
   s = pop push(e,s);
 
   attr X is push-non-empty means
 :: STACKS_1:def 12
-
   not emp push(e,s);
 end;
 

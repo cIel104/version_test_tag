@@ -2,7 +2,7 @@
 ::  by Karol P\kak
 :: 
 :: Received March 26, 2015
-:: Copyright (c) 2015-2021 Association of Mizar Users
+:: Copyright (c) 2015-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -41,7 +41,6 @@ reserve x,y for object,
 
 registration
   let r be ext-real number;
-  cluster <*r*> -> ext-real-valued;
   cluster <*r*> -> decreasing increasing non-decreasing non-increasing;
 end;
 

@@ -2,7 +2,7 @@
 ::  by Edmund Woronowicz
 ::
 :: Received April 14, 1989
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -271,12 +271,12 @@ theorem :: RELSET_1:31
 :: from AMI_3, 2007.06.13, A.T. (generalized)
 
 scheme :: RELSET_1:sch 4
-  {A,B() -> set, P[set,set], P,R()->Relation of A(), B()}: P() = R()
+  {A,B() -> set, P[object,object], Q,R()->Relation of A(), B()}: Q() = R()
 provided
- for p being Element of A(), q being Element of B() holds [p,q] in P(
-) iff P[p,q] and
- for p being Element of A(), q being Element of B() holds [p,q] in R(
-) iff P[p,q];
+ for p being Element of A(), q being Element of B() holds
+    [p,q] in Q() iff P[p,q] and
+ for p being Element of A(), q being Element of B() holds
+    [p,q] in R() iff P[p,q];
 
 :: missing, 2007.06.14, A.T.
 

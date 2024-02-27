@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek and Krzysztof Hryniewiecki
 ::
 :: Received April 1, 1989
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -17,12 +17,12 @@ environ
  vocabularies NUMBERS, NAT_1, FUNCT_1, SUBSET_1, XXREAL_0, TARSKI, XCMPLX_0,
       XBOOLE_0, CARD_1, ARYTM_3, RELAT_1, FINSET_1, ZFMISC_1, ORDINAL1,
       PARTFUN1, FUNCOP_1, ORDINAL4, ARYTM_1, FINSEQ_1, ORDINAL2, VALUED_0,
-      FUNCT_2, UPROOTS;
+      FUNCT_2, UPROOTS, INT_1, RAT_1, REAL_1;
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, XCMPLX_0, RELAT_1, FUNCT_1,
       FUNCOP_1, WELLORD2, ORDINAL1, NAT_1, CARD_1, NUMBERS, PARTFUN1, FINSET_1,
-      XXREAL_0, FUNCT_2, INT_1, VALUED_0;
+      XXREAL_0, XREAL_0, FUNCT_2, INT_1, VALUED_0, RAT_1;
  constructors WELLORD2, FUNCOP_1, FUNCT_4, XXREAL_0, XREAL_0, NAT_1, CARD_1,
-      RELSET_1, XCMPLX_0, INT_1, VALUED_0, NUMBERS;
+      RELSET_1, XCMPLX_0, INT_1, VALUED_0, NUMBERS, RAT_1;
  registrations XBOOLE_0, SUBSET_1, RELAT_1, FUNCT_1, ORDINAL1, FINSET_1,
       XXREAL_0, XREAL_0, NAT_1, CARD_1, NUMBERS, VALUED_0;
  requirements REAL, NUMERALS, SUBSET, BOOLE, ARITHM;
@@ -33,7 +33,8 @@ begin
 reserve
   a for natural Number,
   k,l,m,n,k1,b,c,i for Nat,
-  x,y,z,y1,y2 for object, X,Y for set,
+  x,y,z,y1,y2 for object,
+  X,Y for set,
   f,g for Function;
 
 ::   Segments of Natural Numbers
@@ -205,8 +206,13 @@ end;
 
 reserve D for set;
 
+registration
+  let D;
+  cluster D-valued for FinSequence;
+end;
+
 theorem :: FINSEQ_1:18
-  for p being FinSequence of D holds p|(Seg a) is FinSequence of D;
+  for p being D-valued FinSequence holds p|(Seg a) is FinSequence of D;
 
 theorem :: FINSEQ_1:19
   for D being non empty set ex p being FinSequence of D st len p = a;
@@ -292,7 +298,7 @@ theorem :: FINSEQ_1:34
   p^{} = p & {}^p = p;
 
 theorem :: FINSEQ_1:35
-  p^q = {} implies p={} & q={};
+  p^q = {} implies p = {} & q = {};
 
 definition
   let D be set;
@@ -319,8 +325,8 @@ registration
 end;
 
 theorem :: FINSEQ_1:36
-  p^q is FinSequence of D implies p is FinSequence of D & q is FinSequence of D
-;
+  p^q is D-valued FinSequence implies
+  p is FinSequence of D & q is FinSequence of D;
 
 definition
   let x,y be object;
@@ -548,10 +554,6 @@ provided
 
 :: from TOPREAL1
 
-reserve D for set,
-  p for FinSequence of D,
-  m for Nat;
-
 definition
   let m;
   let p be FinSequence;
@@ -561,7 +563,8 @@ definition
 end;
 
 definition
-  let D,m,p;
+  let D,m;
+  let p be FinSequence of D;
   redefine func p|m -> FinSequence of D;
 end;
 
@@ -682,7 +685,8 @@ theorem :: FINSEQ_1:74
   <* x *> is FinSequence of D;
 
 theorem :: FINSEQ_1:75
-  for D being set, p,q being FinSequence of D holds p ^ q is FinSequence of D;
+  for D being set, p,q being D-valued FinSequence holds p^q is FinSequence of D
+;
 
 :: from GROUP_7, 2007.02.10, AK
 
@@ -740,8 +744,6 @@ theorem :: FINSEQ_1:82
   for p being FinSequence, n,m being Nat st m <= n holds p|n|m = p|m;
 
 :: from CARD_5, 2008.10.08, A.T.
-
-reserve m for Nat;
 
 theorem :: FINSEQ_1:83
   Seg n = (n+1) \ {0};
@@ -828,7 +830,7 @@ end;
 :: from JORDAN7, 2010.02.26, A.T
 
 registration
-  cluster increasing -> one-to-one for real-valued FinSequence;
+  cluster NAT-defined increasing -> one-to-one for real-valued Function;
 end;
 
 :: from AMI_6, 2010.04.07, A.T.
@@ -908,7 +910,7 @@ registration
   cluster -> finite for FinSubsequence;
 end;
 
-reserve x1,x2,y1,y2 for set;
+reserve x1,x2,y1,y2 for object;
 
 theorem :: FINSEQ_1:98
   {[x1,y1], [x2,y2]} is FinSequence implies x1 = 1 & x2 = 1 & y1 = y2 or
@@ -937,3 +939,184 @@ end;
 registration
   cluster non empty natural-valued for FinSequence;
 end;
+
+theorem :: FINSEQ_1:102
+  for f being D-valued FinSequence holds f is FinSequence of D;
+
+theorem :: FINSEQ_1:103
+  for f being natural-valued FinSequence holds f is FinSequence of NAT;
+
+theorem :: FINSEQ_1:104
+  for f being integer-valued FinSequence holds f is FinSequence of INT;
+
+theorem :: FINSEQ_1:105
+  for f being rational-valued FinSequence holds f is FinSequence of RAT;
+
+theorem :: FINSEQ_1:106
+  for f being real-valued FinSequence holds f is FinSequence of REAL;
+
+theorem :: FINSEQ_1:107
+  for f being complex-valued FinSequence holds f is FinSequence of COMPLEX;
+
+theorem :: FINSEQ_1:108
+  for f being ext-real-valued FinSequence holds f is FinSequence of ExtREAL;
+
+registration
+  let n be Nat;
+  let f be natural-valued FinSequence;
+  cluster f|n -> natural-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be NAT-valued FinSequence;
+  cluster f|n -> NAT-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be integer-valued FinSequence;
+  cluster f|n -> integer-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be INT-valued FinSequence;
+  cluster f|n -> INT-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be rational-valued FinSequence;
+  cluster f|n -> rational-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be RAT-valued FinSequence;
+  cluster f|n -> RAT-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be real-valued FinSequence;
+  cluster f|n -> real-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be REAL-valued FinSequence;
+  cluster f|n -> REAL-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be complex-valued FinSequence;
+  cluster f|n -> complex-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be COMPLEX-valued FinSequence;
+  cluster f|n -> COMPLEX-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be ext-real-valued FinSequence;
+  cluster f|n -> ext-real-valued;
+end;
+
+registration
+  let n be Nat;
+  let f be ExtREAL-valued FinSequence;
+  cluster f|n -> ExtREAL-valued;
+end;
+
+registration
+  let I be set;
+  let p,q be I-valued FinSequence;
+  cluster p^q -> I-valued;
+end;
+
+registration
+  let f,g be natural-valued FinSequence;
+  cluster f^g -> natural-valued;
+end;
+
+registration
+  let f,g be integer-valued FinSequence;
+  cluster f^g -> integer-valued;
+end;
+
+registration
+  let f,g be rational-valued FinSequence;
+  cluster f^g -> rational-valued;
+end;
+
+registration
+  let f,g be real-valued FinSequence;
+  cluster f^g -> real-valued;
+end;
+
+registration
+  let f,g be complex-valued FinSequence;
+  cluster f^g -> complex-valued;
+end;
+
+registration
+  let f,g be ext-real-valued FinSequence;
+  cluster f^g -> ext-real-valued;
+end;
+
+registration
+  let n be natural Number;
+  cluster <*n*> -> natural-valued;
+end;
+
+registration
+  let i be Integer;
+  cluster <*i*> -> integer-valued;
+end;
+
+registration
+  let r be Rational;
+  cluster <*r*> -> rational-valued;
+end;
+
+registration
+  let r be Real;
+  cluster <*r*> -> real-valued;
+end;
+
+registration
+  let c be Complex;
+  cluster <*c*> -> complex-valued;
+end;
+
+registration
+  let e be ExtReal;
+  cluster <*e*> -> ext-real-valued;
+end;
+
+registration
+  cluster -> natural-valued for FinSequence of NAT;
+  cluster -> integer-valued for FinSequence of INT;
+  cluster -> rational-valued for FinSequence of RAT;
+  cluster -> real-valued for FinSequence of REAL;
+  cluster -> complex-valued for FinSequence of COMPLEX;
+  cluster -> ext-real-valued for FinSequence of ExtREAL;
+end;
+
+:: registration
+::   let D be non empty set;
+::   let x1 be Element of D;
+::   cluster <*x1*> -> D-valued;
+::   coherence;
+::   let x2 be Element of D;
+::   cluster <*x1,x2*> -> D-valued;
+::   coherence;
+::   let x3 be Element of D;
+::   cluster <*x1,x2,x3*> -> D-valued;
+::   coherence;
+:: end;

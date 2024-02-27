@@ -2,7 +2,7 @@
 ::  by Robert Milewski
 ::
 :: Received April 17, 2000
-:: Copyright (c) 2000-2021 Association of Mizar Users
+:: Copyright (c) 2000-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -19,7 +19,7 @@ environ
       ORDINAL4, ARYTM_3, XXREAL_0, FINSEQ_3, FINSEQ_2, PRE_POLY, TARSKI,
       CARD_1, ORDERS_1, RELAT_2, FINSET_1, ARYTM_1, FUNCT_2, POLYNOM1,
       ALGSEQ_1, FUNCOP_1, FUNCT_4, MESFUNC1, LATTICES, VECTSP_1, BINOP_1,
-      CLASSES1, GROUP_1, ZFMISC_1, POLYNOM3, XCMPLX_0;
+      CLASSES1, GROUP_1, ZFMISC_1, POLYNOM3, XCMPLX_0, VALUED_0;
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, CARD_1, ORDINAL1, NUMBERS,
       XCMPLX_0, RELAT_1, RELAT_2, FUNCT_1, ORDERS_1, XXREAL_0, XREAL_0, NAT_1,
       NAT_D, CLASSES1, RELSET_1, PARTFUN1, FINSET_1, FUNCT_2, FUNCOP_1,
@@ -32,7 +32,8 @@ environ
       MATRLIN, FVSUM_1, VFUNCT_1, NUMBERS;
  registrations ORDINAL1, FUNCT_2, NUMBERS, XXREAL_0, XREAL_0, NAT_1, INT_1,
       MEMBERED, FINSEQ_1, FINSEQ_2, FINSEQ_5, STRUCT_0, VECTSP_1, VALUED_0,
-      FINSET_1, RELSET_1, PRE_POLY, VFUNCT_1, CARD_1, FUNCT_1, FINSEQ_3;
+      FINSET_1, RELSET_1, PRE_POLY, VFUNCT_1, CARD_1, FUNCT_1, FINSEQ_3,
+      WSIERP_1;
  requirements NUMERALS, BOOLE, SUBSET, REAL, ARITHM;
 
 
@@ -48,18 +49,11 @@ theorem :: POLYNOM3:2
   addLoopStr for p be FinSequence of the carrier of V holds Sum p = Sum Rev p;
 
 theorem :: POLYNOM3:3
-  for p be FinSequence of REAL holds Sum p = Sum Rev p;
+  for p be REAL-valued FinSequence holds Sum p = Sum Rev p;
 
 theorem :: POLYNOM3:4
-  for p be FinSequence of NAT for i be Element of NAT st i in dom p
+  for p being natural-valued FinSequence, i being Nat st i in dom p
   holds Sum p >= p.i;
-
-definition
-  let D be non empty set;
-  let i be Element of NAT;
-  let p be FinSequence of D;
-  redefine func Del(p,i) -> FinSequence of D;
-end;
 
 definition
   let D be non empty set;
@@ -69,7 +63,7 @@ end;
 
 definition
   let D be non empty set;
-  let k,n be Element of NAT;
+  let k,n be Nat;
   let p be Element of k-tuples_on D;
   let q be Element of n-tuples_on D;
   redefine func p^q -> Element of (k+n)-tuples_on D;
@@ -181,8 +175,9 @@ theorem :: POLYNOM3:10
   for n be Element of NAT holds Decomp(n,1) = <*<*n*>*>;
 
 theorem :: POLYNOM3:11
-  for i,j,n,k1,k2 be Element of NAT st Decomp(n,2).i = <*k1,n-'k1
-  *> & Decomp(n,2).j = <*k2,n-'k2*> holds i<j iff k1<k2;
+  for i,j,n,k1,k2 be Element of NAT st
+  Decomp(n,2).i = <*k1,n-'k1*> & Decomp(n,2).j = <*k2,n-'k2*>
+  holds i<j iff k1<k2;
 
 theorem :: POLYNOM3:12
   for i,n,k1,k2 be Element of NAT st Decomp(n,2).i = <*k1,n-'k1*>
@@ -214,32 +209,32 @@ theorem :: POLYNOM3:15
   prodTuples(p,q,r,t)*P;
 
 theorem :: POLYNOM3:16
-  for D be set, f be FinSequence of D*, i be Nat
-  holds Card (f|i) = (Card f)|i;
+  for D be set, f be FinSequence of D*, i be Nat holds Card (f|i) = (Card f)|i;
 
 ::$CT
 
 theorem :: POLYNOM3:18
-  for p be FinSequence of NAT for i,j be Nat st i <= j
+  for p be natural-valued FinSequence for i,j be Nat st i <= j
   holds Sum (p|i) <= Sum (p|j);
 
 ::$CT
 
 theorem :: POLYNOM3:20
-  for p be FinSequence of REAL for i be Element of NAT st i < len
-  p holds Sum (p|(i+1)) = Sum (p|i) + p.(i+1);
+  for p be real-valued FinSequence for i be Nat st i < len p
+  holds Sum (p|(i+1)) = Sum (p|i) + p.(i+1);
 
 theorem :: POLYNOM3:21
-  for p be FinSequence of NAT for i,j,k1,k2 be Element of NAT st i
-< len p & j < len p & 1 <= k1 & 1 <= k2 & k1 <= p.(i+1) & k2 <= p.(j+1) & (Sum
-  (p|i)) + k1 = (Sum (p|j)) + k2 holds i = j & k1 = k2;
+  for p be natural-valued FinSequence
+  for i,j,k1,k2 be Nat st
+  i < len p & j < len p & 1 <= k1 & 1 <= k2 & k1 <= p.(i+1) & k2 <= p.(j+1) &
+  (Sum(p|i)) + k1 = (Sum (p|j)) + k2 holds i = j & k1 = k2;
 
 theorem :: POLYNOM3:22
   for D1,D2 be set for f1 be FinSequence of D1* for f2 be
   FinSequence of D2* for i1,i2,j1,j2 be Element of NAT st i1 in dom f1 & i2 in
   dom f2 & j1 in dom (f1.i1) & j2 in dom (f2.i2) & Card f1 = Card f2 & (Sum ((
-  Card f1)|(i1-'1))) + j1 = (Sum ((Card f2)|(i2-'1))) + j2 holds i1 = i2 & j1 =
-  j2;
+  Card f1)|(i1-'1))) + j1 = (Sum ((Card f2)|(i2-'1))) + j2
+  holds i1 = i2 & j1 = j2;
 
 begin  :: Polynomials
 
@@ -249,8 +244,8 @@ definition
 end;
 
 theorem :: POLYNOM3:23
-  for L be non empty ZeroStr for p be Polynomial of L for n be
-  Element of NAT holds n >= len p iff n is_at_least_length_of p;
+  for L be non empty ZeroStr for p be Polynomial of L
+  for n be Nat holds n >= len p iff n is_at_least_length_of p;
 
 scheme :: POLYNOM3:sch 2
   PolynomialLambdaF{R()->non empty addLoopStr, A()->Element of NAT, F(Element

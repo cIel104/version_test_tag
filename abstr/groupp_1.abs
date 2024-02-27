@@ -2,7 +2,7 @@
 ::  by Xiquan Liang and Dailu Li
 ::
 :: Received April 29, 2010
-:: Copyright (c) 2010-2021 Association of Mizar Users
+:: Copyright (c) 2010-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -34,7 +34,7 @@ begin :: $p$-Groups
 reserve G for Group,
   a,b for Element of G,
   m, n for Nat,
-  p for prime Nat;
+  p for Prime;
 
 theorem :: GROUPP_1:1
   (for r being Nat holds n <> p |^ r) implies
@@ -200,7 +200,7 @@ theorem :: GROUPP_1:22
   G is p-group implies H is p-group;
 
 definition
-  let p be prime Nat;
+  let p be Prime;
   let G be Group such that
  G is p-group;
   func expon (G,p) -> Nat means
@@ -210,7 +210,7 @@ definition
 end;
 
 definition
-  let p be prime Nat;
+  let p be Prime;
   let G be Group;
   redefine func expon (G,p) -> Element of NAT;
 end;
@@ -228,7 +228,7 @@ theorem :: GROUPP_1:25
   expon (G,p) = 1 implies G is cyclic;
 
 theorem :: GROUPP_1:26
-  for G being finite Group,p being prime Nat
+  for G being finite Group,p being Prime
   for a being Element of G holds G is p-group & expon (G,p) = 2 &
   ord a = p |^2 implies G is commutative;
 

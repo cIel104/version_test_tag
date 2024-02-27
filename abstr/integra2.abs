@@ -2,7 +2,7 @@
 ::  by Noboru Endou , Katsumi Wasaki and Yasunari Shidama
 ::
 :: Received December 7, 1999
-:: Copyright (c) 1999-2021 Association of Mizar Users
+:: Copyright (c) 1999-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -29,7 +29,7 @@ environ
       CLASSES1, RELSET_1, SEQ_2, MEMBER_1, MEASURE6, COMSEQ_2;
  registrations RELAT_1, ORDINAL1, FUNCT_2, NUMBERS, XREAL_0, MEMBERED,
       FINSEQ_1, INTEGRA1, VALUED_0, VALUED_1, XXREAL_2, CARD_1, SEQ_2,
-      RELSET_1, XXREAL_3, MEMBER_1, MEASURE5, NAT_1;
+      RELSET_1, XXREAL_3, MEMBER_1, MEASURE5, NAT_1, RFINSEQ;
  requirements REAL, NUMERALS, BOOLE, SUBSET, ARITHM;
 
 
@@ -37,31 +37,26 @@ begin :: Lemmas of Finite Sequence
 
 reserve a,b,r,x,y for Real,
   i,j,k,n for Nat,
-  x1 for set,
-  p for FinSequence of REAL;
+  x1 for set;
 
 theorem :: INTEGRA2:1
   for A be non empty closed_interval Subset of REAL, x being Real holds
   x in A iff lower_bound A <= x & x <= upper_bound A;
 
 definition
-  let IT be FinSequence of REAL;
+  let IT be real-valued FinSequence;
   redefine attr IT is non-decreasing means
 :: INTEGRA2:def 1
   for n be Nat st n in dom IT & n+1 in dom IT holds IT.n <= IT.(n+1);
 end;
 
-registration
-  cluster non-decreasing for FinSequence of REAL;
-end;
-
 theorem :: INTEGRA2:2
-  for p be non-decreasing FinSequence of REAL, i,j st i in dom p & j in
-  dom p & i <= j holds p.i <= p.j;
+  for p be non-decreasing real-valued FinSequence, i,j st
+  i in dom p & j in dom p & i <= j holds p.i <= p.j;
 
 theorem :: INTEGRA2:3
-  for p ex q be non-decreasing FinSequence of REAL st
-    p,q are_fiberwise_equipotent;
+  for p being real-valued FinSequence
+  ex q be non-decreasing FinSequence of REAL st p,q are_fiberwise_equipotent;
 
 theorem :: INTEGRA2:4
   for D be non empty set, f be FinSequence of D, k1,k2,k3 be Nat

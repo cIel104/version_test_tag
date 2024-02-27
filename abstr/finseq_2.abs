@@ -2,7 +2,7 @@
 ::  by Czes{\l}aw Byli\'nski
 ::
 :: Received March 1, 1990
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -70,7 +70,8 @@ theorem :: FINSEQ_2:10
   b in rng p implies ex i being Nat st i in dom p & p.i = b;
 
 theorem :: FINSEQ_2:11
-  for D being set for p being FinSequence of D st i in dom p holds p.i in D;
+  for D being set for p being D-valued FinSequence st i in dom p holds p.i in D
+;
 
 theorem :: FINSEQ_2:12
   for D being set holds (for i being Nat st i in dom p holds p.i in D)
@@ -108,13 +109,13 @@ theorem :: FINSEQ_2:22
   len r = i+j implies ex p,q st len p = i & len q = j & r = p^q;
 
 theorem :: FINSEQ_2:23
-  for r being FinSequence of D st len r = i+j ex p,q being
-  FinSequence of D st len p = i & len q = j & r = p^q;
+  for r being D-valued FinSequence st len r = i+j
+  ex p,q being FinSequence of D st len p = i & len q = j & r = p^q;
 
 scheme :: FINSEQ_2:sch 1
-  SeqLambdaD{i()->Nat,D()->non empty set,F(set)->Element of D()}: ex z being
-FinSequence of D() st len z = i() & for j being Nat st j in dom z holds z.j = F
-  (j);
+  SeqLambdaD{i()->Nat,D()->non empty set,F(set)->Element of D()}:
+  ex z being FinSequence of D() st len z = i() &
+  for j being Nat st j in dom z holds z.j = F(j);
 
 scheme :: FINSEQ_2:sch 2
   IndSeqD{D()->set, P[set]}: for p being FinSequence of D() holds P[p]

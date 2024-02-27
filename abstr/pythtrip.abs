@@ -2,7 +2,7 @@
 ::  by Freek Wiedijk
 ::
 :: Received August 26, 2001
-:: Copyright (c) 2001-2021 Association of Mizar Users
+:: Copyright (c) 2001-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -16,7 +16,7 @@ environ
 
  vocabularies NUMBERS, SUBSET_1, INT_1, NAT_1, ARYTM_3, INT_2, CARD_1,
       XXREAL_0, ORDINAL1, SQUARE_1, ABIAN, RELAT_1, ARYTM_1, FINSET_1, FUNCT_1,
-      XBOOLE_0, COMPLEX1, TARSKI, PYTHTRIP, QUANTAL1;
+      XBOOLE_0, COMPLEX1, TARSKI, PYTHTRIP, QUANTAL1, NEWTON;
  notations TARSKI, XBOOLE_0, ENUMSET1, SUBSET_1, FINSET_1, ORDINAL1, CARD_1,
       NUMBERS, XCMPLX_0, XXREAL_0, INT_1, INT_2, NAT_1, NAT_D, SQUARE_1, ABIAN,
       PEPIN, DOMAIN_1, RELAT_1, FUNCT_1;
@@ -28,7 +28,7 @@ environ
 
 begin :: relative primeness
 
-reserve a,b,c,k,k9,m,n,n9,p,p9 for Element of NAT;
+reserve a,b,c,k,k9,m,n,n9,p,p9 for Nat;
 reserve i,i9 for Integer;
 
 definition
@@ -42,7 +42,7 @@ definition
   let m,n be Nat;
   redefine pred m,n are_coprime means
 :: PYTHTRIP:def 2
-  for p being prime Nat holds not (p divides m & p divides n);
+  for p being Prime holds not (p divides m & p divides n);
 end;
 
 begin :: squares
@@ -66,10 +66,12 @@ end;
 
 registration
   cluster even square for Element of NAT;
+  cluster even square for Nat;
 end;
 
 registration
   cluster odd square for Element of NAT;
+  cluster odd square for Nat;
 end;
 
 registration
@@ -142,8 +144,9 @@ theorem :: PYTHTRIP:10
   a,b are_coprime implies a is odd or b is odd;
 
 theorem :: PYTHTRIP:11
-  a^2 + b^2 = c^2 & a,b are_coprime & a is odd implies ex m
-  ,n st m <= n & a = n^2 - m^2 & b = 2*m*n & c = n^2 + m^2;
+  a^2 + b^2 = c^2 & a,b are_coprime & a is odd implies
+  ex m,n being Element of NAT st
+   m <= n & a = n^2 - m^2 & b = 2*m*n & c = n^2 + m^2;
 
 theorem :: PYTHTRIP:12
   a = n^2 - m^2 & b = 2*m*n & c = n^2 + m^2 implies a^2 + b^2 = c^2;
@@ -152,7 +155,7 @@ definition
   mode Pythagorean_triple -> Subset of NAT means
 :: PYTHTRIP:def 4
 
-  ex a,b,c st a^2 + b^2 = c^2 & it = { a,b,c };
+  ex a,b,c being Element of NAT st a^2 + b^2 = c^2 & it = { a,b,c };
 end;
 
 reserve X for Pythagorean_triple;
@@ -166,7 +169,8 @@ definition
   redefine mode Pythagorean_triple means
 :: PYTHTRIP:def 5
 
-  ex k,m,n st m <= n & it = { k* (n^2 - m^2), k*(2*m*n), k*(n^2 + m^2) };
+  ex k,m,n being Element of NAT st m <= n &
+   it = { k*(n^2 - m^2), k*(2*m*n), k*(n^2 + m^2) };
 end;
 
 notation
@@ -190,11 +194,11 @@ definition
   redefine attr X is simplified means
 :: PYTHTRIP:def 8
 
-  ex m,n st m in X & n in X & m,n are_coprime;
+  ex m,n being Element of NAT st m in X & n in X & m,n are_coprime;
 end;
 
 theorem :: PYTHTRIP:14
-  n > 0 implies ex X st X is non degenerate & X is simplified & 4* n in X;
+  n > 0 implies ex X st X is non degenerate & X is simplified & 4*n in X;
 
 registration
   cluster non degenerate simplified for Pythagorean_triple;

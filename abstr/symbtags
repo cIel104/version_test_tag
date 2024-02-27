@@ -480,6 +480,22 @@ Nat_Hom;ALG_1:func.5:5Nat_Hom197,5568
 Cng;ALG_1:func.6:6Cng214,5924
 HomQuot;ALG_1:func.7:7HomQuot224,6145
 
+alggeo_1.abs,
+{;ALGGEO_1:func.1:1{57,2686
+E_eval;ALGGEO_1:func.2:2E_eval65,3028
+E_eval;ALGGEO_1:func.3:3E_eval77,3451
+deg1Poly;ALGGEO_1:func.4:4deg1Poly125,5289
+Zero_;ALGGEO_1:func.5:5Zero_161,6418
+Zero_;ALGGEO_1:func.6:6Zero_178,6860
+algebraic_set_from_ideal;ALGGEO_1:attr.1:1algebraic_set_from_ideal192,7199
+Algebraic_Set;ALGGEO_1:mode.0:1Algebraic_Set205,7490
+union;ALGGEO_1:func.7:7union229,8227
+Alg_Sets;ALGGEO_1:func.8:8Alg_Sets252,8932
+polyset;ALGGEO_1:func.9:9polyset265,9335
+Ideal_;ALGGEO_1:func.10:10Ideal_286,10055
+reducible;ALGGEO_1:attr.2:2reducible347,11826
+irreducible;ALGGEO_1:attr.2:3irreducible355,12008
+
 algnum_1.abs,
 Ext_eval;ALGNUM_1:func.1:1Ext_eval92,3992
 is_integral_over;ALGNUM_1:pred.1:1is_integral_over189,7078
@@ -867,73 +883,73 @@ CESpace;ANALORT:func.5:5CESpace281,8288
 CMSpace;ANALORT:func.6:6CMSpace295,8512
 
 anproj10.abs,
-unit;ANPROJ10:attr.1:1unit50,1958
-op1;ANPROJ10:func.1:1op161,2117
-op2;ANPROJ10:func.2:2op269,2264
-pi_1342;ANPROJ10:func.3:3pi_1342107,3221
-pi_1423;ANPROJ10:func.4:4pi_1423110,3303
-pi_2143;ANPROJ10:func.5:5pi_2143113,3385
-pi_2314;ANPROJ10:func.6:6pi_2314116,3467
-pi_2341;ANPROJ10:func.7:7pi_2341119,3549
-pi_2413;ANPROJ10:func.8:8pi_2413122,3631
-pi_2431;ANPROJ10:func.9:9pi_2431125,3713
-pi_3124;ANPROJ10:func.10:10pi_3124128,3796
-pi_3142;ANPROJ10:func.11:11pi_3142131,3879
-pi_3241;ANPROJ10:func.12:12pi_3241134,3962
-pi_3412;ANPROJ10:func.13:13pi_3412137,4045
-pi_3421;ANPROJ10:func.14:14pi_3421140,4128
-pi_4123;ANPROJ10:func.15:15pi_4123143,4211
-pi_4132;ANPROJ10:func.16:16pi_4132146,4294
-pi_4213;ANPROJ10:func.17:17pi_4213149,4377
-pi_4312;ANPROJ10:func.18:18pi_4312152,4460
-pi_4321;ANPROJ10:func.19:19pi_4321155,4543
-pi_id;ANPROJ10:func.20:20pi_id163,4694
-pi_12;ANPROJ10:func.21:21pi_12166,4775
-pi_13;ANPROJ10:func.22:22pi_13170,4874
-pi_14;ANPROJ10:func.23:23pi_14174,4973
-pi_23;ANPROJ10:func.24:24pi_23178,5072
-pi_24;ANPROJ10:func.25:25pi_24182,5171
-pi_34;ANPROJ10:func.26:26pi_34186,5270
-pi_1234;ANPROJ10:func.20:27pi_1234201,5529
-pi_2134;ANPROJ10:func.21:28pi_2134202,5564
-pi_3214;ANPROJ10:func.22:29pi_3214203,5599
-pi_4231;ANPROJ10:func.23:30pi_4231204,5634
-pi_1324;ANPROJ10:func.24:31pi_1324205,5669
-pi_1432;ANPROJ10:func.25:32pi_1432206,5704
-pi_1243;ANPROJ10:func.26:33pi_1243207,5739
-affine-ratio;ANPROJ10:func.27:34affine-ratio284,7994
-cross-ratio;ANPROJ10:func.28:35cross-ratio531,15778
-cross-ratio-tuple;ANPROJ10:func.29:36cross-ratio-tuple601,18103
+unit;ANPROJ10:attr.1:1unit51,1974
+op1;ANPROJ10:func.1:1op162,2133
+op2;ANPROJ10:func.2:2op270,2280
+pi_1342;ANPROJ10:func.3:3pi_1342108,3237
+pi_1423;ANPROJ10:func.4:4pi_1423111,3319
+pi_2143;ANPROJ10:func.5:5pi_2143114,3401
+pi_2314;ANPROJ10:func.6:6pi_2314117,3483
+pi_2341;ANPROJ10:func.7:7pi_2341120,3565
+pi_2413;ANPROJ10:func.8:8pi_2413123,3647
+pi_2431;ANPROJ10:func.9:9pi_2431126,3729
+pi_3124;ANPROJ10:func.10:10pi_3124129,3812
+pi_3142;ANPROJ10:func.11:11pi_3142132,3895
+pi_3241;ANPROJ10:func.12:12pi_3241135,3978
+pi_3412;ANPROJ10:func.13:13pi_3412138,4061
+pi_3421;ANPROJ10:func.14:14pi_3421141,4144
+pi_4123;ANPROJ10:func.15:15pi_4123144,4227
+pi_4132;ANPROJ10:func.16:16pi_4132147,4310
+pi_4213;ANPROJ10:func.17:17pi_4213150,4393
+pi_4312;ANPROJ10:func.18:18pi_4312153,4476
+pi_4321;ANPROJ10:func.19:19pi_4321156,4559
+pi_id;ANPROJ10:func.20:20pi_id164,4710
+pi_12;ANPROJ10:func.21:21pi_12167,4791
+pi_13;ANPROJ10:func.22:22pi_13171,4890
+pi_14;ANPROJ10:func.23:23pi_14175,4989
+pi_23;ANPROJ10:func.24:24pi_23179,5088
+pi_24;ANPROJ10:func.25:25pi_24183,5187
+pi_34;ANPROJ10:func.26:26pi_34187,5286
+pi_1234;ANPROJ10:func.20:27pi_1234202,5545
+pi_2134;ANPROJ10:func.21:28pi_2134203,5580
+pi_3214;ANPROJ10:func.22:29pi_3214204,5615
+pi_4231;ANPROJ10:func.23:30pi_4231205,5650
+pi_1324;ANPROJ10:func.24:31pi_1324206,5685
+pi_1432;ANPROJ10:func.25:32pi_1432207,5720
+pi_1243;ANPROJ10:func.26:33pi_1243208,5755
+affine-ratio;ANPROJ10:func.27:34affine-ratio285,8010
+cross-ratio;ANPROJ10:func.28:35cross-ratio532,15794
+cross-ratio-tuple;ANPROJ10:func.29:36cross-ratio-tuple602,18119
 
 anproj11.abs,
-zero_proj1;ANPROJ11:attr.1:1zero_proj184,3009
-normalize_proj1;ANPROJ11:func.1:1normalize_proj1105,3544
-zero_proj2;ANPROJ11:attr.2:2zero_proj2123,4119
-normalize_proj2;ANPROJ11:func.2:2normalize_proj2144,4654
-zero_proj3;ANPROJ11:attr.3:3zero_proj3162,5228
-normalize_proj3;ANPROJ11:func.3:3normalize_proj3183,5763
-dir1a;ANPROJ11:func.4:4dir1a219,6781
-Pdir1a;ANPROJ11:func.5:5Pdir1a225,6974
-dir1b;ANPROJ11:func.6:6dir1b232,7154
-Pdir1b;ANPROJ11:func.7:7Pdir1b239,7348
-dir2a;ANPROJ11:func.8:8dir2a265,8253
-Pdir2a;ANPROJ11:func.9:9Pdir2a271,8448
-dir2b;ANPROJ11:func.10:10dir2b278,8629
-Pdir2b;ANPROJ11:func.11:11Pdir2b285,8825
-dir3a;ANPROJ11:func.12:12dir3a311,9736
-Pdir3a;ANPROJ11:func.13:13Pdir3a318,9931
-dir3b;ANPROJ11:func.14:14dir3b325,10112
-Pdir3b;ANPROJ11:func.15:15Pdir3b332,10307
-dual1;ANPROJ11:func.16:16dual1358,11212
-dual2;ANPROJ11:func.17:17dual2365,11415
-dual3;ANPROJ11:func.18:18dual3372,11618
-dual;ANPROJ11:func.19:19dual412,13072
-#;ANPROJ11:func.20:20#428,13638
-dual;ANPROJ11:func.21:21dual435,13782
-dual;ANPROJ11:func.22:22dual472,15054
-are_concurrent;ANPROJ11:pred.1:1are_concurrent498,15756
-#;ANPROJ11:func.23:23#505,15969
-#;ANPROJ11:func.24:24#512,16129
+zero_proj1;ANPROJ11:attr.1:1zero_proj184,3014
+normalize_proj1;ANPROJ11:func.1:1normalize_proj1105,3549
+zero_proj2;ANPROJ11:attr.2:2zero_proj2123,4124
+normalize_proj2;ANPROJ11:func.2:2normalize_proj2144,4659
+zero_proj3;ANPROJ11:attr.3:3zero_proj3162,5233
+normalize_proj3;ANPROJ11:func.3:3normalize_proj3183,5768
+dir1a;ANPROJ11:func.4:4dir1a219,6786
+Pdir1a;ANPROJ11:func.5:5Pdir1a225,6979
+dir1b;ANPROJ11:func.6:6dir1b232,7159
+Pdir1b;ANPROJ11:func.7:7Pdir1b239,7353
+dir2a;ANPROJ11:func.8:8dir2a265,8258
+Pdir2a;ANPROJ11:func.9:9Pdir2a271,8453
+dir2b;ANPROJ11:func.10:10dir2b278,8634
+Pdir2b;ANPROJ11:func.11:11Pdir2b285,8830
+dir3a;ANPROJ11:func.12:12dir3a311,9741
+Pdir3a;ANPROJ11:func.13:13Pdir3a318,9936
+dir3b;ANPROJ11:func.14:14dir3b325,10117
+Pdir3b;ANPROJ11:func.15:15Pdir3b332,10312
+dual1;ANPROJ11:func.16:16dual1358,11217
+dual2;ANPROJ11:func.17:17dual2365,11420
+dual3;ANPROJ11:func.18:18dual3372,11623
+dual;ANPROJ11:func.19:19dual412,13077
+#;ANPROJ11:func.20:20#428,13643
+dual;ANPROJ11:func.21:21dual435,13787
+dual;ANPROJ11:func.22:22dual472,15059
+are_concurrent;ANPROJ11:pred.1:1are_concurrent498,15761
+#;ANPROJ11:func.23:23#505,15974
+#;ANPROJ11:func.24:24#512,16134
 
 anproj_1.abs,
 are_Prop;ANPROJ_1:pred.1:1are_Prop37,1405
@@ -1413,10 +1429,10 @@ one;ARYTM_3:func.12:13one308,6837
 <;ARYTM_3:pred.3:4<361,7773
 
 ascoli.abs,
-Cl;ASCOLI:func.1:1Cl46,2311
-equibounded;ASCOLI:attr.1:1equibounded105,3632
-is_equicontinuous_at;ASCOLI:pred.1:1is_equicontinuous_at120,4036
-equicontinuous;ASCOLI:attr.2:2equicontinuous134,4449
+Cl;ASCOLI:func.1:1Cl46,2316
+equibounded;ASCOLI:attr.1:1equibounded105,3637
+is_equicontinuous_at;ASCOLI:pred.1:1is_equicontinuous_at120,4041
+equicontinuous;ASCOLI:attr.2:2equicontinuous134,4454
 
 asympt_0.abs,
 logbase;ASYMPT_0:attr.1:1logbase61,2360
@@ -1625,25 +1641,25 @@ BCK-positive-implicative;BCIALG_3:attr.10:10BCK-positive-implicative256,7229
 BCK-implicative;BCIALG_3:attr.11:11BCK-implicative260,7352
 
 bcialg_4.abs,
-BCIStr_1;BCIALG_4:struct.1:1BCIStr_135,1599
-*;BCIALG_4:func.1:1*46,1872
-with_condition_S;BCIALG_4:attr.2:1with_condition_S53,2008
-BCI_S-EXAMPLE;BCIALG_4:func.2:2BCI_S-EXAMPLE60,2137
-BCI-Algebra_with_Condition(S);BCIALG_4:mode.0:1BCI-Algebra_with_Condition(S)80,2546
-Condition_S;BCIALG_4:func.3:3Condition_S92,2880
-Adjoint_pGroup;BCIALG_4:func.4:4Adjoint_pGroup114,3604
-power;BCIALG_4:func.5:5power190,5997
-|^;BCIALG_4:func.6:6|^201,6290
-Product_S;BCIALG_4:func.7:7Product_S243,7532
-BCK-Algebra_with_Condition(S);BCIALG_4:mode.0:2BCK-Algebra_with_Condition(S)294,9251
-commutative;BCIALG_4:attr.3:2commutative316,9923
-Initial_section;BCIALG_4:func.8:8Initial_section338,10565
-positive-implicative;BCIALG_4:attr.4:3positive-implicative353,11021
-being_SB-1;BCIALG_4:attr.5:4being_SB-1387,12063
-being_SB-2;BCIALG_4:attr.6:5being_SB-2391,12158
-being_SB-4;BCIALG_4:attr.7:6being_SB-4395,12259
-semi-Brouwerian-algebra;BCIALG_4:mode.0:3semi-Brouwerian-algebra413,12613
-implicative;BCIALG_4:attr.8:7implicative425,12993
+BCIStr_1;BCIALG_4:struct.1:1BCIStr_135,1609
+*;BCIALG_4:func.1:1*46,1882
+with_condition_S;BCIALG_4:attr.2:1with_condition_S53,2018
+BCI_S-EXAMPLE;BCIALG_4:func.2:2BCI_S-EXAMPLE60,2147
+BCI-Algebra_with_Condition(S);BCIALG_4:mode.0:1BCI-Algebra_with_Condition(S)80,2556
+Condition_S;BCIALG_4:func.3:3Condition_S92,2890
+Adjoint_pGroup;BCIALG_4:func.4:4Adjoint_pGroup114,3614
+power;BCIALG_4:func.5:5power190,6007
+|^;BCIALG_4:func.6:6|^201,6300
+Product_S;BCIALG_4:func.7:7Product_S243,7542
+BCK-Algebra_with_Condition(S);BCIALG_4:mode.0:2BCK-Algebra_with_Condition(S)294,9261
+commutative;BCIALG_4:attr.3:2commutative316,9933
+Initial_section;BCIALG_4:func.8:8Initial_section338,10575
+positive-implicative;BCIALG_4:attr.4:3positive-implicative353,11031
+being_SB-1;BCIALG_4:attr.5:4being_SB-1387,12073
+being_SB-2;BCIALG_4:attr.6:5being_SB-2391,12168
+being_SB-4;BCIALG_4:attr.7:6being_SB-4395,12269
+semi-Brouwerian-algebra;BCIALG_4:mode.0:3semi-Brouwerian-algebra413,12623
+implicative;BCIALG_4:attr.8:7implicative425,13003
 
 bcialg_5.abs,
 Polynom;BCIALG_5:func.1:1Polynom34,1428
@@ -1874,15 +1890,15 @@ addnat;BINOP_2:func.23:23addnat256,7800
 multnat;BINOP_2:func.24:24multnat260,7895
 
 binpack1.abs,
-.;BINPACK1:func.1:1.39,1831
-.;BINPACK1:func.2:2.45,1961
-Seq;BINPACK1:func.3:3Seq68,2605
-SumBin;BINPACK1:func.4:4SumBin77,2783
-at_most_one;BINPACK1:attr.1:1at_most_one88,2988
-Opt;BINPACK1:func.5:5Opt171,5505
-OnlinePackingHistory;BINPACK1:func.6:6OnlinePackingHistory207,6608
-OnlinePacking;BINPACK1:func.7:7OnlinePacking274,8961
-NextFit;BINPACK1:func.8:8NextFit291,9420
+.;BINPACK1:func.1:1.39,1836
+.;BINPACK1:func.2:2.45,1966
+Seq;BINPACK1:func.3:3Seq68,2610
+SumBin;BINPACK1:func.4:4SumBin77,2788
+at_most_one;BINPACK1:attr.1:1at_most_one88,2993
+Opt;BINPACK1:func.5:5Opt171,5510
+OnlinePackingHistory;BINPACK1:func.6:6OnlinePackingHistory207,6613
+OnlinePacking;BINPACK1:func.7:7OnlinePacking274,8966
+NextFit;BINPACK1:func.8:8NextFit291,9425
 
 bintree1.abs,
 root-label;BINTREE1:func.1:1root-label36,1589
@@ -2176,24 +2192,24 @@ C_0_FunctionsNorm;C0SP2:func.8:8C_0_FunctionsNorm355,12468
 R_Normed_Space_of_C_0_Functions;C0SP2:func.9:9R_Normed_Space_of_C_0_Functions362,12666
 
 c0sp3.abs,
-ContinuousFunctions;C0SP3:func.1:1ContinuousFunctions81,3451
-R_VectorSpace_of_ContinuousFunctions;C0SP3:func.2:2R_VectorSpace_of_ContinuousFunctions119,4880
-.;C0SP3:func.3:3.138,5569
-ContinuousFunctions;C0SP3:func.4:4ContinuousFunctions177,6743
-R_VectorSpace_of_ContinuousFunctions;C0SP3:func.5:5R_VectorSpace_of_ContinuousFunctions212,8024
-.;C0SP3:func.6:6.231,8636
-modetrans;C0SP3:func.7:7modetrans258,9437
-RLNormTopStruct;C0SP3:struct.1:1RLNormTopStruct266,9609
-norm-generated;C0SP3:attr.2:1norm-generated288,10275
-NormedLinearTopSpace;C0SP3:mode.0:1NormedLinearTopSpace304,10774
-ContinuousFunctionsNorm;C0SP3:func.8:8ContinuousFunctionsNorm478,15221
-R_NormSpace_of_ContinuousFunctions;C0SP3:func.9:9R_NormSpace_of_ContinuousFunctions487,15491
-support;C0SP3:func.10:10support627,20821
-support;C0SP3:func.11:11support641,21146
-C_0_Functions;C0SP3:func.12:12C_0_Functions659,21649
-R_VectorSpace_of_C_0_Functions;C0SP3:func.13:13R_VectorSpace_of_C_0_Functions689,22707
-C_0_FunctionsNorm;C0SP3:func.14:14C_0_FunctionsNorm709,23442
-R_Normed_Space_of_C_0_Functions;C0SP3:func.15:15R_Normed_Space_of_C_0_Functions716,23679
+ContinuousFunctions;C0SP3:func.1:1ContinuousFunctions81,3456
+R_VectorSpace_of_ContinuousFunctions;C0SP3:func.2:2R_VectorSpace_of_ContinuousFunctions119,4885
+.;C0SP3:func.3:3.138,5574
+ContinuousFunctions;C0SP3:func.4:4ContinuousFunctions177,6748
+R_VectorSpace_of_ContinuousFunctions;C0SP3:func.5:5R_VectorSpace_of_ContinuousFunctions212,8029
+.;C0SP3:func.6:6.231,8641
+modetrans;C0SP3:func.7:7modetrans258,9442
+RLNormTopStruct;C0SP3:struct.1:1RLNormTopStruct266,9614
+norm-generated;C0SP3:attr.2:1norm-generated288,10280
+NormedLinearTopSpace;C0SP3:mode.0:1NormedLinearTopSpace304,10779
+ContinuousFunctionsNorm;C0SP3:func.8:8ContinuousFunctionsNorm478,15226
+R_NormSpace_of_ContinuousFunctions;C0SP3:func.9:9R_NormSpace_of_ContinuousFunctions487,15496
+support;C0SP3:func.10:10support627,20826
+support;C0SP3:func.11:11support641,21151
+C_0_Functions;C0SP3:func.12:12C_0_Functions659,21654
+R_VectorSpace_of_C_0_Functions;C0SP3:func.13:13R_VectorSpace_of_C_0_Functions689,22712
+C_0_FunctionsNorm;C0SP3:func.14:14C_0_FunctionsNorm709,23447
+R_Normed_Space_of_C_0_Functions;C0SP3:func.15:15R_Normed_Space_of_C_0_Functions716,23684
 
 calcul_1.abs,
 Ant;CALCUL_1:func.1:1Ant52,2132
@@ -2235,13 +2251,13 @@ card_1.abs,
 cardinal;CARD_1:attr.1:1cardinal40,1450
 Cardinal;CARD_1:mode.0:1Cardinal51,1620
 card;CARD_1:func.1:1card73,1925
-nextcard;CARD_1:func.2:2nextcard143,3115
-limit_cardinal;CARD_1:attr.2:2limit_cardinal165,3504
-aleph;CARD_1:func.3:3aleph173,3610
-card;CARD_1:func.4:4card281,6050
-Segm;CARD_1:func.5:5Segm398,8107
--element;CARD_1:attr.3:3-element455,9118
-Singleton;CARD_1:mode.0:2Singleton491,9800
+nextcard;CARD_1:func.2:2nextcard142,3113
+limit_cardinal;CARD_1:attr.2:2limit_cardinal164,3502
+aleph;CARD_1:func.3:3aleph172,3608
+card;CARD_1:func.4:4card280,6048
+Segm;CARD_1:func.5:5Segm397,8105
+-element;CARD_1:attr.3:3-element454,9116
+Singleton;CARD_1:mode.0:2Singleton490,9798
 
 card_2.abs,
 +`;CARD_2:func.1:1+`53,1978
@@ -2972,6 +2988,29 @@ Grothendieck;CLASSES3:mode.0:1Grothendieck85,2650
 Grothendieck;CLASSES3:mode.1:2Grothendieck92,2800
 GrothendieckUniverse;CLASSES3:func.1:1GrothendieckUniverse107,3122
 Rrank;CLASSES3:func.2:2Rrank128,3645
+
+classes4.abs,
+axiom_GU1;CLASSES4:attr.1:1axiom_GU162,2317
+axiom_GU2;CLASSES4:attr.2:2axiom_GU266,2420
+axiom_GU3;CLASSES4:attr.3:3axiom_GU370,2528
+axiom_GU4;CLASSES4:attr.4:4axiom_GU477,2668
+{};CLASSES4:func.1:1{}156,5040
+succ;CLASSES4:func.2:2succ171,5336
+trivial;CLASSES4:attr.5:5trivial203,5858
+product;CLASSES4:func.3:3product241,6623
+disjoint-union;CLASSES4:func.4:4disjoint-union247,6740
+dom;CLASSES4:func.5:5dom265,7166
+Union;CLASSES4:func.6:6Union272,7312
+disjoin;CLASSES4:func.7:7disjoin279,7460
+disjoint-union;CLASSES4:func.8:8disjoint-union286,7625
+`1;CLASSES4:func.9:9`1348,9307
+`2;CLASSES4:func.10:10`2349,9345
+sequence_univers;CLASSES4:func.11:11sequence_univers553,14852
+union_sequence_univers;CLASSES4:func.12:12union_sequence_univers576,15437
+sequence_univers;CLASSES4:func.13:13sequence_univers585,15661
+super_univers;CLASSES4:func.14:14super_univers638,17217
+rank_univers;CLASSES4:func.15:15rank_univers648,17498
+ComplUniverse;CLASSES4:func.16:16ComplUniverse668,18039
 
 clopban1.abs,
 [;];CLOPBAN1:func.1:1[;]45,2140
@@ -4143,43 +4182,43 @@ DynSys;DYNKIN:func.6:6DynSys206,5622
 DynSys;DYNKIN:func.7:7DynSys216,5858
 
 ec_pf_1.abs,
-Subfield;EC_PF_1:mode.1:1Subfield48,2256
-card;EC_PF_1:func.1:1card107,3923
-prime;EC_PF_1:attr.1:1prime120,4176
-GF;EC_PF_1:func.0:2GF126,4296
-quadratic_residue;EC_PF_1:attr.2:2quadratic_residue222,6452
-not_quadratic_residue;EC_PF_1:attr.3:3not_quadratic_residue225,6557
-Lege_p;EC_PF_1:func.2:3Lege_p238,6840
-ProjCo;EC_PF_1:func.3:4ProjCo272,7579
-Disc;EC_PF_1:func.4:5Disc287,8012
-EC_WEqProjCo;EC_PF_1:func.5:6EC_WEqProjCo296,8241
-EC_SetProjCo;EC_PF_1:func.6:7EC_SetProjCo313,8774
-_EQ_;EC_PF_1:pred.1:1_EQ_328,9231
-R_ProjCo;EC_PF_1:func.7:8R_ProjCo351,9924
-R_EllCur;EC_PF_1:func.8:9R_EllCur367,10325
+Subfield;EC_PF_1:mode.1:1Subfield48,2263
+card;EC_PF_1:func.1:1card107,3930
+prime;EC_PF_1:attr.1:1prime120,4183
+GF;EC_PF_1:func.0:2GF126,4303
+quadratic_residue;EC_PF_1:attr.2:2quadratic_residue222,6459
+not_quadratic_residue;EC_PF_1:attr.3:3not_quadratic_residue225,6564
+Lege_p;EC_PF_1:func.2:3Lege_p238,6847
+ProjCo;EC_PF_1:func.3:4ProjCo272,7586
+Disc;EC_PF_1:func.4:5Disc287,8019
+EC_WEqProjCo;EC_PF_1:func.5:6EC_WEqProjCo296,8248
+EC_SetProjCo;EC_PF_1:func.6:7EC_SetProjCo313,8781
+_EQ_;EC_PF_1:pred.1:1_EQ_328,9238
+R_ProjCo;EC_PF_1:func.7:8R_ProjCo351,9931
+R_EllCur;EC_PF_1:func.8:9R_EllCur367,10332
 
 ec_pf_2.abs,
-_or_greater;EC_PF_2:attr.1:1_or_greater124,4481
-EC_WParam;EC_PF_2:func.1:1EC_WParam188,6229
-`1;EC_PF_2:func.2:2`1202,6569
-`2;EC_PF_2:func.3:3`2203,6610
-`1_3;EC_PF_2:func.4:4`1_3220,7044
-`2_3;EC_PF_2:func.5:5`2_3224,7135
-`3_3;EC_PF_2:func.6:6`3_3228,7226
-is_on_curve;EC_PF_2:pred.1:1is_on_curve255,8017
-rep_pt;EC_PF_2:func.7:7rep_pt272,8462
-compell_ProjCo;EC_PF_2:func.8:8compell_ProjCo305,9435
-.;EC_PF_2:func.9:9.317,9832
-addell_ProjCo;EC_PF_2:func.10:10addell_ProjCo546,19765
-.;EC_PF_2:func.11:11.581,21123
+_or_greater;EC_PF_2:attr.1:1_or_greater124,4491
+EC_WParam;EC_PF_2:func.1:1EC_WParam188,6239
+`1;EC_PF_2:func.2:2`1202,6579
+`2;EC_PF_2:func.3:3`2203,6620
+`1_3;EC_PF_2:func.4:4`1_3220,7054
+`2_3;EC_PF_2:func.5:5`2_3224,7145
+`3_3;EC_PF_2:func.6:6`3_3228,7236
+is_on_curve;EC_PF_2:pred.1:1is_on_curve255,8027
+rep_pt;EC_PF_2:func.7:7rep_pt272,8472
+compell_ProjCo;EC_PF_2:func.8:8compell_ProjCo305,9445
+.;EC_PF_2:func.9:9.317,9842
+addell_ProjCo;EC_PF_2:func.10:10addell_ProjCo546,19775
+.;EC_PF_2:func.11:11.581,21133
 
 ec_pf_3.abs,
-EC_SetAffCo;EC_PF_3:func.1:1EC_SetAffCo60,2442
-compell_AffCo;EC_PF_3:func.2:2compell_AffCo103,3658
-.;EC_PF_3:func.3:3.114,3997
-addell_AffCo;EC_PF_3:func.4:4addell_AffCo120,4128
-.;EC_PF_3:func.5:5.131,4502
-0_EC;EC_PF_3:func.6:60_EC194,6584
+EC_SetAffCo;EC_PF_3:func.1:1EC_SetAffCo60,2449
+compell_AffCo;EC_PF_3:func.2:2compell_AffCo103,3665
+.;EC_PF_3:func.3:3.114,4004
+addell_AffCo;EC_PF_3:func.4:4addell_AffCo120,4135
+.;EC_PF_3:func.5:5.131,4509
+0_EC;EC_PF_3:func.6:60_EC194,6591
 
 endalg.abs,
 UAEnd;ENDALG:func.1:1UAEnd39,1591
@@ -4346,7 +4385,7 @@ euclid_4.abs,
 Line;EUCLID_4:func.1:1Line64,2075
 Line;EUCLID_4:func.2:2Line78,2343
 being_line;EUCLID_4:attr.1:1being_line95,2759
-being_line;EUCLID_4:attr.2:2being_line225,6945
+being_line;EUCLID_4:attr.2:2being_line225,6944
 
 euclid_5.abs,
 `1;EUCLID_5:func.1:1`141,1583
@@ -4452,15 +4491,16 @@ euler_1.abs,
 Euler;EULER_1:func.1:1Euler95,3073
 
 euler_2.abs,
-*;EULER_2:func.1:1*71,2354
-mod;EULER_2:func.2:2mod83,2683
+*;EULER_2:func.1:1*77,2624
+mod;EULER_2:func.2:2mod89,2971
+mod;EULER_2:func.3:3mod112,3487
 
 eulrpart.abs,
-odd-valued;EULRPART:attr.1:1odd-valued54,2328
-odd-valued;EULRPART:attr.1:2odd-valued68,2566
-a_partition;EULRPART:mode.1:1a_partition90,2972
-odd_organization;EULRPART:mode.2:2odd_organization112,3386
-Euler_transformation;EULRPART:func.1:1Euler_transformation188,5962
+odd-valued;EULRPART:attr.1:1odd-valued53,2292
+odd-valued;EULRPART:attr.1:2odd-valued67,2530
+a_partition;EULRPART:mode.1:1a_partition89,2936
+odd_organization;EULRPART:mode.2:2odd_organization111,3350
+Euler_transformation;EULRPART:func.1:1Euler_transformation187,5926
 
 exchsort.abs,
 segmental;EXCHSORT:attr.1:1segmental75,2769
@@ -4557,6 +4597,10 @@ AffineMap;FCONT_1:func.1:1AffineMap341,10410
 fcont_2.abs,
 uniformly_continuous;FCONT_2:attr.1:1uniformly_continuous44,1909
 
+fdiff_12.abs,
+is_differentiable_on_interval;FDIFF_12:pred.1:1is_differentiable_on_interval72,3062
+`\;FDIFF_12:func.1:1`\83,3471
+
 fdiff_1.abs,
 -convergent;FDIFF_1:attr.1:1-convergent49,2050
 RestFunc-like;FDIFF_1:attr.2:2RestFunc-like71,2502
@@ -4622,8 +4666,80 @@ GenFib;FIB_NUM3:func.4:4GenFib174,4931
 GenFib;FIB_NUM3:func.5:5GenFib182,5127
 
 fib_num.abs,
-tau;FIB_NUM:func.1:1tau92,3157
-tau_bar;FIB_NUM:func.2:2tau_bar100,3283
+tau;FIB_NUM:func.1:1tau92,3063
+tau_bar;FIB_NUM:func.2:2tau_bar100,3189
+
+field_10.abs,
+{;FIELD_10:func.1:1{56,3080
+X^2-2;FIELD_10:func.2:2X^2-2183,6286
+X^3-1;FIELD_10:func.3:3X^3-1186,6412
+X^3-2;FIELD_10:func.4:4X^3-2189,6525
+X^2+X+1;FIELD_10:func.5:5X^2+X+1192,6638
+2-Root(2);FIELD_10:func.6:62-Root(2)198,6772
+3-Root(2);FIELD_10:func.7:73-Root(2)201,6852
+2-CRoot(2);FIELD_10:func.8:82-CRoot(2)204,6934
+3-CRoot(2);FIELD_10:func.9:93-CRoot(2)207,7018
+sqrt(-3);FIELD_10:func.10:10sqrt(-3)210,7104
+zeta;FIELD_10:func.11:11zeta213,7194
+
+field_11.abs,
+Leading-Term;FIELD_11:func.1:1Leading-Term98,4701
+Leading-Coefficient;FIELD_11:func.2:2Leading-Coefficient108,4954
+Leading-Monomial;FIELD_11:func.3:3Leading-Monomial117,5138
+LC;FIELD_11:func.2:4LC126,5345
+Lt;FIELD_11:func.1:5Lt127,5385
+LM;FIELD_11:func.3:6LM128,5418
+Ext_eval;FIELD_11:func.4:7Ext_eval198,7355
+nonConstantPolys;FIELD_11:func.5:8nonConstantPolys251,9073
+.;FIELD_11:func.6:9.273,9680
+Poly;FIELD_11:func.7:10Poly287,10048
+nonConstantPolys;FIELD_11:func.8:11nonConstantPolys299,10541
+maxIdeal;FIELD_11:mode.1:1maxIdeal455,15495
+KroneckerField;FIELD_11:func.9:12KroneckerField470,15868
+canHom;FIELD_11:func.10:13canHom486,16284
+emb;FIELD_11:func.11:14emb507,16815
+KrRoot;FIELD_11:func.12:15KrRoot540,17857
+
+field_12.abs,
+are_coprime;FIELD_12:pred.1:1are_coprime170,5570
+sequence;FIELD_12:mode.1:1sequence232,7311
+Field-yielding;FIELD_12:attr.1:1Field-yielding243,7469
+.;FIELD_12:func.1:1.259,7780
+.;FIELD_12:func.2:2.265,7873
+ascending;FIELD_12:attr.2:2ascending277,8194
+Carrier;FIELD_12:func.3:3Carrier288,8424
+addseq;FIELD_12:func.4:4addseq311,9155
+multseq;FIELD_12:func.5:5multseq320,9409
+SeqField;FIELD_12:func.6:6SeqField329,9664
+maximal_algebraic;FIELD_12:attr.3:3maximal_algebraic385,11278
+ClosureSequence;FIELD_12:mode.2:2ClosureSequence438,12646
+AlgebraicClosure;FIELD_12:mode.3:3AlgebraicClosure465,13405
+Field-membered;FIELD_12:attr.4:4Field-membered601,17248
+Element;FIELD_12:mode.4:4Element612,17464
+SubFields;FIELD_12:func.7:7SubFields617,17534
+Ext_Set;FIELD_12:func.8:8Ext_Set637,18025
+`1;FIELD_12:func.9:9`1657,18603
+`2;FIELD_12:func.10:10`2665,18805
+<=;FIELD_12:pred.2:2<=682,19334
+ascending;FIELD_12:attr.5:5ascending694,19682
+unionCarrier;FIELD_12:func.11:11unionCarrier729,20720
+unionAdd;FIELD_12:func.12:12unionAdd739,21028
+unionMult;FIELD_12:func.13:13unionMult744,21247
+unionOne;FIELD_12:func.14:14unionOne756,21639
+unionZero;FIELD_12:func.15:15unionZero759,21762
+unionField;FIELD_12:func.16:16unionField769,22058
+unionExt;FIELD_12:func.17:17unionExt864,25154
+upper_bound;FIELD_12:func.18:18upper_bound881,25712
+
+field_13.abs,
+{;FIELD_13:func.1:1{55,2915
+Element;FIELD_13:mode.1:1Element229,7859
+.:;FIELD_13:func.2:2.:244,8171
+==;FIELD_13:pred.0:1==321,10711
+hom_Ext_eval;FIELD_13:func.3:3hom_Ext_eval357,11635
+Image_hom_Ext_eval;FIELD_13:func.4:4Image_hom_Ext_eval392,12501
+-evaluating;FIELD_13:attr.1:1-evaluating434,13623
+-normal;FIELD_13:attr.2:2-normal608,18808
 
 field_1.abs,
 LM;FIELD_1:func.0:1LM46,2227
@@ -4663,19 +4779,19 @@ isoR;FIELD_3:func.7:7isoR259,7882
 flat;FIELD_3:attr.4:4flat294,8853
 
 field_4.abs,
--extending;FIELD_4:attr.1:1-extending83,3607
-RingExtension;FIELD_4:mode.0:1RingExtension110,3995
-comRingExtension;FIELD_4:mode.0:2comRingExtension115,4079
-domRingExtension;FIELD_4:mode.0:3domRingExtension120,4169
-FieldExtension;FIELD_4:mode.0:4FieldExtension125,4257
-is_a_root_of;FIELD_4:pred.1:1is_a_root_of282,8691
-is_with_roots_in;FIELD_4:pred.2:2is_with_roots_in290,8875
-Roots;FIELD_4:func.1:1Roots298,9087
-splits_in;FIELD_4:pred.3:3splits_in312,9496
-VecSp;FIELD_4:func.2:2VecSp325,9867
-deg;FIELD_4:func.3:3deg356,10667
--finite;FIELD_4:attr.2:2-finite370,10942
-KroneckerIso;FIELD_4:func.4:4KroneckerIso397,11553
+-extending;FIELD_4:attr.1:1-extending83,3616
+RingExtension;FIELD_4:mode.0:1RingExtension110,4004
+comRingExtension;FIELD_4:mode.0:2comRingExtension115,4088
+domRingExtension;FIELD_4:mode.0:3domRingExtension120,4178
+FieldExtension;FIELD_4:mode.0:4FieldExtension125,4266
+is_a_root_of;FIELD_4:pred.1:1is_a_root_of282,8700
+is_with_roots_in;FIELD_4:pred.2:2is_with_roots_in290,8884
+Roots;FIELD_4:func.1:1Roots298,9096
+splits_in;FIELD_4:pred.3:3splits_in312,9505
+VecSp;FIELD_4:func.2:2VecSp325,9876
+deg;FIELD_4:func.3:3deg356,10676
+-finite;FIELD_4:attr.2:2-finite370,10951
+KroneckerIso;FIELD_4:func.4:4KroneckerIso397,11562
 
 field_5.abs,
 -infinite;FIELD_5:attr.0:1-infinite99,3960
@@ -4707,68 +4823,68 @@ MinPoly;FIELD_6:func.0:9MinPoly598,16370
 Base;FIELD_6:func.7:10Base683,18908
 
 field_7.abs,
-==;FIELD_7:pred.1:1==55,2919
-==;FIELD_7:pred.1:2==71,3258
-{;FIELD_7:func.1:1{101,3990
-{;FIELD_7:func.2:2{108,4104
-{;FIELD_7:func.3:3{115,4218
-Coeff;FIELD_7:func.4:4Coeff178,5601
-@;FIELD_7:func.5:5@259,7635
--membered;FIELD_7:attr.1:1-membered267,7772
-@;FIELD_7:func.6:6@281,8041
-Base;FIELD_7:func.7:7Base344,9667
-down;FIELD_7:func.8:8down401,11585
-down;FIELD_7:func.9:9down414,12090
-lift;FIELD_7:func.10:10lift426,12470
--algebraic;FIELD_7:attr.2:2-algebraic525,15829
--algebraic;FIELD_7:attr.3:3-algebraic558,16585
-Alg_El;FIELD_7:func.11:11Alg_El670,19285
-Field_of_Algebraic_Elements;FIELD_7:func.12:12Field_of_Algebraic_Elements678,19458
-F_Alg;FIELD_7:func.12:13F_Alg690,19799
+==;FIELD_7:pred.1:1==55,2924
+==;FIELD_7:pred.1:2==71,3263
+{;FIELD_7:func.1:1{101,3995
+{;FIELD_7:func.2:2{108,4109
+{;FIELD_7:func.3:3{115,4223
+Coeff;FIELD_7:func.4:4Coeff178,5606
+@;FIELD_7:func.5:5@259,7640
+-membered;FIELD_7:attr.1:1-membered267,7777
+@;FIELD_7:func.6:6@281,8046
+Base;FIELD_7:func.7:7Base344,9672
+down;FIELD_7:func.8:8down401,11590
+down;FIELD_7:func.9:9down414,12095
+lift;FIELD_7:func.10:10lift426,12475
+-algebraic;FIELD_7:attr.2:2-algebraic525,15834
+-algebraic;FIELD_7:attr.3:3-algebraic558,16590
+Alg_El;FIELD_7:func.11:11Alg_El670,19290
+Field_of_Algebraic_Elements;FIELD_7:func.12:12Field_of_Algebraic_Elements678,19463
+F_Alg;FIELD_7:func.12:13F_Alg690,19804
 
 field_8.abs,
-SplittingField;FIELD_8:mode.1:1SplittingField316,10549
-Homomorphism;FIELD_8:mode.0:2Homomorphism368,11895
-Monomorphism;FIELD_8:mode.0:3Monomorphism370,11987
-Automorphism;FIELD_8:mode.0:4Automorphism371,12043
--fixing;FIELD_8:attr.1:1-fixing378,12191
--homomorphism;FIELD_8:attr.2:2-homomorphism407,12991
--monomorphism;FIELD_8:attr.3:3-monomorphism410,13097
--isomorphism;FIELD_8:attr.4:4-isomorphism413,13175
--extending;FIELD_8:attr.5:5-extending442,13940
-are_isomorphic_over;FIELD_8:pred.1:1are_isomorphic_over472,14831
--isomorphism;FIELD_8:attr.6:6-isomorphism505,15722
-Phi;FIELD_8:func.1:1Phi576,18045
-Psi;FIELD_8:func.2:2Psi603,18913
+SplittingField;FIELD_8:mode.1:1SplittingField316,10564
+Homomorphism;FIELD_8:mode.0:2Homomorphism368,11910
+Monomorphism;FIELD_8:mode.0:3Monomorphism370,12002
+Automorphism;FIELD_8:mode.0:4Automorphism371,12058
+-fixing;FIELD_8:attr.1:1-fixing378,12206
+-homomorphism;FIELD_8:attr.2:2-homomorphism407,13006
+-monomorphism;FIELD_8:attr.3:3-monomorphism410,13112
+-isomorphism;FIELD_8:attr.4:4-isomorphism413,13190
+-extending;FIELD_8:attr.5:5-extending442,13955
+are_isomorphic_over;FIELD_8:pred.1:1are_isomorphic_over472,14846
+-isomorphism;FIELD_8:attr.6:6-isomorphism505,15737
+Phi;FIELD_8:func.1:1Phi576,18060
+Psi;FIELD_8:func.2:2Psi603,18928
 
 field_9.abs,
-@;FIELD_9:func.1:1@72,3810
-X-;FIELD_9:func.2:2X-254,8211
-X+;FIELD_9:func.3:3X+257,8302
-quadratic;FIELD_9:attr.1:1quadratic275,8616
-<%;FIELD_9:func.4:4<%295,9094
-purely_quadratic;FIELD_9:attr.2:2purely_quadratic367,10965
-X^2-;FIELD_9:func.5:5X^2-391,11500
-X^2+;FIELD_9:func.6:6X^2+394,11597
-Discriminant;FIELD_9:func.7:7Discriminant448,13240
-DC;FIELD_9:func.7:8DC457,13485
-Discriminant;FIELD_9:func.7:9Discriminant463,13608
-Discriminant;FIELD_9:func.7:10Discriminant471,13827
-X^2;FIELD_9:func.8:11X^2521,15099
-X^2+1;FIELD_9:func.9:12X^2+1524,15220
-X^2+X;FIELD_9:func.10:13X^2+X527,15343
-X^2+X+1;FIELD_9:func.11:14X^2+X+1530,15466
-X_;FIELD_9:func.12:15X_533,15591
-X-1;FIELD_9:func.13:16X-1536,15700
-alpha;FIELD_9:func.14:17alpha580,16677
-alpha-1;FIELD_9:func.15:18alpha-1586,16789
-quadratic_complete;FIELD_9:attr.3:3quadratic_complete621,17521
-sqrt;FIELD_9:func.16:19sqrt682,18988
-DC-square;FIELD_9:attr.4:4DC-square749,21031
-RootDC;FIELD_9:func.17:20RootDC798,22532
-Root1;FIELD_9:func.18:21Root1806,22792
-Root2;FIELD_9:func.19:22Root2810,22982
--quadratic;FIELD_9:attr.5:5-quadratic850,23974
+@;FIELD_9:func.1:1@72,3815
+X-;FIELD_9:func.2:2X-254,8216
+X+;FIELD_9:func.3:3X+257,8307
+quadratic;FIELD_9:attr.1:1quadratic275,8621
+<%;FIELD_9:func.4:4<%295,9099
+purely_quadratic;FIELD_9:attr.2:2purely_quadratic367,10970
+X^2-;FIELD_9:func.5:5X^2-391,11505
+X^2+;FIELD_9:func.6:6X^2+394,11602
+Discriminant;FIELD_9:func.7:7Discriminant448,13245
+DC;FIELD_9:func.7:8DC457,13490
+Discriminant;FIELD_9:func.7:9Discriminant463,13613
+Discriminant;FIELD_9:func.7:10Discriminant471,13832
+X^2;FIELD_9:func.8:11X^2521,15104
+X^2+1;FIELD_9:func.9:12X^2+1524,15225
+X^2+X;FIELD_9:func.10:13X^2+X527,15348
+X^2+X+1;FIELD_9:func.11:14X^2+X+1530,15471
+X_;FIELD_9:func.12:15X_533,15596
+X-1;FIELD_9:func.13:16X-1536,15705
+alpha;FIELD_9:func.14:17alpha580,16682
+alpha-1;FIELD_9:func.15:18alpha-1586,16794
+quadratic_complete;FIELD_9:attr.3:3quadratic_complete621,17526
+sqrt;FIELD_9:func.16:19sqrt682,18993
+DC-square;FIELD_9:attr.4:4DC-square749,21036
+RootDC;FIELD_9:func.17:20RootDC798,22537
+Root1;FIELD_9:func.18:21Root1806,22797
+Root2;FIELD_9:func.19:22Root2810,22987
+-quadratic;FIELD_9:attr.5:5-quadratic850,23979
 
 filerec1.abs,
 File;FILEREC1:mode.0:1File116,4021
@@ -4924,69 +5040,69 @@ Sigma_tauhelp3;FINANCE5:func.16:16Sigma_tauhelp3424,12029
 Sigma_tau;FINANCE5:func.17:17Sigma_tau434,12331
 
 finance6.abs,
-Call-Option;FINANCE6:func.1:1Call-Option78,3004
-Put-Option;FINANCE6:func.2:2Put-Option85,3169
-Put-Option;FINANCE6:func.3:3Put-Option103,3713
-Straddle;FINANCE6:func.4:4Straddle112,3884
-set_of_constant_RV;FINANCE6:func.5:5set_of_constant_RV124,4205
-set_of_chi_RV;FINANCE6:func.6:6set_of_chi_RV128,4373
--random-membered;FINANCE6:attr.1:1-random-membered135,4579
-Conv_RV;FINANCE6:func.7:7Conv_RV160,5179
-Conv2_RV;FINANCE6:func.8:8Conv2_RV170,5421
-simple_RV_help;FINANCE6:func.9:9simple_RV_help181,5723
-simple_RV_help;FINANCE6:func.10:10simple_RV_help194,6108
-Change_Element_to_Func;FINANCE6:func.11:11Change_Element_to_Func207,6452
-ArbitrageElSigma1;FINANCE6:func.12:12ArbitrageElSigma1216,6674
-ArbitrageElSigma2;FINANCE6:func.13:13ArbitrageElSigma2219,6810
-Arbitrage_Opportunity_exists_wrt;FINANCE6:pred.1:1Arbitrage_Opportunity_exists_wrt230,7120
-RVfirst;FINANCE6:func.14:14RVfirst239,7402
-RVfourth;FINANCE6:func.15:15RVfourth249,7620
-Real_RV;FINANCE6:func.16:16Real_RV336,10894
-Risk_neutral_measure_exists_wrt;FINANCE6:pred.2:2Risk_neutral_measure_exists_wrt346,11140
+Call-Option;FINANCE6:func.1:1Call-Option78,3014
+Put-Option;FINANCE6:func.2:2Put-Option85,3179
+Put-Option;FINANCE6:func.3:3Put-Option103,3723
+Straddle;FINANCE6:func.4:4Straddle112,3894
+set_of_constant_RV;FINANCE6:func.5:5set_of_constant_RV124,4215
+set_of_chi_RV;FINANCE6:func.6:6set_of_chi_RV128,4383
+-random-membered;FINANCE6:attr.1:1-random-membered135,4589
+Conv_RV;FINANCE6:func.7:7Conv_RV160,5189
+Conv2_RV;FINANCE6:func.8:8Conv2_RV170,5431
+simple_RV_help;FINANCE6:func.9:9simple_RV_help181,5733
+simple_RV_help;FINANCE6:func.10:10simple_RV_help194,6118
+Change_Element_to_Func;FINANCE6:func.11:11Change_Element_to_Func207,6462
+ArbitrageElSigma1;FINANCE6:func.12:12ArbitrageElSigma1216,6684
+ArbitrageElSigma2;FINANCE6:func.13:13ArbitrageElSigma2219,6820
+Arbitrage_Opportunity_exists_wrt;FINANCE6:pred.1:1Arbitrage_Opportunity_exists_wrt230,7130
+RVfirst;FINANCE6:func.14:14RVfirst239,7412
+RVfourth;FINANCE6:func.15:15RVfourth249,7630
+Real_RV;FINANCE6:func.16:16Real_RV336,10904
+Risk_neutral_measure_exists_wrt;FINANCE6:pred.2:2Risk_neutral_measure_exists_wrt346,11150
 
 finseq_1.abs,
-Seg;FINSEQ_1:func.1:1Seg43,1664
-Seg;FINSEQ_1:func.2:2Seg50,1783
-FinSequence-like;FINSEQ_1:attr.1:1FinSequence-like97,2901
-FinSequence;FINSEQ_1:mode.0:1FinSequence108,3068
-len;FINSEQ_1:func.0:3len128,3394
-len;FINSEQ_1:func.3:4len133,3448
-dom;FINSEQ_1:func.4:5dom141,3557
-FinSequence;FINSEQ_1:mode.1:2FinSequence181,4605
-FinSequence;FINSEQ_1:mode.2:3FinSequence203,4952
-<*;FINSEQ_1:func.5:6<*219,5316
-<*>;FINSEQ_1:func.6:7<*>226,5407
-^;FINSEQ_1:func.7:8^243,5631
-^;FINSEQ_1:func.8:9^300,6848
-<*;FINSEQ_1:func.9:10<*305,6925
-<*;FINSEQ_1:func.10:11<*327,7318
-<*;FINSEQ_1:func.11:12<*331,7399
-<*;FINSEQ_1:func.12:13<*385,8704
-*;FINSEQ_1:func.13:14*406,9134
-FinSubsequence-like;FINSEQ_1:attr.2:2FinSubsequence-like433,9683
-FinSubsequence;FINSEQ_1:mode.0:4FinSubsequence444,9849
-Sgm;FINSEQ_1:func.14:15Sgm464,10262
-Seq;FINSEQ_1:func.15:16Seq476,10509
-|;FINSEQ_1:func.16:17|558,12043
-|;FINSEQ_1:func.17:18|565,12136
-[*];FINSEQ_1:func.18:19[*]602,12780
-=;FINSEQ_1:pred.0:1=728,16354
-FinSequence-membered;FINSEQ_1:attr.3:3FinSequence-membered770,17198
-canFS;FINSEQ_1:func.19:20canFS870,19333
-canFS;FINSEQ_1:func.20:21canFS877,19469
+Seg;FINSEQ_1:func.1:1Seg44,1711
+Seg;FINSEQ_1:func.2:2Seg51,1830
+FinSequence-like;FINSEQ_1:attr.1:1FinSequence-like98,2948
+FinSequence;FINSEQ_1:mode.0:1FinSequence109,3115
+len;FINSEQ_1:func.0:3len129,3441
+len;FINSEQ_1:func.3:4len134,3495
+dom;FINSEQ_1:func.4:5dom142,3604
+FinSequence;FINSEQ_1:mode.1:2FinSequence182,4652
+FinSequence;FINSEQ_1:mode.2:3FinSequence204,4999
+<*;FINSEQ_1:func.5:6<*225,5431
+<*>;FINSEQ_1:func.6:7<*>232,5522
+^;FINSEQ_1:func.7:8^249,5746
+^;FINSEQ_1:func.8:9^306,6967
+<*;FINSEQ_1:func.9:10<*311,7044
+<*;FINSEQ_1:func.10:11<*333,7442
+<*;FINSEQ_1:func.11:12<*337,7523
+<*;FINSEQ_1:func.12:13<*391,8828
+*;FINSEQ_1:func.13:14*412,9258
+FinSubsequence-like;FINSEQ_1:attr.2:2FinSubsequence-like439,9807
+FinSubsequence;FINSEQ_1:mode.0:4FinSubsequence450,9973
+Sgm;FINSEQ_1:func.14:15Sgm470,10386
+Seq;FINSEQ_1:func.15:16Seq482,10633
+|;FINSEQ_1:func.16:17|560,12108
+|;FINSEQ_1:func.17:18|568,12228
+[*];FINSEQ_1:func.18:19[*]605,12872
+=;FINSEQ_1:pred.0:1=732,16449
+FinSequence-membered;FINSEQ_1:attr.3:3FinSequence-membered772,17273
+canFS;FINSEQ_1:func.19:20canFS872,19417
+canFS;FINSEQ_1:func.20:21canFS879,19553
 
 finseq_2.abs,
-idseq;FINSEQ_2:func.1:1idseq218,6751
-|->;FINSEQ_2:func.2:2|->263,7588
-FinSequenceSet;FINSEQ_2:mode.1:1FinSequenceSet400,11926
-Element;FINSEQ_2:mode.2:2Element408,12085
-*;FINSEQ_2:func.3:3*421,12323
-Tuple;FINSEQ_2:mode.0:3Tuple440,12754
--tuples_on;FINSEQ_2:func.4:4-tuples_on446,12865
-|->;FINSEQ_2:func.5:5|->621,17334
-#;FINSEQ_2:func.6:6#688,19150
-*-->;FINSEQ_2:func.7:7*-->702,19399
-.;FINSEQ_2:func.8:8.730,20020
+idseq;FINSEQ_2:func.1:1idseq219,6761
+|->;FINSEQ_2:func.2:2|->264,7598
+FinSequenceSet;FINSEQ_2:mode.1:1FinSequenceSet401,11936
+Element;FINSEQ_2:mode.2:2Element409,12095
+*;FINSEQ_2:func.3:3*422,12333
+Tuple;FINSEQ_2:mode.0:3Tuple441,12764
+-tuples_on;FINSEQ_2:func.4:4-tuples_on447,12875
+|->;FINSEQ_2:func.5:5|->622,17344
+#;FINSEQ_2:func.6:6#689,19160
+*-->;FINSEQ_2:func.7:7*-->703,19409
+.;FINSEQ_2:func.8:8.731,20030
 
 finseq_3.abs,
 -;FINSEQ_3:func.1:1-221,5594
@@ -5012,25 +5128,25 @@ finseq_5.abs,
 -:;FINSEQ_5:func.1:1-:227,5986
 :-;FINSEQ_5:func.2:2:-261,6672
 Rev;FINSEQ_5:func.3:3Rev299,7488
-Rev;FINSEQ_5:func.4:4Rev342,8606
-Ins;FINSEQ_5:func.5:5Ins354,8873
+Rev;FINSEQ_5:func.4:4Rev342,8610
+Ins;FINSEQ_5:func.5:5Ins354,8877
 
 finseq_6.abs,
 circular;FINSEQ_6:attr.1:1circular337,8306
 Rotate;FINSEQ_6:func.1:1Rotate344,8404
-mid;FINSEQ_6:func.2:2mid455,11141
-mid;FINSEQ_6:func.3:3mid465,11349
--cut;FINSEQ_6:func.4:4-cut560,14222
--cut;FINSEQ_6:func.5:5-cut590,14957
-^';FINSEQ_6:func.6:6^'601,15207
-^';FINSEQ_6:func.7:7^'623,15687
-TwoValued;FINSEQ_6:attr.2:2TwoValued633,15910
-Alternating;FINSEQ_6:attr.3:3Alternating643,16118
-min_at;FINSEQ_6:func.8:8min_at731,18417
-is_non_decreasing_on;FINSEQ_6:pred.1:1is_non_decreasing_on750,18998
-is_split_at;FINSEQ_6:pred.2:2is_split_at757,19182
-constant;FINSEQ_6:attr.4:4constant788,20004
-just_once_values;FINSEQ_6:pred.3:3just_once_values807,20548
+mid;FINSEQ_6:func.2:2mid455,11139
+mid;FINSEQ_6:func.3:3mid464,11346
+-cut;FINSEQ_6:func.4:4-cut559,14217
+-cut;FINSEQ_6:func.5:5-cut589,14951
+^';FINSEQ_6:func.6:6^'600,15200
+^';FINSEQ_6:func.7:7^'622,15680
+TwoValued;FINSEQ_6:attr.2:2TwoValued632,15903
+Alternating;FINSEQ_6:attr.3:3Alternating642,16111
+min_at;FINSEQ_6:func.8:8min_at730,18409
+is_non_decreasing_on;FINSEQ_6:pred.1:1is_non_decreasing_on750,18994
+is_split_at;FINSEQ_6:pred.2:2is_split_at757,19178
+constant;FINSEQ_6:attr.4:4constant788,19999
+just_once_values;FINSEQ_6:pred.3:3just_once_values807,20547
 
 finseq_7.abs,
 Replace;FINSEQ_7:func.0:1Replace58,2060
@@ -5079,10 +5195,10 @@ finite-yielding;FINSET_1:attr.4:6finite-yielding314,6645
 finite-membered;FINSET_1:attr.5:7finite-membered385,7884
 
 finsop_1.abs,
-"**";FINSOP_1:func.1:1"**"45,1735
-+*;FINSOP_1:func.2:2+*65,2413
-findom;FINSOP_1:func.0:3findom70,2493
-findom;FINSOP_1:func.3:4findom75,2564
+"**";FINSOP_1:func.1:1"**"47,1786
++*;FINSOP_1:func.2:2+*69,2466
+findom;FINSOP_1:func.0:3findom74,2546
+findom;FINSOP_1:func.3:4findom79,2617
 
 finsub_1.abs,
 cup-closed;FINSUB_1:attr.1:1cup-closed31,1010
@@ -6027,30 +6143,43 @@ satisfying_(I4);FUZIMPL2:attr.0:9satisfying_(I4)116,3920
 satisfying_(I5);FUZIMPL2:attr.0:10satisfying_(I5)117,3973
 
 fuzimpl3.abs,
-Theta;FUZIMPL3:func.1:1Theta107,3534
-ConjImpl;FUZIMPL3:func.2:2ConjImpl114,3751
-are_conjugate;FUZIMPL3:pred.1:1are_conjugate121,3948
-satisfying_(N1);FUZIMPL3:attr.1:1satisfying_(N1)200,6283
-satisfying_(N2);FUZIMPL3:attr.2:2satisfying_(N2)203,6358
-N_CC;FUZIMPL3:func.3:3N_CC209,6452
-Fuzzy_Negation;FUZIMPL3:mode.0:1Fuzzy_Negation232,6867
-continuous;FUZIMPL3:attr.3:3continuous236,6984
-involutive;FUZIMPL3:attr.4:4involutive243,7148
-satisfying_(N3);FUZIMPL3:attr.5:5satisfying_(N3)250,7298
-satisfying_(N4);FUZIMPL3:attr.6:6satisfying_(N4)253,7371
-satisfying_(N5);FUZIMPL3:attr.7:7satisfying_(N5)256,7445
-negation-strict;FUZIMPL3:attr.8:8negation-strict262,7562
-negation-strong;FUZIMPL3:attr.9:9negation-strong268,7700
-non-vanishing;FUZIMPL3:attr.10:10non-vanishing271,7779
-non-filling;FUZIMPL3:attr.11:11non-filling275,7894
-FNegation;FUZIMPL3:func.4:4FNegation288,8216
-NegationD1;FUZIMPL3:func.5:5NegationD1309,8734
-NegationD2;FUZIMPL3:func.6:6NegationD2314,8903
-<=;FUZIMPL3:pred.2:2<=324,9156
-_greater;FUZIMPL3:attr.12:12_greater385,10640
-SugenoNegation;FUZIMPL3:func.7:7SugenoNegation397,10799
-ConjNeg;FUZIMPL3:func.8:8ConjNeg414,11240
-are_conjugate;FUZIMPL3:pred.3:3are_conjugate426,11561
+Theta;FUZIMPL3:func.1:1Theta108,3561
+ConjImpl;FUZIMPL3:func.2:2ConjImpl115,3778
+are_conjugate;FUZIMPL3:pred.1:1are_conjugate122,3975
+satisfying_(N1);FUZIMPL3:attr.1:1satisfying_(N1)201,6310
+satisfying_(N2);FUZIMPL3:attr.2:2satisfying_(N2)204,6385
+N_CC;FUZIMPL3:func.3:3N_CC210,6479
+Fuzzy_Negation;FUZIMPL3:mode.0:1Fuzzy_Negation233,6894
+continuous;FUZIMPL3:attr.3:3continuous237,7011
+involutive;FUZIMPL3:attr.4:4involutive244,7175
+satisfying_(N3);FUZIMPL3:attr.5:5satisfying_(N3)251,7325
+satisfying_(N4);FUZIMPL3:attr.6:6satisfying_(N4)254,7398
+satisfying_(N5);FUZIMPL3:attr.7:7satisfying_(N5)257,7472
+negation-strict;FUZIMPL3:attr.8:8negation-strict263,7589
+negation-strong;FUZIMPL3:attr.9:9negation-strong269,7727
+non-vanishing;FUZIMPL3:attr.10:10non-vanishing272,7806
+non-filling;FUZIMPL3:attr.11:11non-filling276,7921
+FNegation;FUZIMPL3:func.4:4FNegation289,8243
+NegationD1;FUZIMPL3:func.5:5NegationD1310,8761
+NegationD2;FUZIMPL3:func.6:6NegationD2315,8930
+<=;FUZIMPL3:pred.2:2<=325,9183
+SugenoNegation;FUZIMPL3:func.7:7SugenoNegation390,10678
+ConjNeg;FUZIMPL3:func.8:8ConjNeg407,11119
+are_conjugate;FUZIMPL3:pred.3:3are_conjugate419,11440
+
+fuzimpl4.abs,
+-satisfying_CP;FUZIMPL4:attr.1:1-satisfying_CP52,2612
+-satisfying_L-CP;FUZIMPL4:attr.2:2-satisfying_L-CP61,2847
+-satisfying_R-CP;FUZIMPL4:attr.3:3-satisfying_R-CP70,3084
+I_I3;FUZIMPL4:func.1:1I_I3285,9007
+I_I4;FUZIMPL4:func.2:2I_I4309,9523
+satisfying_CP;FUZIMPL4:attr.4:4satisfying_CP335,10120
+satisfying_L-CP;FUZIMPL4:attr.5:5satisfying_L-CP338,10208
+satisfying_R-CP;FUZIMPL4:attr.6:6satisfying_R-CP341,10300
+max;FUZIMPL4:func.3:3max442,12353
+min;FUZIMPL4:func.4:4min446,12499
+Fuzzy_Negations;FUZIMPL4:func.5:5Fuzzy_Negations453,12663
+{;FUZIMPL4:func.6:6{491,13734
 
 fuznorm1.abs,
 monotonic;FUZNORM1:attr.1:1monotonic117,3653
@@ -6119,7 +6248,10 @@ min;FUZZY_4:func.2:3min122,3901
 Imf;FUZZY_4:func.4:5Imf172,5458
 
 fuzzy_5.abs,
-Membership_Funcs;FUZZY_5:func.1:1Membership_Funcs70,2550
+Membership_Funcs;FUZZY_5:func.1:1Membership_Funcs70,2555
+
+fuzzy_6.abs,
+centroid;FUZZY_6:func.1:1centroid47,2127
 
 fvaluat1.abs,
 ext-integer;FVALUAT1:attr.1:1ext-integer74,2853
@@ -6225,31 +6357,31 @@ CLAADD4;GATE_5:func.18:20CLAADD4222,8872
 CLACARR4;GATE_5:func.19:21CLACARR4226,8993
 
 gaussint.abs,
-g_integer;GAUSSINT:attr.1:1g_integer47,2204
-G_INTEG;GAUSSINT:mode.0:1G_INTEG57,2351
-G_INT_SET;GAUSSINT:func.1:1G_INT_SET89,2855
-g_int_add;GAUSSINT:func.2:2g_int_add110,3255
-g_int_mult;GAUSSINT:func.3:3g_int_mult116,3363
-Sc_Mult;GAUSSINT:func.4:4Sc_Mult122,3473
-Gauss_INT_Module;GAUSSINT:func.5:5Gauss_INT_Module135,3812
-Gauss_INT_Ring;GAUSSINT:func.6:6Gauss_INT_Ring150,4248
-Z_Algebra;GAUSSINT:mode.0:2Z_Algebra207,5723
-Gauss_INT_Field;GAUSSINT:func.7:7Gauss_INT_Field238,6603
-g_rational;GAUSSINT:attr.2:2g_rational250,6897
-G_RAT;GAUSSINT:mode.0:3G_RAT261,7049
-G_RAT_SET;GAUSSINT:func.8:8G_RAT_SET289,7504
-g_rat_add;GAUSSINT:func.9:9g_rat_add312,7968
-g_rat_mult;GAUSSINT:func.10:10g_rat_mult318,8077
-F_Rat;GAUSSINT:func.11:11F_Rat331,8259
-RSc_Mult;GAUSSINT:func.12:12RSc_Mult438,11154
-Gauss_RAT_Module;GAUSSINT:func.13:13Gauss_RAT_Module451,11492
-Gauss_RAT_Ring;GAUSSINT:func.14:14Gauss_RAT_Ring466,11926
-Divides;GAUSSINT:pred.1:1Divides493,12845
-*';GAUSSINT:func.15:15*'509,13264
-Norm;GAUSSINT:func.16:16Norm514,13330
-g_int_unit;GAUSSINT:attr.3:3g_int_unit544,13905
-is_associated_to;GAUSSINT:pred.2:2is_associated_to552,14008
-g_prime;GAUSSINT:attr.4:4g_prime595,15271
+g_integer;GAUSSINT:attr.1:1g_integer46,2190
+G_INTEG;GAUSSINT:mode.0:1G_INTEG56,2337
+G_INT_SET;GAUSSINT:func.1:1G_INT_SET88,2841
+g_int_add;GAUSSINT:func.2:2g_int_add109,3241
+g_int_mult;GAUSSINT:func.3:3g_int_mult115,3349
+Sc_Mult;GAUSSINT:func.4:4Sc_Mult121,3459
+Gauss_INT_Module;GAUSSINT:func.5:5Gauss_INT_Module134,3798
+Gauss_INT_Ring;GAUSSINT:func.6:6Gauss_INT_Ring149,4234
+Z_Algebra;GAUSSINT:mode.0:2Z_Algebra206,5709
+Gauss_INT_Field;GAUSSINT:func.7:7Gauss_INT_Field237,6589
+g_rational;GAUSSINT:attr.2:2g_rational249,6883
+G_RAT;GAUSSINT:mode.0:3G_RAT260,7035
+G_RAT_SET;GAUSSINT:func.8:8G_RAT_SET288,7490
+g_rat_add;GAUSSINT:func.9:9g_rat_add311,7954
+g_rat_mult;GAUSSINT:func.10:10g_rat_mult317,8063
+F_Rat;GAUSSINT:func.11:11F_Rat330,8245
+RSc_Mult;GAUSSINT:func.12:12RSc_Mult437,11140
+Gauss_RAT_Module;GAUSSINT:func.13:13Gauss_RAT_Module450,11478
+Gauss_RAT_Ring;GAUSSINT:func.14:14Gauss_RAT_Ring465,11912
+Divides;GAUSSINT:pred.1:1Divides492,12831
+*';GAUSSINT:func.15:15*'508,13250
+Norm;GAUSSINT:func.16:16Norm513,13316
+g_int_unit;GAUSSINT:attr.3:3g_int_unit543,13891
+is_associated_to;GAUSSINT:pred.2:2is_associated_to551,13994
+g_prime;GAUSSINT:attr.4:4g_prime594,15257
 
 gcd_1.abs,
 divides;GCD_1:pred.1:1divides74,2369
@@ -6377,6 +6509,51 @@ gfacirc2.abs,
 -BitGFA1Circ;GFACIRC2:func.6:6-BitGFA1Circ323,13138
 -BitGFA1CarryOutput;GFACIRC2:func.7:7-BitGFA1CarryOutput344,13903
 -BitGFA1AdderOutput;GFACIRC2:func.8:8-BitGFA1AdderOutput462,18672
+
+glcolo00.abs,
+VColoring;GLCOLO00:mode.0:1VColoring55,2905
+*;GLCOLO00:func.1:1*70,3227
+proper;GLCOLO00:attr.1:1proper114,4725
+-vcolorable;GLCOLO00:attr.2:2-vcolorable218,8304
+finite-vcolorable;GLCOLO00:attr.3:3finite-vcolorable344,11666
+.vChromaticNum();GLCOLO00:func.2:2.vChromaticNum()455,14750
+.vChromaticNum();GLCOLO00:func.3:3.vChromaticNum()493,15643
+EColoring;GLCOLO00:mode.0:2EColoring573,18086
+*;GLCOLO00:func.4:4*583,18335
+proper;GLCOLO00:attr.4:4proper623,19733
+-ecolorable;GLCOLO00:attr.5:5-ecolorable712,22828
+finite-ecolorable;GLCOLO00:attr.6:6finite-ecolorable806,25454
+.eChromaticNum();GLCOLO00:func.5:5.eChromaticNum()915,28472
+.eChromaticNum();GLCOLO00:func.6:6.eChromaticNum()947,29205
+TColoring;GLCOLO00:mode.1:3TColoring1008,31085
+_V;GLCOLO00:func.0:7_V1023,31323
+_E;GLCOLO00:func.0:8_E1024,31346
+_V;GLCOLO00:func.7:9_V1034,31458
+_E;GLCOLO00:func.8:10_E1035,31497
+[;GLCOLO00:func.9:11[1040,31568
+proper;GLCOLO00:attr.7:7proper1087,33350
+-tcolorable;GLCOLO00:attr.8:8-tcolorable1194,37264
+finite-tcolorable;GLCOLO00:attr.9:9finite-tcolorable1304,40446
+.tChromaticNum();GLCOLO00:func.10:12.tChromaticNum()1402,43156
+.tChromaticNum();GLCOLO00:func.11:13.tChromaticNum()1441,44096
+
+glenum00.abs,
+.allSG();GLENUM00:func.1:1.allSG()44,2087
+createGraph;GLENUM00:func.2:2createGraph68,2661
+createGraph;GLENUM00:func.3:3createGraph104,3700
+createGraph;GLENUM00:func.4:4createGraph127,4275
+Element;GLENUM00:mode.1:1Element238,8183
+SG2SGFunc;GLENUM00:func.5:5SG2SGFunc249,8436
+SubgraphRel;GLENUM00:func.6:6SubgraphRel342,10647
+.allInducedSG();GLENUM00:func.7:7.allInducedSG()379,11566
+.allSpanningSG();GLENUM00:func.8:8.allSpanningSG()510,14997
+.allForests();GLENUM00:func.9:9.allForests()627,18128
+.allSpanningForests();GLENUM00:func.10:10.allSpanningForests()729,21301
+.allConnectedSG();GLENUM00:func.11:11.allConnectedSG()830,24594
+.allTrees();GLENUM00:func.12:12.allTrees()893,26432
+SubtreeRel;GLENUM00:func.13:13SubtreeRel982,29096
+.allSpanningTrees();GLENUM00:func.14:14.allSpanningTrees()1035,30448
+.allComponents();GLENUM00:func.15:15.allComponents()1138,33648
 
 glib_000.abs,
 GraphStruct;GLIB_000:mode.0:1GraphStruct38,1565
@@ -6892,34 +7069,52 @@ GraphMeet;GLIB_014:mode.3:5GraphMeet1278,32904
 GraphMeet;GLIB_014:mode.4:6GraphMeet1317,33937
 
 glib_015.abs,
-replaceVerticesEdges;GLIB_015:func.1:1replaceVerticesEdges51,2657
-replaceVertices;GLIB_015:func.2:2replaceVertices62,2981
-replaceEdges;GLIB_015:func.3:3replaceEdges69,3178
-the_Vertices_of;GLIB_015:func.4:4the_Vertices_of804,25639
-the_Edges_of;GLIB_015:func.5:5the_Edges_of810,25818
-the_Source_of;GLIB_015:func.6:6the_Source_of816,25991
-the_Target_of;GLIB_015:func.7:7the_Target_of822,26166
-the_Vertices_of;GLIB_015:func.4:8the_Vertices_of859,27084
-the_Edges_of;GLIB_015:func.5:9the_Edges_of864,27231
-the_Source_of;GLIB_015:func.6:10the_Source_of869,27372
-the_Target_of;GLIB_015:func.7:11the_Target_of873,27515
-are_Disomorphic;GLIB_015:pred.1:1are_Disomorphic899,28244
-are_isomorphic;GLIB_015:pred.2:2are_isomorphic905,28457
-are_Disomorphic;GLIB_015:pred.3:3are_Disomorphic966,30423
-are_isomorphic;GLIB_015:pred.4:4are_isomorphic973,30693
-are_Disomorphic;GLIB_015:pred.5:5are_Disomorphic1049,33384
-are_isomorphic;GLIB_015:pred.6:6are_isomorphic1056,33617
-vertex-disjoint;GLIB_015:attr.1:1vertex-disjoint1069,33983
-edge-disjoint;GLIB_015:attr.2:2edge-disjoint1074,34149
-vertex-disjoint;GLIB_015:attr.3:3vertex-disjoint1259,40023
-edge-disjoint;GLIB_015:attr.4:4edge-disjoint1265,40244
-vertex-disjoint;GLIB_015:attr.3:5vertex-disjoint1281,40769
-edge-disjoint;GLIB_015:attr.4:6edge-disjoint1286,40941
-renameElementsDistinctlyFunc;GLIB_015:func.8:12renameElementsDistinctlyFunc1362,43339
-canGFDistinction;GLIB_015:func.9:13canGFDistinction1423,45318
-canGFDistinction;GLIB_015:func.10:14canGFDistinction1589,50644
-GraphSum;GLIB_015:mode.1:1GraphSum1829,58909
-GraphSum;GLIB_015:mode.2:2GraphSum2004,64308
+replaceVerticesEdges;GLIB_015:func.1:1replaceVerticesEdges51,2662
+replaceVertices;GLIB_015:func.2:2replaceVertices62,2986
+replaceEdges;GLIB_015:func.3:3replaceEdges69,3183
+the_Vertices_of;GLIB_015:func.4:4the_Vertices_of804,25644
+the_Edges_of;GLIB_015:func.5:5the_Edges_of810,25823
+the_Source_of;GLIB_015:func.6:6the_Source_of816,25996
+the_Target_of;GLIB_015:func.7:7the_Target_of822,26171
+the_Vertices_of;GLIB_015:func.4:8the_Vertices_of859,27089
+the_Edges_of;GLIB_015:func.5:9the_Edges_of864,27236
+the_Source_of;GLIB_015:func.6:10the_Source_of869,27377
+the_Target_of;GLIB_015:func.7:11the_Target_of873,27520
+are_Disomorphic;GLIB_015:pred.1:1are_Disomorphic899,28249
+are_isomorphic;GLIB_015:pred.2:2are_isomorphic905,28462
+are_Disomorphic;GLIB_015:pred.3:3are_Disomorphic966,30428
+are_isomorphic;GLIB_015:pred.4:4are_isomorphic973,30698
+are_Disomorphic;GLIB_015:pred.5:5are_Disomorphic1049,33389
+are_isomorphic;GLIB_015:pred.6:6are_isomorphic1056,33622
+vertex-disjoint;GLIB_015:attr.1:1vertex-disjoint1069,33988
+edge-disjoint;GLIB_015:attr.2:2edge-disjoint1074,34154
+vertex-disjoint;GLIB_015:attr.3:3vertex-disjoint1259,40028
+edge-disjoint;GLIB_015:attr.4:4edge-disjoint1265,40249
+vertex-disjoint;GLIB_015:attr.3:5vertex-disjoint1281,40774
+edge-disjoint;GLIB_015:attr.4:6edge-disjoint1286,40946
+renameElementsDistinctlyFunc;GLIB_015:func.8:12renameElementsDistinctlyFunc1362,43344
+canGFDistinction;GLIB_015:func.9:13canGFDistinction1423,45323
+canGFDistinction;GLIB_015:func.10:14canGFDistinction1589,50649
+GraphSum;GLIB_015:mode.1:1GraphSum1829,58914
+GraphSum;GLIB_015:mode.2:2GraphSum2004,64313
+
+glib_016.abs,
+Dcomplete;GLIB_016:attr.1:1Dcomplete47,2394
+canCompleteGraph;GLIB_016:func.1:1canCompleteGraph55,2564
+canDCompleteGraph;GLIB_016:func.2:2canDCompleteGraph58,2662
+-regular;GLIB_016:attr.2:2-regular270,8935
+cubic;GLIB_016:attr.3:3cubic383,12178
+regular;GLIB_016:attr.4:4regular409,12769
+regular;GLIB_016:attr.4:5regular420,12980
+-Dregular;GLIB_016:attr.5:6-Dregular468,14074
+Dregular;GLIB_016:attr.6:7Dregular568,16753
+Dregular;GLIB_016:attr.6:8Dregular580,17050
+.degreeMap();GLIB_016:func.3:3.degreeMap()654,18728
+.inDegreeMap();GLIB_016:func.4:4.inDegreeMap()658,18864
+.outDegreeMap();GLIB_016:func.5:5.outDegreeMap()662,19004
+.degreeMap();GLIB_016:func.6:6.degreeMap()692,19856
+.inDegreeMap();GLIB_016:func.7:7.inDegreeMap()693,19925
+.outDegreeMap();GLIB_016:func.8:8.outDegreeMap()694,19996
 
 glibpre0.abs,
 plain;GLIBPRE0:attr.1:1plain536,19580
@@ -6930,7 +7125,7 @@ chordal;GLIBPRE0:attr.2:5chordal758,26450
 chordal;GLIBPRE0:attr.2:6chordal766,26600
 
 glibpre1.abs,
-.;GLIBPRE1:func.1:1.275,9210
+.;GLIBPRE1:func.1:1.275,9215
 
 glunir00.abs,
 VertexDomRel;GLUNIR00:func.1:1VertexDomRel41,1863
@@ -7195,7 +7390,7 @@ cyclic;GR_CY_1:attr.1:1cyclic179,4871
 gr_cy_3.abs,
 Safe;GR_CY_3:attr.1:1Safe48,2283
 Sophie_Germain;GR_CY_3:attr.2:2Sophie_Germain81,2937
-Mersenne;GR_CY_3:func.1:1Mersenne119,4049
+Mersenne;GR_CY_3:func.1:1Mersenne120,4056
 
 grnilp_1.abs,
 [.;GRNILP_1:func.1:1[.72,2377
@@ -7247,21 +7442,21 @@ the_subsets_of_card;GROUP_10:func.3:5the_subsets_of_card115,3783
 the_extension_of_left_translation_of;GROUP_10:func.4:6the_extension_of_left_translation_of143,4506
 the_extension_of_left_operation_of;GROUP_10:func.5:7the_extension_of_left_operation_of157,4895
 the_left_translation_of;GROUP_10:func.6:8the_left_translation_of169,5207
-the_left_operation_of;GROUP_10:func.7:9the_left_operation_of181,5635
-the_left_translation_of;GROUP_10:func.8:10the_left_translation_of192,5899
-the_left_operation_of;GROUP_10:func.9:11the_left_operation_of204,6252
-the_strict_stabilizer_of;GROUP_10:func.10:12the_strict_stabilizer_of219,6609
-the_strict_stabilizer_of;GROUP_10:func.11:13the_strict_stabilizer_of230,6882
-is_fixed_under;GROUP_10:pred.1:1is_fixed_under240,7135
-the_fixed_points_of;GROUP_10:func.12:14the_fixed_points_of250,7339
-are_conjugated_under;GROUP_10:pred.2:2are_conjugated_under264,7655
-the_orbit_of;GROUP_10:func.13:15the_orbit_of291,8508
-the_orbits_of;GROUP_10:func.14:16the_orbits_of324,9543
--group;GROUP_10:attr.2:2-group336,9790
-is_Sylow_p-subgroup_of_prime;GROUP_10:pred.3:3is_Sylow_p-subgroup_of_prime369,10444
-the_sylow_p-subgroups_of_prime;GROUP_10:func.15:17the_sylow_p-subgroups_of_prime404,11422
-the_left_translation_of;GROUP_10:func.16:18the_left_translation_of421,11884
-the_left_operation_of;GROUP_10:func.17:19the_left_operation_of435,12364
+the_left_operation_of;GROUP_10:func.7:9the_left_operation_of181,5636
+the_left_translation_of;GROUP_10:func.8:10the_left_translation_of192,5900
+the_left_operation_of;GROUP_10:func.9:11the_left_operation_of204,6253
+the_strict_stabilizer_of;GROUP_10:func.10:12the_strict_stabilizer_of219,6610
+the_strict_stabilizer_of;GROUP_10:func.11:13the_strict_stabilizer_of230,6883
+is_fixed_under;GROUP_10:pred.1:1is_fixed_under240,7136
+the_fixed_points_of;GROUP_10:func.12:14the_fixed_points_of250,7340
+are_conjugated_under;GROUP_10:pred.2:2are_conjugated_under264,7656
+the_orbit_of;GROUP_10:func.13:15the_orbit_of291,8509
+the_orbits_of;GROUP_10:func.14:16the_orbits_of324,9544
+-group;GROUP_10:attr.2:2-group336,9791
+is_Sylow_p-subgroup_of_prime;GROUP_10:pred.3:3is_Sylow_p-subgroup_of_prime369,10441
+the_sylow_p-subgroups_of_prime;GROUP_10:func.15:17the_sylow_p-subgroups_of_prime404,11407
+the_left_translation_of;GROUP_10:func.16:18the_left_translation_of421,11861
+the_left_operation_of;GROUP_10:func.17:19the_left_operation_of435,12337
 
 group_11.abs,
 `;GROUP_11:func.1:1`80,2678
@@ -7282,8 +7477,8 @@ group_17.abs,
 Product;GROUP_17:func.1:1Product85,3320
 
 group_18.abs,
-Ordset;GROUP_18:func.1:1Ordset40,2140
-modetrans;GROUP_18:func.2:2modetrans87,3536
+Ordset;GROUP_18:func.1:1Ordset40,2147
+modetrans;GROUP_18:func.2:2modetrans87,3543
 
 group_19.abs,
 <*;GROUP_19:func.1:1<*41,2038
@@ -7412,6 +7607,56 @@ dsum2sum;GROUP_21:func.19:19dsum2sum499,14213
 sum2dsum;GROUP_21:func.20:20sum2dsum515,14629
 InterHom;GROUP_21:func.21:21InterHom543,15374
 ProductHom;GROUP_21:func.22:22ProductHom561,15901
+
+group_22.abs,
+proper;GROUP_22:attr.1:1proper124,3666
+Endomorphism;GROUP_22:mode.0:1Endomorphism162,4478
+Automorphism;GROUP_22:mode.0:2Automorphism174,4658
+is_inner_wrt;GROUP_22:pred.1:1is_inner_wrt250,6688
+inner;GROUP_22:attr.2:2inner259,6841
+outer;GROUP_22:attr.2:3outer267,6990
+characteristic;GROUP_22:attr.3:4characteristic319,8268
+Centralizer;GROUP_22:func.1:1Centralizer530,14263
+Centralizer;GROUP_22:func.2:2Centralizer553,14861
+{;GROUP_22:func.3:3{585,15687
+Normalizer;GROUP_22:func.4:4Normalizer591,15783
+
+group_23.abs,
+.;GROUP_23:func.1:1.67,2775
+ManySortedFunction;GROUP_23:mode.0:1ManySortedFunction74,2952
+.;GROUP_23:func.2:2.84,3239
+Union;GROUP_23:func.3:3Union102,3684
+Group-yielding;GROUP_23:attr.1:1Group-yielding158,5162
+-Subgroup-yielding;GROUP_23:attr.2:2-Subgroup-yielding254,7384
+Subgroup-Family;GROUP_23:mode.0:2Subgroup-Family280,7971
+.;GROUP_23:func.4:4.288,8172
+componentwise_strict;GROUP_23:attr.3:3componentwise_strict312,8914
+(1).;GROUP_23:func.5:5(1).360,10204
+(Omega).;GROUP_23:func.6:6(Omega).369,10411
+normal;GROUP_23:attr.4:4normal379,10660
+./.;GROUP_23:func.7:7./.417,11546
+incl;GROUP_23:func.8:8incl449,12326
+incl;GROUP_23:func.9:9incl456,12476
+Homomorphism-Family;GROUP_23:mode.1:3Homomorphism-Family499,13435
+.;GROUP_23:func.10:10.513,13793
+Homomorphism-Family;GROUP_23:mode.2:4Homomorphism-Family524,14002
+/.;GROUP_23:func.11:11/.594,16145
+proj;GROUP_23:func.12:12proj611,16467
+product;GROUP_23:func.13:13product687,18660
+product;GROUP_23:func.14:14product745,20327
+product;GROUP_23:func.15:15product849,23453
+Ker;GROUP_23:func.16:16Ker859,23738
+Image;GROUP_23:func.17:17Image870,24033
+normal;GROUP_23:attr.5:5normal899,24895
+componentwise_strict;GROUP_23:attr.6:6componentwise_strict902,25007
+.;GROUP_23:func.18:18.932,25781
+|;GROUP_23:func.19:19|987,27145
+Element;GROUP_23:mode.0:5Element1076,29401
+/.;GROUP_23:func.20:20/.1144,31016
+is_internal_product_of;GROUP_23:pred.1:1is_internal_product_of1153,31162
+is_internal_product_of;GROUP_23:pred.1:2is_internal_product_of1188,32292
+is_internal_product_of;GROUP_23:pred.2:3is_internal_product_of1238,33952
+is_internal_product_of;GROUP_23:pred.3:4is_internal_product_of1263,34906
 
 group_2.abs,
 ";GROUP_2:func.1:1"49,1826
@@ -7568,11 +7813,11 @@ are_equivalent_under;GROUP_9:pred.6:6are_equivalent_under1074,27939
 the_schreier_series_of;GROUP_9:func.21:21the_schreier_series_of1192,31929
 
 groupp_1.abs,
--power;GROUPP_1:attr.1:1-power92,3210
-expon;GROUPP_1:func.1:1expon206,5740
-expon;GROUPP_1:func.2:2expon215,5868
--commutative-group-like;GROUPP_1:attr.2:2-commutative-group-like240,6531
--commutative-group;GROUPP_1:attr.3:3-commutative-group249,6710
+-power;GROUPP_1:attr.1:1-power92,3206
+expon;GROUPP_1:func.1:1expon206,5732
+expon;GROUPP_1:func.2:2expon215,5856
+-commutative-group-like;GROUPP_1:attr.2:2-commutative-group-like240,6515
+-commutative-group;GROUPP_1:attr.3:3-commutative-group249,6694
 
 grsolv_1.abs,
 solvable;GRSOLV_1:attr.1:1solvable36,1446
@@ -7685,20 +7930,20 @@ satisfying_Euclid_Axiom;GTARSKI2:attr.3:7satisfying_Euclid_Axiom345,11330
 satisfying_Continuity_Axiom;GTARSKI2:attr.4:8satisfying_Continuity_Axiom346,11394
 
 gtarski3.abs,
-satisfying_SST_A5;GTARSKI3:attr.1:1satisfying_SST_A575,2456
-AFS;GTARSKI3:pred.1:1AFS102,3381
-between4;GTARSKI3:pred.2:2between4185,5853
-between5;GTARSKI3:pred.3:3between5195,6103
-IFS;GTARSKI3:pred.4:4IFS356,11523
-FS;GTARSKI3:pred.5:5FS443,14250
-<=;GTARSKI3:pred.6:6<=490,15538
-out;GTARSKI3:pred.7:7out557,17086
-halfline;GTARSKI3:func.1:1halfline603,18111
-Line;GTARSKI3:func.2:2Line623,18569
-is_line;GTARSKI3:pred.8:8is_line639,18996
-Middle;GTARSKI3:pred.9:9Middle731,21804
-reflection;GTARSKI3:func.3:3reflection786,23507
-Krippenfigur;GTARSKI3:pred.10:10Krippenfigur903,26897
+satisfying_SST_A5;GTARSKI3:attr.1:1satisfying_SST_A575,2455
+AFS;GTARSKI3:pred.1:1AFS102,3380
+between4;GTARSKI3:pred.2:2between4185,5852
+between5;GTARSKI3:pred.3:3between5195,6102
+IFS;GTARSKI3:pred.4:4IFS356,11522
+FS;GTARSKI3:pred.5:5FS443,14249
+<=;GTARSKI3:pred.6:6<=490,15537
+out;GTARSKI3:pred.7:7out557,17085
+halfline;GTARSKI3:func.1:1halfline603,18110
+Line;GTARSKI3:func.2:2Line623,18568
+is_line;GTARSKI3:pred.8:8is_line639,18995
+Middle;GTARSKI3:pred.9:9Middle731,21803
+reflection;GTARSKI3:func.3:3reflection786,23506
+Krippenfigur;GTARSKI3:pred.10:10Krippenfigur903,26896
 (RE);GTARSKI3:attr.2:2(RE)932,27754
 (TE);GTARSKI3:attr.3:3(TE)935,27846
 (IE);GTARSKI3:attr.4:4(IE)939,27983
@@ -7867,21 +8112,44 @@ Px;HILB10_1:func.1:1Px64,2418
 Py;HILB10_1:func.2:2Py76,2726
 
 hilb10_2.abs,
-@;HILB10_2:func.1:1@72,2734
-@;HILB10_2:func.2:2@81,2890
-extended_by_0;HILB10_2:func.3:3extended_by_0182,5001
-permuted_by;HILB10_2:func.4:4permuted_by293,8555
--xtuples_of;HILB10_2:func.5:5-xtuples_of389,11537
-diophantine;HILB10_2:attr.1:1diophantine404,11893
+@;HILB10_2:func.1:1@72,2741
+@;HILB10_2:func.2:2@81,2897
+extended_by_0;HILB10_2:func.3:3extended_by_0181,5004
+permuted_by;HILB10_2:func.4:4permuted_by292,8558
+-xtuples_of;HILB10_2:func.5:5-xtuples_of388,11540
+diophantine;HILB10_2:attr.1:1diophantine403,11896
 
 hilb10_4.abs,
-Product;HILB10_4:func.1:1Product53,2364
+Product;HILB10_4:func.1:1Product53,2371
 
 hilb10_5.abs,
 |.;HILB10_5:func.1:1|.91,3834
 sum_of_coefficients;HILB10_5:func.2:2sum_of_coefficients118,4465
 degree;HILB10_5:func.3:3degree128,4731
 recursively_enumerable;HILB10_5:attr.1:1recursively_enumerable306,11028
+
+hilb10_7.abs,
+[#];HILB10_7:func.1:1[#]50,2270
+Ext;HILB10_7:func.2:2Ext129,4702
+swap;HILB10_7:func.3:3swap137,4906
+Swap;HILB10_7:func.4:4Swap177,5823
+Ext;HILB10_7:func.5:5Ext187,6084
+with_evenly_repeated_values;HILB10_7:attr.1:1with_evenly_repeated_values297,9025
+with_evenly_repeated_values-member;HILB10_7:attr.2:2with_evenly_repeated_values-member314,9428
+doms;HILB10_7:func.6:6doms363,10819
+App;HILB10_7:func.7:7App446,12820
+App;HILB10_7:func.8:8App456,13111
+.;HILB10_7:func.9:9.479,13601
+"**";HILB10_7:func.10:10"**"486,13740
+<*;HILB10_7:func.11:11<*507,14199
+SignGen;HILB10_7:func.12:12SignGen573,15984
+SignGenOp;HILB10_7:func.13:13SignGenOp628,17363
+SignGenOp;HILB10_7:func.14:14SignGenOp734,20907
+doms;HILB10_7:func.15:15doms884,26101
+
+hilb10_8.abs,
+theta;HILB10_8:attr.1:1theta42,1746
+_Theta;HILB10_8:mode.0:1_Theta53,1892
 
 hilbasis.abs,
 bag_extend;HILBASIS:func.1:1bag_extend65,3061
@@ -8058,15 +8326,15 @@ principal;IDEAL_1:attr.7:7principal970,32969
 PID;IDEAL_1:attr.8:8PID978,33113
 
 ideal_2.abs,
-.;IDEAL_2:func.1:1.57,2452
-%;IDEAL_2:func.2:2%85,3272
-||^;IDEAL_2:func.3:3||^112,4128
-Psi;IDEAL_2:func.4:4Psi215,6824
-quasi-primary;IDEAL_2:attr.1:1quasi-primary238,7484
-primary;IDEAL_2:attr.2:2primary247,7690
--primary;IDEAL_2:attr.3:3-primary300,8973
-PRIMARY;IDEAL_2:func.5:5PRIMARY307,9058
-PRIMARY;IDEAL_2:func.6:6PRIMARY319,9279
+.;IDEAL_2:func.1:1.57,2467
+%;IDEAL_2:func.2:2%85,3287
+||^;IDEAL_2:func.3:3||^112,4143
+Psi;IDEAL_2:func.4:4Psi215,6839
+quasi-primary;IDEAL_2:attr.1:1quasi-primary238,7499
+primary;IDEAL_2:attr.2:2primary247,7705
+-primary;IDEAL_2:attr.3:3-primary300,8988
+PRIMARY;IDEAL_2:func.5:5PRIMARY307,9073
+PRIMARY;IDEAL_2:func.6:6PRIMARY319,9294
 
 incproj.abs,
 LINE;INCPROJ:mode.1:1LINE36,1228
@@ -8155,60 +8423,61 @@ Subsignature;INSTALG1:mode.1:1Subsignature117,4753
 hom;INSTALG1:func.3:3hom364,14777
 
 int_1.abs,
-INT;INT_1:func.0:1INT35,1301
-integer;INT_1:attr.1:1integer43,1419
-Integer;INT_1:mode.0:1Integer56,1608
-divides;INT_1:pred.1:1divides159,3866
-are_congruent_mod;INT_1:pred.2:2are_congruent_mod167,3992
-are_congruent_mod;INT_1:pred.2:3are_congruent_mod174,4113
-[\;INT_1:func.1:2[\231,5629
-[/;INT_1:func.2:3[/255,6011
-frac;INT_1:func.3:4frac296,6699
-div;INT_1:func.4:5div325,7132
-mod;INT_1:func.5:6mod332,7240
-dim-like;INT_1:attr.2:2dim-like474,10443
+INT;INT_1:func.0:1INT35,1341
+integer;INT_1:attr.1:1integer43,1459
+Integer;INT_1:mode.0:1Integer56,1648
+divides;INT_1:pred.1:1divides159,3906
+are_congruent_mod;INT_1:pred.2:2are_congruent_mod167,4032
+are_congruent_mod;INT_1:pred.2:3are_congruent_mod174,4153
+[\;INT_1:func.1:2[\231,5669
+[/;INT_1:func.2:3[/260,6113
+frac;INT_1:func.3:4frac306,6863
+div;INT_1:func.4:5div335,7296
+mod;INT_1:func.5:6mod342,7404
+dim-like;INT_1:attr.2:2dim-like490,10692
 
 int_2.abs,
-|.;INT_2:func.1:1|.30,1134
-lcm;INT_2:func.2:2lcm48,1457
-gcd;INT_2:func.3:3gcd61,1714
-are_coprime;INT_2:pred.1:1are_coprime136,3289
-prime;INT_2:attr.1:1prime165,4087
+|.;INT_2:func.1:1|.30,1142
+lcm;INT_2:func.2:2lcm48,1465
+gcd;INT_2:func.3:3gcd61,1722
+are_coprime;INT_2:pred.1:1are_coprime136,3297
+prime;INT_2:attr.1:1prime165,4088
+Prime;INT_2:mode.0:1Prime189,4481
 
 int_3.abs,
 multint;INT_3:func.0:1multint37,1697
 compint;INT_3:func.0:2compint44,1825
 INT.Ring;INT_3:func.1:3INT.Ring50,1945
-|.;INT_3:func.2:4|.87,2737
-absint;INT_3:func.3:5absint91,2800
-div;INT_3:func.4:6div108,3277
-mod;INT_3:func.5:7mod109,3325
-Euclidian;INT_3:attr.1:1Euclidian120,3568
-EuclidianRing;INT_3:mode.0:1EuclidianRing138,3944
-DegreeFunction;INT_3:mode.1:2DegreeFunction144,4105
-absint;INT_3:func.6:8absint161,4597
-multint;INT_3:func.7:9multint184,5233
-compint;INT_3:func.8:10compint193,5422
-INT.Ring;INT_3:func.9:11INT.Ring215,6114
+|.;INT_3:func.2:4|.92,2853
+absint;INT_3:func.3:5absint96,2916
+div;INT_3:func.4:6div113,3393
+mod;INT_3:func.5:7mod114,3441
+Euclidian;INT_3:attr.1:1Euclidian125,3684
+EuclidianRing;INT_3:mode.0:1EuclidianRing143,4060
+DegreeFunction;INT_3:mode.1:2DegreeFunction149,4221
+absint;INT_3:func.6:8absint166,4713
+multint;INT_3:func.7:9multint189,5349
+compint;INT_3:func.8:10compint198,5538
+INT.Ring;INT_3:func.9:11INT.Ring220,6230
 
 int_4.abs,
-Cong;INT_4:func.1:1Cong144,4419
-is_CRS_of;INT_4:pred.1:1is_CRS_of288,9427
+Cong;INT_4:func.1:1Cong142,4390
+is_CRS_of;INT_4:pred.1:1is_CRS_of286,9398
 
 int_5.abs,
-Poly-INT;INT_5:func.1:1Poly-INT54,2263
-is_quadratic_residue_mod;INT_5:pred.1:1is_quadratic_residue_mod94,3627
-Lege;INT_5:func.2:2Lege170,5857
-Card;INT_5:func.3:3Card272,8853
+Poly-INT;INT_5:func.1:1Poly-INT54,2292
+is_quadratic_residue_mod;INT_5:pred.1:1is_quadratic_residue_mod94,3656
+Lege;INT_5:func.2:2Lege170,5886
+Card;INT_5:func.3:3Card272,8882
 
 int_6.abs,
-multiplicative-trivial;INT_6:attr.0:1multiplicative-trivial154,4775
-multiplicative-trivial;INT_6:attr.0:2multiplicative-trivial159,4885
-Chinese_Remainder;INT_6:attr.1:3Chinese_Remainder177,5361
-CR_Sequence;INT_6:mode.0:1CR_Sequence190,5623
-mod;INT_6:func.1:1mod219,6339
-CR_coefficients;INT_6:mode.1:2CR_coefficients233,6611
-to_int;INT_6:func.2:2to_int273,7916
+multiplicative-trivial;INT_6:attr.0:1multiplicative-trivial154,4797
+multiplicative-trivial;INT_6:attr.0:2multiplicative-trivial159,4907
+Chinese_Remainder;INT_6:attr.1:3Chinese_Remainder177,5383
+CR_Sequence;INT_6:mode.0:1CR_Sequence190,5645
+mod;INT_6:func.1:1mod219,6361
+CR_coefficients;INT_6:mode.1:2CR_coefficients233,6633
+to_int;INT_6:func.2:2to_int273,7938
 
 int_7.abs,
 prime-factorization-like;INT_7:attr.1:1prime-factorization-like67,3115
@@ -8217,10 +8486,10 @@ multint0;INT_7:func.2:2multint0152,5554
 Z/Z*;INT_7:func.3:3Z/Z*163,5796
 
 int_8.abs,
-RelPrimes;INT_8:func.1:1RelPrimes43,1846
-RelPrimes;INT_8:func.2:2RelPrimes53,2038
-is_RRS_of;INT_8:pred.1:1is_RRS_of146,4541
-is_primitive_root_of;INT_8:pred.2:2is_primitive_root_of183,5657
+RelPrimes;INT_8:func.1:1RelPrimes43,1856
+RelPrimes;INT_8:func.2:2RelPrimes53,2048
+is_RRS_of;INT_8:pred.1:1is_RRS_of146,4551
+is_primitive_root_of;INT_8:pred.2:2is_primitive_root_of183,5667
 
 integr10.abs,
 is_right_ext_Riemann_integrable_on;INTEGR10:pred.1:1is_right_ext_Riemann_integrable_on52,2055
@@ -8313,20 +8582,23 @@ is_RiemannStieltjes_integrable_with;INTEGR22:pred.1:1is_RiemannStieltjes_integr
 integral;INTEGR22:func.5:5integral217,7182
 
 integr24.abs,
-is_left_improper_integrable_on;INTEGR24:pred.1:1is_left_improper_integrable_on238,9764
-is_right_improper_integrable_on;INTEGR24:pred.2:2is_right_improper_integrable_on252,10244
-left_improper_integral;INTEGR24:func.1:1left_improper_integral268,10770
-right_improper_integral;INTEGR24:func.2:2right_improper_integral283,11260
-is_improper_integrable_on;INTEGR24:pred.3:3is_improper_integrable_on406,16381
-improper_integral;INTEGR24:func.3:3improper_integral463,18706
+is_left_improper_integrable_on;INTEGR24:pred.1:1is_left_improper_integrable_on238,9769
+is_right_improper_integrable_on;INTEGR24:pred.2:2is_right_improper_integrable_on252,10249
+left_improper_integral;INTEGR24:func.1:1left_improper_integral268,10775
+right_improper_integral;INTEGR24:func.2:2right_improper_integral283,11265
+is_improper_integrable_on;INTEGR24:pred.3:3is_improper_integrable_on406,16386
+improper_integral;INTEGR24:func.3:3improper_integral463,18711
 
 integr25.abs,
-is_-infty_improper_integrable_on;INTEGR25:pred.1:1is_-infty_improper_integrable_on143,5793
-is_+infty_improper_integrable_on;INTEGR25:pred.2:2is_+infty_improper_integrable_on157,6282
-improper_integral_-infty;INTEGR25:func.1:1improper_integral_-infty173,6820
-improper_integral_+infty;INTEGR25:func.2:2improper_integral_+infty188,7321
-is_improper_integrable_on_REAL;INTEGR25:pred.3:3is_improper_integrable_on_REAL311,12510
-improper_integral_on_REAL;INTEGR25:func.3:3improper_integral_on_REAL364,14677
+is_-infty_improper_integrable_on;INTEGR25:pred.1:1is_-infty_improper_integrable_on143,5798
+is_+infty_improper_integrable_on;INTEGR25:pred.2:2is_+infty_improper_integrable_on157,6287
+improper_integral_-infty;INTEGR25:func.1:1improper_integral_-infty173,6825
+improper_integral_+infty;INTEGR25:func.2:2improper_integral_+infty188,7326
+is_improper_integrable_on_REAL;INTEGR25:pred.3:3is_improper_integrable_on_REAL311,12515
+improper_integral_on_REAL;INTEGR25:func.3:3improper_integral_on_REAL364,14682
+
+integr26.abs,
+is_antiderivative_of;INTEGR26:pred.1:1is_antiderivative_of195,8101
 
 integra1.abs,
 Division;INTEGRA1:mode.1:1Division75,2858
@@ -8351,12 +8623,12 @@ indx;INTEGRA1:func.13:13indx349,9792
 PartSums;INTEGRA1:func.14:14PartSums376,10659
 
 integra2.abs,
-non-decreasing;INTEGRA2:attr.0:1non-decreasing49,2208
-**;INTEGRA2:func.1:1**76,2933
-DivSequence;INTEGRA2:mode.0:1DivSequence216,7170
-.;INTEGRA2:func.2:2.223,7281
-upper_sum;INTEGRA2:func.3:3upper_sum230,7444
-lower_sum;INTEGRA2:func.4:4lower_sum233,7546
+non-decreasing;INTEGRA2:attr.0:1non-decreasing48,2192
+**;INTEGRA2:func.1:1**71,2880
+DivSequence;INTEGRA2:mode.0:1DivSequence211,7117
+.;INTEGRA2:func.2:2.218,7228
+upper_sum;INTEGRA2:func.3:3upper_sum225,7391
+lower_sum;INTEGRA2:func.4:4lower_sum228,7493
 
 integra3.abs,
 delta;INTEGRA3:func.1:1delta49,2235
@@ -8374,8 +8646,8 @@ integral;INTEGRA5:func.2:3integral94,3626
 integral;INTEGRA5:func.4:5integral177,6171
 
 integra7.abs,
-IntegralFuncs;INTEGRA7:func.1:1IntegralFuncs93,3816
-is_integral_of;INTEGRA7:pred.1:1is_integral_of102,4033
+IntegralFuncs;INTEGRA7:func.1:1IntegralFuncs94,3835
+is_integral_of;INTEGRA7:pred.1:1is_integral_of103,4052
 
 integra8.abs,
 Cst;INTEGRA8:func.1:1Cst157,4574
@@ -8443,6 +8715,30 @@ CPC-Taut;INTPRO_1:func.12:12CPC-Taut437,10720
 S4_theory;INTPRO_1:attr.10:10S4_theory492,12021
 CnS4;INTPRO_1:func.13:13CnS4512,12727
 S4-Taut;INTPRO_1:func.14:14S4-Taut519,12865
+
+intpro_2.abs,
+'equiv';INTPRO_2:func.1:1'equiv'41,1825
+Proof_Step_Kinds_IPC;INTPRO_2:func.2:2Proof_Step_Kinds_IPC47,1932
+is_a_correct_step_wrt_IPC;INTPRO_2:pred.1:1is_a_correct_step_wrt_IPC71,2488
+is_a_proof_wrt_IPC;INTPRO_2:pred.2:2is_a_proof_wrt_IPC92,3294
+Effect_IPC;INTPRO_2:func.3:3Effect_IPC129,4264
+|-_IPC;INTPRO_2:pred.3:3|-_IPC161,5026
+|-_IPC;INTPRO_2:pred.4:4|-_IPC169,5112
+valid_IPC;INTPRO_2:attr.1:1valid_IPC236,6375
+valid_IPC;INTPRO_2:attr.1:2valid_IPC243,6469
+{;INTPRO_2:func.4:4{311,8049
+{;INTPRO_2:func.5:5{316,8154
+{;INTPRO_2:func.6:6{321,8265
+{;INTPRO_2:func.7:7{326,8382
+{;INTPRO_2:func.8:8{331,8505
+{;INTPRO_2:func.9:9{336,8634
+{;INTPRO_2:func.10:10{341,8769
+{;INTPRO_2:func.11:11{346,8911
+neg;INTPRO_2:func.12:12neg594,15702
+neg^2;INTPRO_2:func.13:13neg^2601,15835
+neg^3;INTPRO_2:func.14:14neg^3608,15973
+neg^4;INTPRO_2:func.15:15neg^4615,16123
+neg^5;INTPRO_2:func.16:16neg^5622,16285
 
 irrat_1.abs,
 irrational;IRRAT_1:attr.0:1irrational45,1967
@@ -8649,12 +8945,12 @@ LT;JORDAN3:pred.3:3LT218,8015
 B_Cut;JORDAN3:func.4:4B_Cut255,9234
 
 jordan4.abs,
-S_Drop;JORDAN4:func.1:1S_Drop130,4359
-is_a_part>_of;JORDAN4:pred.1:1is_a_part>_of151,4935
-is_a_part<_of;JORDAN4:pred.2:2is_a_part<_of162,5272
-is_a_part_of;JORDAN4:pred.3:3is_a_part_of173,5612
-Lower;JORDAN4:func.2:2Lower348,12554
-Upper;JORDAN4:func.3:3Upper354,12824
+S_Drop;JORDAN4:func.1:1S_Drop87,2887
+is_a_part>_of;JORDAN4:pred.1:1is_a_part>_of108,3473
+is_a_part<_of;JORDAN4:pred.2:2is_a_part<_of118,3813
+is_a_part_of;JORDAN4:pred.3:3is_a_part_of128,4162
+Lower;JORDAN4:func.2:2Lower323,11468
+Upper;JORDAN4:func.3:3Upper329,11738
 
 jordan5c.abs,
 First_Point;JORDAN5C:func.1:1First_Point51,2288
@@ -8779,7 +9075,7 @@ Lim_inf;KURATO_2:func.1:1Lim_inf132,4859
 Lim_sup;KURATO_2:func.2:2Lim_sup227,8217
 
 lagra4sq.abs,
-a_sum_of_four_squares;LAGRA4SQ:attr.1:1a_sum_of_four_squares37,1753
+a_sum_of_four_squares;LAGRA4SQ:attr.1:1a_sum_of_four_squares37,1761
 MODMAP_;LAGRA4SQ:func.1:1MODMAP_72,2633
 LAG4SQf;LAGRA4SQ:func.2:2LAG4SQf78,2772
 LAG4SQg;LAGRA4SQ:func.3:3LAG4SQg84,2930
@@ -8902,25 +9198,25 @@ ClosedSubset;LATTAD_1:mode.0:4ClosedSubset573,16112
 latt;LATTAD_1:func.17:17latt579,16254
 
 lattba_1.abs,
-TBAStruct;LATTBA_1:struct.1:1TBAStruct31,1241
-TBALattStr;LATTBA_1:struct.2:2TBALattStr37,1383
-op3;LATTBA_1:func.1:1op344,1583
-Tern;LATTBA_1:func.2:2Tern55,1792
-ternary-distributive;LATTBA_1:attr.3:1ternary-distributive61,1957
-ternary-left-idempotent;LATTBA_1:attr.4:2ternary-left-idempotent65,2137
-ternary-right-idempotent;LATTBA_1:attr.5:3ternary-right-idempotent68,2263
-ternary-left-absorbing;LATTBA_1:attr.6:4ternary-left-absorbing71,2388
-ternary-right-absorbing;LATTBA_1:attr.7:5ternary-right-absorbing74,2515
-Ternary_Boolean_Algebra;LATTBA_1:mode.0:1Ternary_Boolean_Algebra88,2889
-JoinTBA;LATTBA_1:func.3:3JoinTBA99,3271
-MeetTBA;LATTBA_1:func.4:4MeetTBA103,3409
-TBA2BA;LATTBA_1:func.5:5TBA2BA111,3633
-Ros;LATTBA_1:func.6:6Ros168,5079
-RosTrn;LATTBA_1:func.7:7RosTrn174,5225
-BA2TBA;LATTBA_1:func.8:8BA2TBA181,5405
-BA2TBAA;LATTBA_1:func.9:9BA2TBAA187,5559
-satisfying_TBA1;LATTBA_1:attr.8:6satisfying_TBA1337,9568
-TBA-like;LATTBA_1:attr.9:7TBA-like355,10232
+TBAStruct;LATTBA_1:struct.1:1TBAStruct31,1246
+TBALattStr;LATTBA_1:struct.2:2TBALattStr37,1388
+op3;LATTBA_1:func.1:1op344,1588
+Tern;LATTBA_1:func.2:2Tern55,1797
+ternary-distributive;LATTBA_1:attr.3:1ternary-distributive61,1962
+ternary-left-idempotent;LATTBA_1:attr.4:2ternary-left-idempotent65,2142
+ternary-right-idempotent;LATTBA_1:attr.5:3ternary-right-idempotent68,2268
+ternary-left-absorbing;LATTBA_1:attr.6:4ternary-left-absorbing71,2393
+ternary-right-absorbing;LATTBA_1:attr.7:5ternary-right-absorbing74,2520
+Ternary_Boolean_Algebra;LATTBA_1:mode.0:1Ternary_Boolean_Algebra88,2894
+JoinTBA;LATTBA_1:func.3:3JoinTBA99,3276
+MeetTBA;LATTBA_1:func.4:4MeetTBA103,3414
+TBA2BA;LATTBA_1:func.5:5TBA2BA111,3638
+Ros;LATTBA_1:func.6:6Ros168,5084
+RosTrn;LATTBA_1:func.7:7RosTrn174,5230
+BA2TBA;LATTBA_1:func.8:8BA2TBA181,5410
+BA2TBAA;LATTBA_1:func.9:9BA2TBAA187,5564
+satisfying_TBA1;LATTBA_1:attr.8:6satisfying_TBA1337,9573
+TBA-like;LATTBA_1:attr.9:7TBA-like355,10237
 
 lattice2.abs,
 absorbs;LATTICE2:pred.1:1absorbs73,2080
@@ -9112,25 +9408,25 @@ meet-closed;LATTICES:attr.20:17meet-closed439,10772
 join-closed;LATTICES:attr.21:18join-closed442,10889
 
 latwal_1.abs,
-satisfying_W3;LATWAL_1:attr.1:1satisfying_W375,2669
-satisfying_W3';LATWAL_1:attr.2:2satisfying_W3'79,2806
-satisfying_W3;LATWAL_1:attr.1:3satisfying_W387,3040
-satisfying_W3';LATWAL_1:attr.2:4satisfying_W3'94,3203
-WeaklyAssociativeLattice;LATWAL_1:mode.0:1WeaklyAssociativeLattice119,3841
-WA_Lattice;LATWAL_1:mode.0:2WA_Lattice141,4614
-satisfying_WA;LATWAL_1:attr.3:5satisfying_WA151,4846
-ex123"/\";LATWAL_1:func.1:1ex123"/\"244,7218
-ex123"\/";LATWAL_1:func.2:2ex123"\/"248,7386
-ex123\/;LATWAL_1:func.3:3ex123\/255,7571
-ex123/\;LATWAL_1:func.4:4ex123/\258,7697
-ExNearLattice;LATWAL_1:func.5:5ExNearLattice268,7964
-NearLattice;LATWAL_1:mode.0:3NearLattice283,8312
-satisfying_WAL31;LATWAL_1:attr.4:6satisfying_WAL31346,10489
-satisfying_WAL32;LATWAL_1:attr.5:7satisfying_WAL32350,10627
-satisfying_WAL33;LATWAL_1:attr.6:8satisfying_WAL33354,10765
-satisfying_WAL34;LATWAL_1:attr.7:9satisfying_WAL34358,10903
-satisfying_WAL35;LATWAL_1:attr.8:10satisfying_WAL35362,11044
-satisfying_WAL4;LATWAL_1:attr.9:11satisfying_WAL4382,11643
+satisfying_W3;LATWAL_1:attr.1:1satisfying_W375,2674
+satisfying_W3';LATWAL_1:attr.2:2satisfying_W3'79,2811
+satisfying_W3;LATWAL_1:attr.1:3satisfying_W387,3045
+satisfying_W3';LATWAL_1:attr.2:4satisfying_W3'94,3208
+WeaklyAssociativeLattice;LATWAL_1:mode.0:1WeaklyAssociativeLattice119,3846
+WA_Lattice;LATWAL_1:mode.0:2WA_Lattice141,4619
+satisfying_WA;LATWAL_1:attr.3:5satisfying_WA151,4851
+ex123"/\";LATWAL_1:func.1:1ex123"/\"244,7238
+ex123"\/";LATWAL_1:func.2:2ex123"\/"248,7406
+ex123\/;LATWAL_1:func.3:3ex123\/255,7591
+ex123/\;LATWAL_1:func.4:4ex123/\258,7717
+ExNearLattice;LATWAL_1:func.5:5ExNearLattice268,7984
+NearLattice;LATWAL_1:mode.0:3NearLattice283,8332
+satisfying_WAL31;LATWAL_1:attr.4:6satisfying_WAL31345,10475
+satisfying_WAL32;LATWAL_1:attr.5:7satisfying_WAL32349,10613
+satisfying_WAL33;LATWAL_1:attr.6:8satisfying_WAL33353,10751
+satisfying_WAL34;LATWAL_1:attr.7:9satisfying_WAL34357,10889
+satisfying_WAL35;LATWAL_1:attr.8:10satisfying_WAL35361,11030
+satisfying_WAL4;LATWAL_1:attr.9:11satisfying_WAL4381,11629
 
 leibniz1.abs,
 alternating_series;LEIBNIZ1:func.1:1alternating_series90,3304
@@ -9243,18 +9539,18 @@ is_divergent_to-infty_in;LIMFUNC3:pred.3:3is_divergent_to-infty_in91,3579
 lim;LIMFUNC3:func.1:1lim211,9108
 
 liouvil1.abs,
-|_;LIOUVIL1:func.1:1|_131,4529
-FinSeq;LIOUVIL1:func.2:2FinSeq152,5027
-eventually-non-zero;LIOUVIL1:attr.1:1eventually-non-zero197,6238
-powerfact;LIOUVIL1:func.3:3powerfact228,6948
-liouville;LIOUVIL1:attr.2:2liouville257,7638
-Liouville_seq;LIOUVIL1:func.4:4Liouville_seq271,8031
-Liouville_constant;LIOUVIL1:func.5:5Liouville_constant288,8379
-BLiouville_seq;LIOUVIL1:func.6:6BLiouville_seq294,8502
-ALiouville_seq;LIOUVIL1:func.7:7ALiouville_seq304,8738
-Liouville_constant;LIOUVIL1:func.8:8Liouville_constant376,11177
-Liouville;LIOUVIL1:mode.0:1Liouville395,11576
-LiouvilleNumbers;LIOUVIL1:func.9:9LiouvilleNumbers417,12088
+|_;LIOUVIL1:func.1:1|_132,4542
+FinSeq;LIOUVIL1:func.2:2FinSeq153,5040
+eventually-non-zero;LIOUVIL1:attr.1:1eventually-non-zero198,6251
+powerfact;LIOUVIL1:func.3:3powerfact229,6961
+liouville;LIOUVIL1:attr.2:2liouville258,7651
+Liouville_seq;LIOUVIL1:func.4:4Liouville_seq272,8044
+Liouville_constant;LIOUVIL1:func.5:5Liouville_constant289,8392
+BLiouville_seq;LIOUVIL1:func.6:6BLiouville_seq295,8515
+ALiouville_seq;LIOUVIL1:func.7:7ALiouville_seq305,8751
+Liouville_constant;LIOUVIL1:func.8:8Liouville_constant377,11190
+Liouville;LIOUVIL1:mode.0:1Liouville396,11589
+LiouvilleNumbers;LIOUVIL1:func.9:9LiouvilleNumbers418,12101
 
 lmod_6.abs,
 Submodules;LMOD_6:func.0:1Submodules44,1533
@@ -9293,6 +9589,42 @@ LMULT;LMOD_7:func.16:16LMULT376,9099
 /;LMOD_7:func.17:17/387,9270
 /;LMOD_7:func.18:18/405,9612
 
+lmod_xx1.abs,
+ADD;LMOD_XX1:func.1:1ADD39,1777
+set_End;LMOD_XX1:func.2:2set_End58,2353
+add_End;LMOD_XX1:func.3:3add_End66,2559
+*;LMOD_XX1:func.4:4*83,3055
+FuncComp;LMOD_XX1:func.5:5FuncComp89,3215
+mult_End;LMOD_XX1:func.6:6mult_End108,3774
+0_End;LMOD_XX1:func.7:70_End122,4196
+1_End;LMOD_XX1:func.8:81_End125,4276
+Inv;LMOD_XX1:func.9:9Inv133,4419
+End_Ring;LMOD_XX1:func.10:10End_Ring145,4751
+Homomorphism;LMOD_XX1:mode.1:1Homomorphism172,5447
+~=;LMOD_XX1:pred.1:1~=185,5759
+Endomorphism;LMOD_XX1:mode.0:2Endomorphism193,5906
+~=;LMOD_XX1:pred.2:2~=205,6155
+LModlmult;LMOD_XX1:func.11:11LModlmult220,6501
+AbGrLMod;LMOD_XX1:func.12:12AbGrLMod233,6843
+0_Funcs;LMOD_XX1:func.13:130_Funcs247,7286
+ADD;LMOD_XX1:func.14:14ADD255,7435
+[;];LMOD_XX1:func.15:15[;]274,8034
+LMULT;LMOD_XX1:func.16:16LMULT280,8149
+Func_Mod;LMOD_XX1:func.17:17Func_Mod292,8520
+*;LMOD_XX1:func.18:18*330,9698
+set_Hom;LMOD_XX1:func.19:19set_Hom346,10185
+add_Hom;LMOD_XX1:func.20:20add_Hom354,10391
+[;];LMOD_XX1:func.21:21[;]364,10684
+lmult_Hom;LMOD_XX1:func.22:22lmult_Hom370,10799
+0_Hom;LMOD_XX1:func.23:230_Hom378,10992
+Hom;LMOD_XX1:func.24:24Hom385,11109
+tau;LMOD_XX1:func.25:25tau426,12268
+phi;LMOD_XX1:func.26:26phi447,12767
+AbGr;LMOD_XX1:func.27:27AbGr472,13429
+AbGr;LMOD_XX1:func.28:28AbGr480,13619
+canHom;LMOD_XX1:func.29:29canHom524,15126
+rho;LMOD_XX1:func.30:30rho563,16219
+
 lopban10.abs,
 reproj;LOPBAN10:func.1:1reproj44,2070
 reproj;LOPBAN10:func.2:2reproj76,2890
@@ -9327,6 +9659,17 @@ lopban13.abs,
 invertible;LOPBAN13:attr.1:1invertible44,2066
 Inv;LOPBAN13:func.1:1Inv55,2359
 InvertibleOperators;LOPBAN13:func.2:2InvertibleOperators173,6147
+
+lopban14.abs,
+IsoCPRLSP;LOPBAN14:func.1:1IsoCPRLSP43,2056
+";LOPBAN14:func.2:2"67,2588
+IsoCPNrSP;LOPBAN14:func.3:3IsoCPNrSP168,5421
+";LOPBAN14:func.4:4"193,5986
+NestingLB;LOPBAN14:func.5:5NestingLB382,11405
+NestMult;LOPBAN14:func.6:6NestMult465,14005
+
+lopban15.abs,
+RLSp2RVSp;LOPBAN15:func.1:1RLSp2RVSp152,5274
 
 lopban_1.abs,
 [;];LOPBAN_1:func.1:1[;]45,2185
@@ -10128,6 +10471,27 @@ B-Meas;MEASUR12:func.13:13B-Meas508,17567
 L-Field;MEASUR12:func.14:14L-Field523,17932
 L-Meas;MEASUR12:func.15:15L-Meas529,18041
 
+measur13.abs,
+ElmFin;MEASUR13:func.1:1ElmFin39,1833
+sigmaFieldFamily;MEASUR13:mode.1:1sigmaFieldFamily46,1968
+ProdFinSeq;MEASUR13:func.2:2ProdFinSeq58,2353
+CarProduct;MEASUR13:func.3:3CarProduct66,2595
+SubFin;MEASUR13:func.4:4SubFin84,3032
+SubFin;MEASUR13:func.5:5SubFin93,3241
+ElmFin;MEASUR13:func.6:6ElmFin102,3452
+sigmaFieldFamily;MEASUR13:mode.2:2sigmaFieldFamily109,3610
+sigmaMeasureFamily;MEASUR13:mode.3:3sigmaMeasureFamily115,3785
+SubFin;MEASUR13:func.7:7SubFin125,4129
+ElmFin;MEASUR13:func.8:8ElmFin134,4372
+ProdSigmaFldFinSeq;MEASUR13:func.9:9ProdSigmaFldFinSeq221,7513
+Prod_Field;MEASUR13:func.10:10Prod_Field238,8086
+ProdSigmaMesFinSeq;MEASUR13:func.11:11ProdSigmaMesFinSeq257,8762
+Prod_Measure;MEASUR13:func.12:12Prod_Measure274,9410
+sigma_finite;MEASUR13:attr.1:1sigma_finite282,9656
+ProjPMap1;MEASUR13:func.13:13ProjPMap1372,13519
+FSqIntg;MEASUR13:func.14:14FSqIntg432,16357
+is_Sequentially_integrable_on;MEASUR13:pred.1:1is_Sequentially_integrable_on445,16838
+
 measure1.abs,
 \;MEASURE1:func.0:1\54,2079
 compl-closed;MEASURE1:attr.0:1compl-closed74,2470
@@ -10366,8 +10730,8 @@ is_a.e.integrable_on;MESFUN13:pred.1:1is_a.e.integrable_on161,5964
 is_a.e.finite;MESFUN13:pred.2:2is_a.e.finite177,6435
 
 mesfun14.abs,
-.;MESFUN14:func.1:1.93,4205
-EqDiv;MESFUN14:func.2:2EqDiv156,6609
+.;MESFUN14:func.1:1.93,4210
+EqDiv;MESFUN14:func.2:2EqDiv156,6614
 
 mesfun6c.abs,
 -measurable;MESFUN6C:attr.1:1-measurable57,2235
@@ -10460,11 +10824,11 @@ is_integrable_on;MESFUNC5:pred.1:1is_integrable_on732,28915
 Integral_on;MESFUNC5:func.8:8Integral_on833,33112
 
 mesfunc6.abs,
--measurable;MESFUNC6:attr.1:1-measurable97,3496
-is_simple_func_in;MESFUNC6:pred.1:1is_simple_func_in260,7844
-Integral;MESFUNC6:func.1:1Integral404,12077
-is_integrable_on;MESFUNC6:pred.2:2is_integrable_on447,13440
-Integral_on;MESFUNC6:func.2:2Integral_on508,15424
+-measurable;MESFUNC6:attr.1:1-measurable97,3506
+is_simple_func_in;MESFUNC6:pred.1:1is_simple_func_in260,7854
+Integral;MESFUNC6:func.1:1Integral403,12087
+is_integrable_on;MESFUNC6:pred.2:2is_integrable_on446,13450
+Integral_on;MESFUNC6:func.2:2Integral_on507,15434
 
 mesfunc7.abs,
 extreal-yielding;MESFUNC7:attr.0:1extreal-yielding80,3048
@@ -11069,14 +11433,14 @@ chosen_next;MODELC_3:func.36:36chosen_next837,23424
 chosen_run;MODELC_3:func.37:37chosen_run852,23810
 
 moebius1.abs,
-square-containing;MOEBIUS1:attr.1:1square-containing133,4672
-square-free;MOEBIUS1:attr.1:2square-free145,4928
-SCNAT;MOEBIUS1:func.1:1SCNAT162,5232
-Moebius;MOEBIUS1:func.2:2Moebius204,6366
-NatDivisors;MOEBIUS1:func.3:3NatDivisors251,7422
-SMoebius;MOEBIUS1:func.4:4SMoebius276,7948
-PFactors;MOEBIUS1:func.5:5PFactors308,8696
-Radical;MOEBIUS1:func.6:6Radical352,9870
+square-containing;MOEBIUS1:attr.1:1square-containing133,4616
+square-free;MOEBIUS1:attr.1:2square-free145,4872
+SCNAT;MOEBIUS1:func.1:1SCNAT162,5165
+Moebius;MOEBIUS1:func.2:2Moebius204,6299
+NatDivisors;MOEBIUS1:func.3:3NatDivisors251,7321
+SMoebius;MOEBIUS1:func.4:4SMoebius274,7832
+PFactors;MOEBIUS1:func.5:5PFactors306,8569
+Radical;MOEBIUS1:func.6:6Radical350,9723
 
 moebius2.abs,
 ReciPrime;MOEBIUS2:func.1:1ReciPrime142,4585
@@ -11295,20 +11659,20 @@ context;MSAFREE5:mode.0:4context854,21656
 Hom;MSAFREE5:func.22:23Hom1097,28033
 struct-invariant;MSAFREE5:attr.14:14struct-invariant1142,29273
 -reachable;MSAFREE5:attr.15:15-reachable1220,31886
-.;MSAFREE5:func.23:24.1245,32366
-basic;MSAFREE5:attr.16:16basic1250,32463
-transl;MSAFREE5:func.24:25transl1257,32592
-.;MSAFREE5:func.25:26.1344,35488
--sorts;MSAFREE5:attr.17:17-sorts1351,35635
-.;MSAFREE5:func.26:27.1373,36188
--sorts;MSAFREE5:attr.18:18-sorts1380,36340
-.;MSAFREE5:func.27:28.1403,36947
--context-sequence;MSAFREE5:attr.19:19-context-sequence1411,37175
-.;MSAFREE5:func.28:29.1456,38686
--omitting;MSAFREE5:attr.20:20-omitting1463,38854
--consequent-context-sequence;MSAFREE5:attr.21:21-consequent-context-sequence1468,39028
--omitting;MSAFREE5:attr.22:22-omitting1479,39366
-vf-sequence;MSAFREE5:mode.2:5vf-sequence1500,39997
+.;MSAFREE5:func.23:24.1246,32406
+basic;MSAFREE5:attr.16:16basic1251,32503
+transl;MSAFREE5:func.24:25transl1258,32632
+.;MSAFREE5:func.25:26.1345,35528
+-sorts;MSAFREE5:attr.17:17-sorts1352,35675
+.;MSAFREE5:func.26:27.1374,36228
+-sorts;MSAFREE5:attr.18:18-sorts1381,36380
+.;MSAFREE5:func.27:28.1404,36987
+-context-sequence;MSAFREE5:attr.19:19-context-sequence1412,37215
+.;MSAFREE5:func.28:29.1457,38726
+-omitting;MSAFREE5:attr.20:20-omitting1464,38894
+-consequent-context-sequence;MSAFREE5:attr.21:21-consequent-context-sequence1469,39068
+-omitting;MSAFREE5:attr.22:22-omitting1480,39406
+vf-sequence;MSAFREE5:mode.2:5vf-sequence1501,40037
 
 msafree.abs,
 ||;MSAFREE:func.1:1||47,1896
@@ -11712,35 +12076,35 @@ lower_bound;NAGATA_2:func.3:3lower_bound95,3934
 nat_1.abs,
 +;NAT_1:func.1:1+57,1970
 *;NAT_1:func.2:2*78,2385
-min*;NAT_1:func.3:3min*261,6971
-sequence;NAT_1:mode.0:1sequence308,7860
-min;NAT_1:func.4:4min380,9788
-max;NAT_1:func.5:5max381,9832
-^\;NAT_1:func.6:6^\396,10246
-^\;NAT_1:func.7:7^\410,10551
-.;NAT_1:func.8:8.488,12211
-.;NAT_1:func.9:9.527,13397
-.;NAT_1:func.10:10.534,13553
+min*;NAT_1:func.3:3min*261,6960
+sequence;NAT_1:mode.0:1sequence308,7849
+min;NAT_1:func.4:4min380,9777
+max;NAT_1:func.5:5max381,9821
+^\;NAT_1:func.6:6^\396,10235
+^\;NAT_1:func.7:7^\410,10540
+.;NAT_1:func.8:8.488,12200
+.;NAT_1:func.9:9.527,13386
+.;NAT_1:func.10:10.534,13542
 
 nat_2.abs,
 trivial;NAT_2:attr.0:1trivial129,3532
 
 nat_3.abs,
-|^;NAT_3:func.1:1|^86,2751
-|^;NAT_3:func.2:2|^107,3154
-|^;NAT_3:func.3:3|^113,3265
-*;NAT_3:func.4:4*146,3877
-min;NAT_3:func.5:5min180,4656
-max;NAT_3:func.6:6max212,5440
-Product;NAT_3:func.7:7Product248,6330
-Product;NAT_3:func.8:8Product256,6508
-|^;NAT_3:func.9:9|^265,6781
-|-count;NAT_3:func.10:10|-count291,7353
-|-count;NAT_3:func.11:11|-count299,7486
-prime_exponents;NAT_3:func.12:12prime_exponents347,8658
-pfexp;NAT_3:func.12:13pfexp355,8812
-prime_factorization;NAT_3:func.13:14prime_factorization460,11098
-ppf;NAT_3:func.13:15ppf469,11325
+|^;NAT_3:func.1:1|^86,2759
+|^;NAT_3:func.2:2|^107,3162
+|^;NAT_3:func.3:3|^113,3273
+*;NAT_3:func.4:4*146,3885
+min;NAT_3:func.5:5min180,4664
+max;NAT_3:func.6:6max212,5447
+Product;NAT_3:func.7:7Product248,6336
+Product;NAT_3:func.8:8Product256,6514
+|^;NAT_3:func.9:9|^265,6787
+|-count;NAT_3:func.10:10|-count291,7359
+|-count;NAT_3:func.11:11|-count299,7492
+prime_exponents;NAT_3:func.12:12prime_exponents345,8659
+pfexp;NAT_3:func.12:13pfexp353,8813
+prime_factorization;NAT_3:func.13:14prime_factorization456,11095
+ppf;NAT_3:func.13:15ppf464,11323
 
 nat_4.abs,
 |-count;NAT_4:func.1:1|-count226,7253
@@ -11756,16 +12120,16 @@ perfect;NAT_5:attr.2:2perfect259,7466
 Euler_phi;NAT_5:func.6:6Euler_phi280,7920
 
 nat_6.abs,
-_greater;NAT_6:attr.1:1_greater172,5080
-_smaller;NAT_6:attr.0:2_smaller179,5178
-_or_smaller;NAT_6:attr.1:3_or_smaller180,5226
-Divisor;NAT_6:mode.1:1Divisor255,6909
-is_quadratic_non_residue_mod;NAT_6:pred.0:1is_quadratic_non_residue_mod311,8085
-LegendreSymbol;NAT_6:func.1:1LegendreSymbol328,8508
-LegendreSymbol;NAT_6:func.1:2LegendreSymbol338,8799
-Leg;NAT_6:func.1:3Leg348,9055
-Proth;NAT_6:attr.2:4Proth399,10430
-CullenNumber;NAT_6:func.2:4CullenNumber479,11930
+_greater;NAT_6:attr.1:1_greater172,4630
+_smaller;NAT_6:attr.0:2_smaller184,4784
+_or_smaller;NAT_6:attr.1:3_or_smaller185,4832
+Divisor;NAT_6:mode.1:1Divisor264,6240
+is_quadratic_non_residue_mod;NAT_6:pred.0:1is_quadratic_non_residue_mod320,7288
+LegendreSymbol;NAT_6:func.1:1LegendreSymbol337,7668
+LegendreSymbol;NAT_6:func.1:2LegendreSymbol347,7930
+Leg;NAT_6:func.1:3Leg357,8168
+Proth;NAT_6:attr.2:4Proth408,9389
+CullenNumber;NAT_6:func.2:4CullenNumber491,10802
 
 nat_d.abs,
 div;NAT_D:func.1:1div33,1247
@@ -11861,7 +12225,11 @@ contraction;NCFCONT2:attr.1:1contraction280,9557
 Contraction;NCFCONT2:mode.0:1Contraction294,9853
 
 ndiff10.abs,
-Exch;NDIFF10:func.1:1Exch102,3360
+Exch;NDIFF10:func.1:1Exch102,3365
+
+ndiff11.abs,
+Jacobian;NDIFF11:func.1:1Jacobian335,10067
+Jacobian;NDIFF11:func.2:2Jacobian354,10531
 
 ndiff_1.abs,
 non-zero;NDIFF_1:attr.0:1non-zero75,3017
@@ -12034,6 +12402,15 @@ Ext;NET_1:func.11:11Ext252,6983
 Input;NET_1:func.12:12Input270,7489
 Output;NET_1:func.13:13Output273,7556
 
+neurons1.abs,
+is_Multilayer_perceptron_with;NEURONS1:pred.1:1is_Multilayer_perceptron_with310,8991
+Multilayer_perceptron_like;NEURONS1:attr.1:1Multilayer_perceptron_like320,9236
+Multilayer_perceptron;NEURONS1:mode.0:1Multilayer_perceptron335,9545
+OutPutFunc;NEURONS1:func.1:1OutPutFunc354,9984
+NEURONS;NEURONS1:func.2:2NEURONS388,10926
+is_LayerFunc;NEURONS1:pred.2:2is_LayerFunc452,12923
+is_LayerFunc_Seq;NEURONS1:pred.3:3is_LayerFunc_Seq464,13188
+
 newton02.abs,
 \;NEWTON02:func.1:1\623,15040
 
@@ -12042,15 +12419,15 @@ trivial;NEWTON03:attr.0:1trivial51,1953
 ^2;NEWTON03:func.1:1^258,2053
 gcd;NEWTON03:func.2:2gcd65,2152
 lcm;NEWTON03:func.3:3lcm68,2227
-odd;NEWTON03:attr.0:2odd264,5560
-|-count;NEWTON03:func.4:4|-count667,14803
-|-count;NEWTON03:func.4:5|-count676,14967
+odd;NEWTON03:attr.0:2odd268,5547
+|-count;NEWTON03:func.4:4|-count670,14643
+|-count;NEWTON03:func.4:5|-count679,14807
 
 newton04.abs,
-min;NEWTON04:func.1:1min142,4069
-max;NEWTON04:func.2:2max143,4102
-Subnomial;NEWTON04:func.3:3Subnomial527,13407
-Subnomial;NEWTON04:func.4:4Subnomial598,15063
+min;NEWTON04:func.1:1min127,3432
+max;NEWTON04:func.2:2max128,3465
+Subnomial;NEWTON04:func.3:3Subnomial511,12852
+Subnomial;NEWTON04:func.4:4Subnomial582,14508
 
 newton05.abs,
 parity;NEWTON05:func.1:1parity212,6123
@@ -12067,10 +12444,9 @@ In_Power;NEWTON:func.5:5In_Power220,4622
 Newton_Coeff;NEWTON:func.6:6Newton_Coeff241,5075
 !;NEWTON:func.7:7!265,5505
 SetPrimes;NEWTON:func.8:8SetPrimes379,7632
-Prime;NEWTON:mode.0:1Prime391,7834
-SetPrimenumber;NEWTON:func.9:9SetPrimenumber398,7925
-primenumber;NEWTON:func.10:10primenumber452,8920
-|^;NEWTON:func.11:11|^501,9882
+SetPrimenumber;NEWTON:func.9:9SetPrimenumber393,7856
+primenumber;NEWTON:func.10:10primenumber447,8881
+|^;NEWTON:func.11:11|^496,9833
 
 nfcont_1.abs,
 Neighbourhood;NFCONT_1:mode.1:1Neighbourhood53,2095
@@ -12374,7 +12750,75 @@ BinBranch;NTALGO_2:func.4:4BinBranch60,2370
 ALGO_BPOW;NTALGO_2:func.5:5ALGO_BPOW65,2461
 
 number02.abs,
-composite;NUMBER02:attr.1:1composite201,5481
+composite;NUMBER02:attr.1:1composite194,5370
+
+number03.abs,
+are_mutually_coprime;NUMBER03:pred.1:1are_mutually_coprime273,7498
+are_mutually_coprime;NUMBER03:pred.2:2are_mutually_coprime277,7631
+
+number04.abs,
+double_odd;NUMBER04:attr.1:1double_odd129,4036
+double_odd;NUMBER04:attr.1:2double_odd136,4153
+OddEvenPowers;NUMBER04:func.1:1OddEvenPowers161,4552
+
+number05.abs,
+4k+3_Primes;NUMBER05:func.1:14k+3_Primes62,2146
+satisfy_Sierpinski_problem_35;NUMBER05:pred.1:1satisfy_Sierpinski_problem_35131,3808
+satisfies_Sierpinski_problem_76a;NUMBER05:pred.2:2satisfies_Sierpinski_problem_76a175,4858
+satisfies_Sierpinski_problem_76b;NUMBER05:pred.3:3satisfies_Sierpinski_problem_76b182,5013
+
+number06.abs,
+with_all_coprime_terms;NUMBER06:attr.1:1with_all_coprime_terms54,2082
+AP-like;NUMBER06:attr.2:2AP-like68,2421
+fAP-like;NUMBER06:attr.3:3fAP-like76,2644
+Arithmetic_Progression;NUMBER06:mode.0:1Arithmetic_Progression119,3454
+ArProg;NUMBER06:func.1:1ArProg125,3592
+difference;NUMBER06:func.2:2difference141,3955
+Fibonacci;NUMBER06:attr.4:4Fibonacci235,6176
+Fibonacci-valued;NUMBER06:attr.5:5Fibonacci-valued280,7089
+triangular-valued;NUMBER06:attr.6:6triangular-valued322,8123
+form_an_AP;NUMBER06:pred.1:1form_an_AP365,9247
+perfect_power;NUMBER06:attr.7:7perfect_power439,11211
+not_representable_by_sum_or_difference_of_two_primes;NUMBER06:attr.8:8not_representable_by_sum_or_difference_of_two_primes562,14859
+with_terms_not_representable_by_sum_or_diff_of_two_primes;NUMBER06:attr.9:9with_terms_not_representable_by_sum_or_diff_of_two_primes569,15074
+
+number07.abs,
+satisfies_Sierpinski_problem_48;NUMBER07:pred.1:1satisfies_Sierpinski_problem_48208,6142
+satisfies_Sierpinski_problem_87a;NUMBER07:pred.2:2satisfies_Sierpinski_problem_87a239,6920
+satisfies_Sierpinski_problem_87b;NUMBER07:pred.3:3satisfies_Sierpinski_problem_87b242,7058
+has_exactly_two_different_prime_divisors;NUMBER07:pred.4:4has_exactly_two_different_prime_divisors292,8040
+is_a_product_of_two_different_primes;NUMBER07:pred.5:5is_a_product_of_two_different_primes300,8274
+satisfies_Sierpinski_problem_89;NUMBER07:pred.6:6satisfies_Sierpinski_problem_89331,9124
+
+number08.abs,
+Euler_factorization;NUMBER08:func.1:1Euler_factorization135,4450
+Euler_factorization_1;NUMBER08:func.2:2Euler_factorization_1210,6458
+Euler_factorization_2;NUMBER08:func.3:3Euler_factorization_2247,7324
+<=;NUMBER08:pred.1:1<=299,8685
+satisfies_Sierpinski_problem_86;NUMBER08:pred.2:2satisfies_Sierpinski_problem_86418,12176
+having_exactly_one_prime_divisor;NUMBER08:attr.1:1having_exactly_one_prime_divisor513,14206
+the_only_divisor_of;NUMBER08:func.4:4the_only_divisor_of523,14439
+having_at_least_three_different_prime_divisors;NUMBER08:attr.2:2having_at_least_three_different_prime_divisors574,15612
+satisfies_Sierpinski_problem_105;NUMBER08:pred.3:3satisfies_Sierpinski_problem_105582,15845
+recSeqCart;NUMBER08:func.5:5recSeqCart724,18964
+
+number09.abs,
+included_in_Seg;NUMBER09:attr.1:1included_in_Seg84,2899
+Coprimes;NUMBER09:func.1:1Coprimes117,3487
+a_product_of_two_primes;NUMBER09:attr.2:2a_product_of_two_primes159,4756
+not_a_product_of_two_primes;NUMBER09:attr.2:3not_a_product_of_two_primes166,4888
+having_at_least_three_different_divisors;NUMBER09:attr.3:4having_at_least_three_different_divisors227,6233
+GreaterOrEqualsNumbers;NUMBER09:func.2:2GreaterOrEqualsNumbers352,9087
+
+number10.abs,
+are_twin;NUMBER10:pred.1:1are_twin68,2672
+are_not_twin;NUMBER10:pred.1:2are_not_twin77,2797
+<=6n+1;NUMBER10:func.1:1<=6n+185,2936
+LP<=6n+1;NUMBER10:func.2:2LP<=6n+1129,3892
+primeindex;NUMBER10:func.3:3primeindex152,4357
+6n+1_Primes;NUMBER10:func.4:46n+1_Primes205,5576
+a_product_of_three_different_primes;NUMBER10:attr.1:1a_product_of_three_different_primes229,6014
+powersFS;NUMBER10:func.5:5powersFS298,7625
 
 numbers.abs,
 NAT;NUMBERS:func.0:1NAT31,1204
@@ -12394,22 +12838,22 @@ EvenNAT;NUMERAL2:func.3:1EvenNAT67,2791
 OddNAT;NUMERAL2:func.4:2OddNAT73,2888
 
 numpoly1.abs,
-Triangle;NUMPOLY1:func.1:1Triangle114,3505
-triangular;NUMPOLY1:attr.1:1triangular120,3607
-Polygon;NUMPOLY1:func.2:2Polygon213,5391
--gonal;NUMPOLY1:attr.2:2-gonal226,5689
-polygonal;NUMPOLY1:attr.3:3polygonal232,5808
-IndexPoly;NUMPOLY1:func.3:3IndexPoly263,6412
-CenterPolygon;NUMPOLY1:func.4:4CenterPolygon296,7320
-NPower;NUMPOLY1:func.5:5NPower419,10016
-PolygonalNumbers;NUMPOLY1:func.6:6PolygonalNumbers480,11602
-PolygonalNumbers;NUMPOLY1:func.7:7PolygonalNumbers486,11752
-TriangularNumbers;NUMPOLY1:func.8:8TriangularNumbers490,11822
-SquareNumbers;NUMPOLY1:func.9:9SquareNumbers493,11914
-mersenne;NUMPOLY1:attr.4:4mersenne537,12871
-ReciTriangRS;NUMPOLY1:func.10:10ReciTriangRS619,14367
-SumsReciTriang;NUMPOLY1:func.11:11SumsReciTriang636,14687
-geo-seq;NUMPOLY1:func.12:12geo-seq640,14821
+Triangle;NUMPOLY1:func.1:1Triangle119,3588
+triangular;NUMPOLY1:attr.1:1triangular125,3689
+Polygon;NUMPOLY1:func.2:2Polygon214,5407
+-gonal;NUMPOLY1:attr.2:2-gonal227,5716
+polygonal;NUMPOLY1:attr.3:3polygonal233,5835
+IndexPoly;NUMPOLY1:func.3:3IndexPoly269,6523
+CenterPolygon;NUMPOLY1:func.4:4CenterPolygon302,7431
+NPower;NUMPOLY1:func.5:5NPower430,10202
+PolygonalNumbers;NUMPOLY1:func.6:6PolygonalNumbers491,11788
+PolygonalNumbers;NUMPOLY1:func.7:7PolygonalNumbers497,11938
+TriangularNumbers;NUMPOLY1:func.8:8TriangularNumbers501,12008
+SquareNumbers;NUMPOLY1:func.9:9SquareNumbers504,12100
+mersenne;NUMPOLY1:attr.4:4mersenne548,13057
+ReciTriangRS;NUMPOLY1:func.10:10ReciTriangRS630,14553
+SumsReciTriang;NUMPOLY1:func.11:11SumsReciTriang646,14867
+geo-seq;NUMPOLY1:func.12:12geo-seq650,15001
 
 openlatt.abs,
 Topology_of;OPENLATT:func.1:1Topology_of49,1734
@@ -12593,27 +13037,27 @@ ordinal1.abs,
 succ;ORDINAL1:func.1:1succ38,1275
 epsilon-transitive;ORDINAL1:attr.1:1epsilon-transitive68,1716
 epsilon-connected;ORDINAL1:attr.2:2epsilon-connected72,1804
-ordinal;ORDINAL1:attr.3:3ordinal88,2085
-Number;ORDINAL1:mode.0:1Number99,2348
-number;ORDINAL1:mode.0:2number100,2377
-Ordinal;ORDINAL1:mode.0:3Ordinal112,2518
-c=;ORDINAL1:pred.1:1c=136,3048
-limit_ordinal;ORDINAL1:attr.4:4limit_ordinal222,4826
-Sequence-like;ORDINAL1:attr.5:5Sequence-like242,5158
-Sequence;ORDINAL1:mode.0:4Sequence253,5340
-Sequence;ORDINAL1:mode.0:5Sequence263,5470
-c=-linear;ORDINAL1:attr.6:6c=-linear293,6008
-On;ORDINAL1:func.2:2On334,7142
-Lim;ORDINAL1:func.3:3Lim338,7248
-omega;ORDINAL1:func.4:4omega349,7502
-natural;ORDINAL1:attr.7:7natural362,7747
-Nat;ORDINAL1:mode.0:6Nat374,7900
-0;ORDINAL1:func.5:50439,9019
-zero;ORDINAL1:attr.8:8zero450,9145
-non-zero;ORDINAL1:attr.9:9non-zero475,9523
-with_zero;ORDINAL1:attr.10:10with_zero481,9617
-without_zero;ORDINAL1:attr.10:11without_zero487,9702
-Segm;ORDINAL1:func.6:6Segm533,10662
+ordinal;ORDINAL1:attr.3:3ordinal88,2082
+Number;ORDINAL1:mode.0:1Number99,2341
+number;ORDINAL1:mode.0:2number100,2370
+Ordinal;ORDINAL1:mode.0:3Ordinal108,2462
+c=;ORDINAL1:pred.1:1c=132,2992
+limit_ordinal;ORDINAL1:attr.4:4limit_ordinal218,4770
+Sequence-like;ORDINAL1:attr.5:5Sequence-like238,5102
+Sequence;ORDINAL1:mode.0:4Sequence249,5284
+Sequence;ORDINAL1:mode.0:5Sequence259,5414
+c=-linear;ORDINAL1:attr.6:6c=-linear289,5952
+On;ORDINAL1:func.2:2On330,7086
+Lim;ORDINAL1:func.3:3Lim334,7192
+omega;ORDINAL1:func.4:4omega345,7446
+natural;ORDINAL1:attr.7:7natural358,7691
+Nat;ORDINAL1:mode.0:6Nat370,7844
+0;ORDINAL1:func.5:50435,8963
+zero;ORDINAL1:attr.8:8zero446,9089
+non-zero;ORDINAL1:attr.9:9non-zero471,9467
+with_zero;ORDINAL1:attr.10:10with_zero477,9561
+without_zero;ORDINAL1:attr.10:11without_zero483,9646
+Segm;ORDINAL1:func.6:6Segm529,10606
 
 ordinal2.abs,
 last;ORDINAL2:func.1:1last59,1640
@@ -13304,10 +13748,10 @@ PairSetFamily;PENCIL_4:func.10:10PairSetFamily285,9403
 VeroneseSpace;PENCIL_4:func.11:11VeroneseSpace301,9763
 
 pepin.abs,
-^2;PEPIN:func.1:1^2164,4547
-Crypto;PEPIN:func.2:2Crypto190,5036
-order;PEPIN:func.3:3order207,5405
-Fermat;PEPIN:func.4:4Fermat232,5957
+^2;PEPIN:func.1:1^2163,4543
+Crypto;PEPIN:func.2:2Crypto189,5032
+order;PEPIN:func.3:3order206,5401
+Fermat;PEPIN:func.4:4Fermat229,5940
 
 peterson.abs,
 Values_with_TF;PETERSON:struct.1:1Values_with_TF35,1403
@@ -13564,14 +14008,22 @@ Subst;POLNOT_1:func.37:38Subst940,23775
 Subst;POLNOT_1:func.38:39Subst953,24176
 
 polyalg1.abs,
-AlgebraStr;POLYALG1:struct.1:1AlgebraStr39,1766
-mix-associative;POLYALG1:attr.2:1mix-associative53,2195
-Algebra;POLYALG1:mode.0:1Algebra67,2589
-Formal-Series;POLYALG1:func.1:1Formal-Series82,3054
-Subalgebra;POLYALG1:mode.1:2Subalgebra187,6361
-opers_closed;POLYALG1:attr.3:2opers_closed235,7762
-GenAlg;POLYALG1:func.2:2GenAlg277,9461
-Polynom-Algebra;POLYALG1:func.3:3Polynom-Algebra295,10002
+AlgebraStr;POLYALG1:struct.1:1AlgebraStr39,1786
+mix-associative;POLYALG1:attr.2:1mix-associative53,2215
+Algebra;POLYALG1:mode.0:1Algebra67,2609
+Formal-Series;POLYALG1:func.1:1Formal-Series82,3074
+Subalgebra;POLYALG1:mode.1:2Subalgebra187,6381
+opers_closed;POLYALG1:attr.3:2opers_closed235,7782
+GenAlg;POLYALG1:func.2:2GenAlg277,9481
+Polynom-Algebra;POLYALG1:func.3:3Polynom-Algebra295,10022
+
+polyalgx.abs,
+NBag1;POLYALGX:func.1:1NBag184,3340
+BagN1;POLYALGX:func.2:2BagN190,3474
+Formal-Series;POLYALGX:func.3:3Formal-Series129,4433
+BSFSeri;POLYALGX:func.4:4BSFSeri219,7073
+SBFSeri;POLYALGX:func.5:5SBFSeri267,8403
+BSPoly;POLYALGX:func.6:6BSPoly335,10270
 
 polydiff.abs,
 `|;POLYDIFF:func.1:1`|86,3025
@@ -13675,25 +14127,24 @@ eval;POLYNOM2:func.2:2eval146,6025
 Polynom-Evaluation;POLYNOM2:func.3:3Polynom-Evaluation201,8395
 
 polynom3.abs,
-Del;POLYNOM3:func.1:1Del61,2720
-<*;POLYNOM3:func.2:2<*67,2836
-^;POLYNOM3:func.3:3^75,3035
-^^;POLYNOM3:func.4:4^^83,3231
-<;POLYNOM3:pred.1:1<98,3741
->;POLYNOM3:pred.1:2>109,3978
-<=;POLYNOM3:pred.2:3<=115,4090
->=;POLYNOM3:pred.2:4>=125,4245
-TuplesOrder;POLYNOM3:func.5:5TuplesOrder144,4832
-Decomp;POLYNOM3:func.6:6Decomp160,5193
-prodTuples;POLYNOM3:func.7:7prodTuples202,6403
-Polynomial;POLYNOM3:mode.0:1Polynomial248,7864
-+;POLYNOM3:func.8:8+274,8724
--;POLYNOM3:func.0:9-294,9135
-0_.;POLYNOM3:func.9:100_.312,9536
-1_.;POLYNOM3:func.10:111_.332,10010
-*';POLYNOM3:func.11:12*'349,10390
-*';POLYNOM3:func.12:13*'383,11534
-Polynom-Ring;POLYNOM3:func.13:14Polynom-Ring402,12099
+<*;POLYNOM3:func.1:1<*61,2721
+^;POLYNOM3:func.2:2^69,2909
+^^;POLYNOM3:func.3:3^^77,3105
+<;POLYNOM3:pred.1:1<92,3615
+>;POLYNOM3:pred.1:2>103,3852
+<=;POLYNOM3:pred.2:3<=109,3964
+>=;POLYNOM3:pred.2:4>=119,4119
+TuplesOrder;POLYNOM3:func.4:4TuplesOrder138,4706
+Decomp;POLYNOM3:func.5:5Decomp154,5067
+prodTuples;POLYNOM3:func.6:6prodTuples197,6278
+Polynomial;POLYNOM3:mode.0:1Polynomial243,7738
++;POLYNOM3:func.7:7+269,8587
+-;POLYNOM3:func.0:8-289,8998
+0_.;POLYNOM3:func.8:90_.307,9399
+1_.;POLYNOM3:func.9:101_.327,9873
+*';POLYNOM3:func.10:11*'344,10253
+*';POLYNOM3:func.11:12*'378,11397
+Polynom-Ring;POLYNOM3:func.12:13Polynom-Ring397,11962
 
 polynom4.abs,
 Leading-Monomial;POLYNOM4:func.1:1Leading-Monomial102,3929
@@ -13744,6 +14195,22 @@ is_primitive_root_of_degree;POLYNOM8:pred.1:1is_primitive_root_of_degree246,94
 DFT;POLYNOM8:func.5:5DFT275,10635
 Vandermonde;POLYNOM8:func.6:6Vandermonde293,11263
 VM;POLYNOM8:func.6:7VM303,11577
+
+polynom9.abs,
++*;POLYNOM9:func.1:1+*151,5696
+`^;POLYNOM9:func.2:2`^226,7937
+Subst;POLYNOM9:func.3:3Subst257,8735
+Subst;POLYNOM9:func.4:4Subst275,9211
+Subst;POLYNOM9:func.5:5Subst331,11206
+vars;POLYNOM9:func.6:6vars379,12741
+removed_last;POLYNOM9:func.7:7removed_last457,15277
+_sqrtSegm;POLYNOM9:func.8:8_sqrtSegm510,16775
+count_reps;POLYNOM9:func.9:9count_reps522,17100
+SgnMembershipNumber;POLYNOM9:func.10:10SgnMembershipNumber538,17488
+Jpolynom;POLYNOM9:mode.1:1Jpolynom608,19809
+_sqrt;POLYNOM9:func.11:11_sqrt623,20388
+JsqrtSeries;POLYNOM9:func.12:12JsqrtSeries636,20691
+Jsqrt;POLYNOM9:func.13:13Jsqrt690,22276
 
 polyred.abs,
 *';POLYRED:func.1:1*'127,5183
@@ -13978,8 +14445,8 @@ T_3;PRE_TOPC:attr.11:10T_3333,8842
 T_4;PRE_TOPC:attr.12:11T_4337,8904
 
 prgcor_1.abs,
-idiv1_prg;PRGCOR_1:func.1:1idiv1_prg185,7864
-idiv_prg;PRGCOR_1:func.2:2idiv_prg262,11458
+idiv1_prg;PRGCOR_1:func.1:1idiv1_prg185,7884
+idiv_prg;PRGCOR_1:func.2:2idiv_prg262,11478
 
 prgcor_2.abs,
 is_an_xrep_of;PRGCOR_2:pred.1:1is_an_xrep_of39,1670
@@ -13989,6 +14456,9 @@ scalar_prd_prg;PRGCOR_2:pred.2:2scalar_prd_prg127,4551
 vector_minus_prg;PRGCOR_2:pred.3:3vector_minus_prg156,5463
 vector_add_prg;PRGCOR_2:pred.4:4vector_add_prg188,6428
 vector_sub_prg;PRGCOR_2:pred.5:5vector_sub_prg220,7448
+
+primreci.abs,
+[\;PRIMRECI:func.1:1[\57,2097
 
 prob_1.abs,
 compl-closed;PROB_1:attr.1:1compl-closed52,1994
@@ -14026,21 +14496,21 @@ are_independent_respect_to;PROB_2:pred.2:2are_independent_respect_to162,4577
 .|.;PROB_2:func.3:3.|.217,6069
 
 prob_3.abs,
-Partial_Intersection;PROB_3:func.1:1Partial_Intersection75,2820
-Partial_Union;PROB_3:func.2:2Partial_Union83,3018
-Partial_Diff_Union;PROB_3:func.3:3Partial_Diff_Union116,3789
-disjoint_valued;PROB_3:attr.1:1disjoint_valued141,4363
-.;PROB_3:func.4:4.261,7512
-Union;PROB_3:func.5:5Union272,7803
-Complement;PROB_3:func.6:6Complement281,7950
-Intersection;PROB_3:func.7:7Intersection289,8112
-FinSequence;PROB_3:mode.1:1FinSequence323,9065
-.;PROB_3:func.8:8.328,9209
-*;PROB_3:func.9:9*357,9915
-non-decreasing-closed;PROB_3:attr.2:2non-decreasing-closed386,10809
-non-increasing-closed;PROB_3:attr.3:3non-increasing-closed391,10962
-MonotoneClass;PROB_3:mode.0:2MonotoneClass418,11710
-monotoneclass;PROB_3:func.10:10monotoneclass437,12196
+Partial_Intersection;PROB_3:func.1:1Partial_Intersection76,2850
+Partial_Union;PROB_3:func.2:2Partial_Union84,3048
+Partial_Diff_Union;PROB_3:func.3:3Partial_Diff_Union117,3819
+disjoint_valued;PROB_3:attr.1:1disjoint_valued142,4393
+.;PROB_3:func.4:4.262,7542
+Union;PROB_3:func.5:5Union273,7833
+Complement;PROB_3:func.6:6Complement282,7980
+Intersection;PROB_3:func.7:7Intersection290,8142
+FinSequence;PROB_3:mode.1:1FinSequence324,9095
+.;PROB_3:func.8:8.329,9239
+*;PROB_3:func.9:9*358,9945
+non-decreasing-closed;PROB_3:attr.2:2non-decreasing-closed387,10840
+non-increasing-closed;PROB_3:attr.3:3non-increasing-closed392,10993
+MonotoneClass;PROB_3:mode.0:2MonotoneClass419,11741
+monotoneclass;PROB_3:func.10:10monotoneclass438,12227
 
 prob_4.abs,
 .;PROB_4:func.1:1.50,2084
@@ -14147,14 +14617,14 @@ prod_NORM;PRVECT_3:func.8:8prod_NORM308,10123
 [;PRVECT_3:func.10:10[325,10678
 
 prvect_4.abs,
-[:;PRVECT_4:func.1:1[:67,2773
-[;PRVECT_4:func.2:2[75,2975
-[:;PRVECT_4:func.3:3[:114,4079
-[;PRVECT_4:func.4:4[122,4278
-<*;PRVECT_4:func.5:5<*204,6675
-[:;PRVECT_4:func.6:6[:224,7460
-[;PRVECT_4:func.7:7[232,7657
-<*;PRVECT_4:func.8:8<*281,9478
+[:;PRVECT_4:func.1:1[:67,2778
+[;PRVECT_4:func.2:2[75,2980
+[:;PRVECT_4:func.3:3[:114,4084
+[;PRVECT_4:func.4:4[122,4283
+<*;PRVECT_4:func.5:5<*204,6680
+[:;PRVECT_4:func.6:6[:224,7465
+[;PRVECT_4:func.7:7[232,7662
+<*;PRVECT_4:func.8:8<*281,9483
 
 pscomp_1.abs,
 RealMap;PSCOMP_1:mode.0:1RealMap47,2111
@@ -14215,14 +14685,14 @@ can_be_characterized_by;PUA2MSS1:pred.6:6can_be_characterized_by453,13861
 can_be_characterized_by;PUA2MSS1:pred.7:7can_be_characterized_by463,14197
 
 pythtrip.abs,
-are_coprime;PYTHTRIP:pred.0:1are_coprime36,1426
-are_coprime;PYTHTRIP:pred.0:2are_coprime43,1574
-square;PYTHTRIP:attr.1:1square52,1747
-Pythagorean_triple;PYTHTRIP:mode.1:1Pythagorean_triple152,3533
-Pythagorean_triple;PYTHTRIP:mode.1:2Pythagorean_triple166,3801
-degenerate;PYTHTRIP:attr.0:2degenerate174,3959
-simplified;PYTHTRIP:attr.2:3simplified183,4115
-simplified;PYTHTRIP:attr.2:4simplified190,4246
+are_coprime;PYTHTRIP:pred.0:1are_coprime36,1423
+are_coprime;PYTHTRIP:pred.0:2are_coprime43,1571
+square;PYTHTRIP:attr.1:1square52,1740
+Pythagorean_triple;PYTHTRIP:mode.1:1Pythagorean_triple155,3610
+Pythagorean_triple;PYTHTRIP:mode.1:2Pythagorean_triple169,3899
+degenerate;PYTHTRIP:attr.0:2degenerate178,4080
+simplified;PYTHTRIP:attr.2:3simplified187,4236
+simplified;PYTHTRIP:attr.2:4simplified194,4367
 
 pzfmisc1.abs,
 {;PZFMISC1:func.1:1{46,1509
@@ -14611,39 +15081,39 @@ nullity;RANKNULL:func.11:11nullity362,11220
 rat_1.abs,
 RAT;RAT_1:func.0:1RAT38,1394
 rational;RAT_1:attr.1:1rational46,1505
-Rational;RAT_1:mode.0:1Rational61,1675
-denominator;RAT_1:func.1:2denominator122,3135
-numerator;RAT_1:func.2:3numerator130,3290
+Rational;RAT_1:mode.0:1Rational60,1674
+denominator;RAT_1:func.1:2denominator121,3155
+numerator;RAT_1:func.2:3numerator129,3320
 
 ratfunc1.abs,
-zero;RATFUNC1:attr.0:1zero98,3858
-constant;RATFUNC1:attr.1:2constant105,3972
-is_a_common_root_of;RATFUNC1:pred.1:1is_a_common_root_of269,8745
-have_a_common_root;RATFUNC1:pred.2:2have_a_common_root277,8931
-have_common_roots;RATFUNC1:pred.2:3have_common_roots285,9127
-have_no_common_roots;RATFUNC1:pred.2:4have_no_common_roots286,9189
-Common_Roots;RATFUNC1:func.1:1Common_Roots327,10709
-Leading-Coefficient;RATFUNC1:func.2:2Leading-Coefficient338,10938
-LC;RATFUNC1:func.2:3LC346,11092
-normalized;RATFUNC1:attr.2:3normalized365,11614
-rational_function;RATFUNC1:mode.1:1rational_function389,12137
-[;RATFUNC1:func.3:4[399,12401
-`1;RATFUNC1:func.4:5`1405,12536
-`2;RATFUNC1:func.5:6`2406,12574
-zero;RATFUNC1:attr.3:4zero412,12707
-irreducible;RATFUNC1:attr.4:5irreducible430,13145
-reducible;RATFUNC1:attr.4:6reducible439,13389
-normalized;RATFUNC1:attr.5:7normalized446,13599
-NormRationalFunction;RATFUNC1:func.6:7NormRationalFunction470,14406
-NormRatF;RATFUNC1:func.6:8NormRatF480,14780
-0._;RATFUNC1:func.7:90._493,15186
-1._;RATFUNC1:func.8:101._496,15272
-+;RATFUNC1:func.9:11+559,17173
-*';RATFUNC1:func.10:12*'568,17451
-NF;RATFUNC1:func.11:13NF603,18738
-degree;RATFUNC1:func.12:14degree698,22566
-deg;RATFUNC1:func.12:15deg708,22904
-eval;RATFUNC1:func.13:16eval732,23710
+zero;RATFUNC1:attr.0:1zero99,3884
+constant;RATFUNC1:attr.1:2constant106,3998
+is_a_common_root_of;RATFUNC1:pred.1:1is_a_common_root_of270,8771
+have_a_common_root;RATFUNC1:pred.2:2have_a_common_root278,8957
+have_common_roots;RATFUNC1:pred.2:3have_common_roots286,9153
+have_no_common_roots;RATFUNC1:pred.2:4have_no_common_roots287,9215
+Common_Roots;RATFUNC1:func.1:1Common_Roots328,10735
+Leading-Coefficient;RATFUNC1:func.2:2Leading-Coefficient339,10964
+LC;RATFUNC1:func.2:3LC347,11118
+normalized;RATFUNC1:attr.2:3normalized366,11640
+rational_function;RATFUNC1:mode.1:1rational_function390,12163
+[;RATFUNC1:func.3:4[400,12427
+`1;RATFUNC1:func.4:5`1406,12562
+`2;RATFUNC1:func.5:6`2407,12600
+zero;RATFUNC1:attr.3:4zero413,12733
+irreducible;RATFUNC1:attr.4:5irreducible431,13171
+reducible;RATFUNC1:attr.4:6reducible440,13415
+normalized;RATFUNC1:attr.5:7normalized447,13625
+NormRationalFunction;RATFUNC1:func.6:7NormRationalFunction471,14432
+NormRatF;RATFUNC1:func.6:8NormRatF481,14806
+0._;RATFUNC1:func.7:90._494,15212
+1._;RATFUNC1:func.8:101._497,15298
++;RATFUNC1:func.9:11+560,17199
+*';RATFUNC1:func.10:12*'569,17477
+NF;RATFUNC1:func.11:13NF604,18764
+degree;RATFUNC1:func.12:14degree699,22592
+deg;RATFUNC1:func.12:15deg709,22930
+eval;RATFUNC1:func.13:16eval733,23736
 
 rcomp_1.abs,
 [.;RCOMP_1:func.1:1[.42,1739
@@ -14669,21 +15139,21 @@ real_1.abs,
 /;REAL_1:func.6:6/52,1541
 
 real_3.abs,
-Integer_Sequence;REAL_3:mode.0:1Integer_Sequence87,2475
-modSeq;REAL_3:func.1:1modSeq107,2946
-divSeq;REAL_3:func.2:2divSeq116,3141
-remainders_for_scf;REAL_3:func.3:3remainders_for_scf170,4330
-rfs;REAL_3:func.3:4rfs178,4492
-SimpleContinuedFraction;REAL_3:func.4:5SimpleContinuedFraction183,4568
-scf;REAL_3:func.4:6scf191,4723
-convergent_numerators;REAL_3:func.5:7convergent_numerators256,6172
-convergent_denominators;REAL_3:func.6:8convergent_denominators266,6399
-c_n;REAL_3:func.5:9c_n275,6602
-c_d;REAL_3:func.6:10c_d276,6649
-convergents_of_continued_fractions;REAL_3:func.7:11convergents_of_continued_fractions378,9673
-cocf;REAL_3:func.7:12cocf386,9812
-backContinued_fraction;REAL_3:func.8:13backContinued_fraction417,10703
-bcf;REAL_3:func.8:14bcf425,10883
+Integer_Sequence;REAL_3:mode.0:1Integer_Sequence87,2474
+modSeq;REAL_3:func.1:1modSeq107,2945
+divSeq;REAL_3:func.2:2divSeq116,3140
+remainders_for_scf;REAL_3:func.3:3remainders_for_scf170,4329
+rfs;REAL_3:func.3:4rfs178,4491
+SimpleContinuedFraction;REAL_3:func.4:5SimpleContinuedFraction183,4567
+scf;REAL_3:func.4:6scf191,4722
+convergent_numerators;REAL_3:func.5:7convergent_numerators256,6171
+convergent_denominators;REAL_3:func.6:8convergent_denominators266,6398
+c_n;REAL_3:func.5:9c_n275,6601
+c_d;REAL_3:func.6:10c_d276,6648
+convergents_of_continued_fractions;REAL_3:func.7:11convergents_of_continued_fractions378,9672
+cocf;REAL_3:func.7:12cocf386,9811
+backContinued_fraction;REAL_3:func.8:13backContinued_fraction417,10702
+bcf;REAL_3:func.8:14bcf425,10882
 
 realalg1.abs,
 strongly_reflexive;REALALG1:attr.1:1strongly_reflexive47,2425
@@ -14754,12 +15224,12 @@ Euclid_scalar;REAL_NS1:func.6:6Euclid_scalar157,5140
 REAL-US;REAL_NS1:func.7:7REAL-US165,5324
 
 real_ns3.abs,
-max_norm;REAL_NS3:func.1:1max_norm136,4465
-sum_norm;REAL_NS3:func.2:2sum_norm150,4712
-max_norm;REAL_NS3:func.3:3max_norm226,6684
-sum_norm;REAL_NS3:func.4:4sum_norm241,7007
-euclid_norm;REAL_NS3:func.5:5euclid_norm255,7330
-isometric-like;REAL_NS3:attr.1:1isometric-like393,11062
+max_norm;REAL_NS3:func.1:1max_norm136,4470
+sum_norm;REAL_NS3:func.2:2sum_norm150,4717
+max_norm;REAL_NS3:func.3:3max_norm226,6689
+sum_norm;REAL_NS3:func.4:4sum_norm241,7012
+euclid_norm;REAL_NS3:func.5:5euclid_norm255,7335
+isometric-like;REAL_NS3:attr.1:1isometric-like393,11067
 
 realset1.abs,
 -binopclosed;REALSET1:attr.1:1-binopclosed37,1237
@@ -14930,18 +15400,18 @@ dim2;REWRITE3:func.2:2dim2298,9759
 -succ_of;REWRITE3:func.3:3-succ_of552,17851
 
 rfinseq2.abs,
-max_p;RFINSEQ2:func.1:1max_p36,1446
-min_p;RFINSEQ2:func.2:2min_p48,1754
-max;RFINSEQ2:func.3:3max60,2054
-min;RFINSEQ2:func.4:4min63,2115
-sort_d;RFINSEQ2:func.5:5sort_d130,4128
-sort_a;RFINSEQ2:func.6:6sort_a156,4875
+max_p;RFINSEQ2:func.1:1max_p36,1460
+min_p;RFINSEQ2:func.2:2min_p48,1772
+max;RFINSEQ2:func.3:3max59,2075
+min;RFINSEQ2:func.4:4min62,2136
+sort_d;RFINSEQ2:func.5:5sort_d129,4209
+sort_a;RFINSEQ2:func.6:6sort_a155,4996
 
 rfinseq.abs,
 /^;RFINSEQ:func.1:1/^63,2282
-/^;RFINSEQ:func.2:2/^72,2506
-MIM;RFINSEQ:func.3:3MIM96,3109
-non-increasing;RFINSEQ:attr.0:1non-increasing134,4122
+/^;RFINSEQ:func.2:2/^72,2510
+MIM;RFINSEQ:func.3:3MIM101,3212
+non-increasing;RFINSEQ:attr.0:1non-increasing138,4243
 
 rfunct_1.abs,
 /;RFUNCT_1:func.1:1/45,1760
@@ -15028,59 +15498,59 @@ QuotientRing;RING_1:func.2:2QuotientRing151,4135
 /;RING_1:func.2:3/165,4691
 
 ring_2.abs,
-.;RING_2:func.1:1.48,2471
-Chain;RING_2:mode.0:1Chain71,3138
-ascending;RING_2:attr.1:1ascending77,3240
-stagnating;RING_2:attr.2:2stagnating80,3326
-Ideals;RING_2:func.2:2Ideals104,3815
--homomorphic;RING_2:attr.3:3-homomorphic182,5722
-Homomorphism;RING_2:mode.0:2Homomorphism214,6322
-are_isomorphic;RING_2:pred.0:1are_isomorphic233,6757
-canHom;RING_2:func.3:3canHom287,8514
-Image;RING_2:func.4:4Image371,10574
-Image;RING_2:func.5:5Image412,11473
-canHom;RING_2:func.6:6canHom419,11610
-Unit;RING_2:mode.0:3Unit466,12668
-NonUnit;RING_2:mode.0:4NonUnit478,13014
-prime;RING_2:attr.4:4prime534,14256
-irreducible;RING_2:attr.5:5irreducible539,14414
-reducible;RING_2:attr.5:6reducible549,14669
-IRR;RING_2:func.7:7IRR579,15278
-PIDomain;RING_2:mode.0:5PIDomain622,16223
-is_a_factorization_of;RING_2:pred.1:2is_a_factorization_of648,16740
-factorizable;RING_2:attr.6:7factorizable657,16956
-Factorization;RING_2:mode.1:6Factorization666,17185
-uniquely_factorizable;RING_2:attr.7:8uniquely_factorizable674,17379
-factorial;RING_2:attr.8:9factorial717,18526
-FactorialRing;RING_2:mode.0:7FactorialRing733,18864
-deg*;RING_2:func.8:8deg*745,19073
-deg*;RING_2:func.9:9deg*752,19183
-deg*;RING_2:func.10:10deg*777,19782
+.;RING_2:func.1:1.48,2491
+Chain;RING_2:mode.0:1Chain71,3158
+ascending;RING_2:attr.1:1ascending77,3260
+stagnating;RING_2:attr.2:2stagnating80,3346
+Ideals;RING_2:func.2:2Ideals104,3835
+-homomorphic;RING_2:attr.3:3-homomorphic182,5742
+Homomorphism;RING_2:mode.0:2Homomorphism214,6342
+are_isomorphic;RING_2:pred.0:1are_isomorphic233,6777
+canHom;RING_2:func.3:3canHom287,8534
+Image;RING_2:func.4:4Image371,10594
+Image;RING_2:func.5:5Image412,11493
+canHom;RING_2:func.6:6canHom419,11630
+Unit;RING_2:mode.0:3Unit466,12688
+NonUnit;RING_2:mode.0:4NonUnit478,13034
+prime;RING_2:attr.4:4prime534,14276
+irreducible;RING_2:attr.5:5irreducible539,14434
+reducible;RING_2:attr.5:6reducible549,14689
+IRR;RING_2:func.7:7IRR579,15298
+PIDomain;RING_2:mode.0:5PIDomain622,16243
+is_a_factorization_of;RING_2:pred.1:2is_a_factorization_of648,16760
+factorizable;RING_2:attr.6:7factorizable657,16976
+Factorization;RING_2:mode.1:6Factorization666,17205
+uniquely_factorizable;RING_2:attr.7:8uniquely_factorizable674,17399
+factorial;RING_2:attr.8:9factorial717,18546
+FactorialRing;RING_2:mode.0:7FactorialRing733,18884
+deg*;RING_2:func.8:8deg*745,19093
+deg*;RING_2:func.9:9deg*752,19203
+deg*;RING_2:func.10:10deg*777,19802
 
 ring_3.abs,
-includes_an_isomorphic_copy_of;RING_3:pred.1:1includes_an_isomorphic_copy_of263,8495
-includes;RING_3:pred.1:2includes270,8649
-are_isomorphic;RING_3:pred.2:3are_isomorphic275,8748
-Z/;RING_3:func.0:1Z/385,11789
-'*';RING_3:func.1:2'*'420,12440
--monomorphic;RING_3:attr.1:1-monomorphic484,14610
-Monomorphism;RING_3:mode.0:1Monomorphism525,15458
--isomorphic;RING_3:attr.2:2-isomorphic567,16479
-Isomorphism;RING_3:mode.0:2Isomorphism608,17272
-";RING_3:func.2:3"616,17485
-Isomorphism;RING_3:mode.0:3Isomorphism629,17734
-Char;RING_3:func.3:4Char674,18731
--characteristic;RING_3:attr.3:3-characteristic685,18980
-CharSet;RING_3:func.4:5CharSet718,19490
-canHom_Int;RING_3:func.5:6canHom_Int748,20145
-carrier/\;RING_3:func.6:7carrier/\848,22257
-PrimeField;RING_3:func.7:8PrimeField855,22417
-PrimeField;RING_3:func.8:9PrimeField888,23141
-denominator;RING_3:func.9:10denominator929,24274
-numerator;RING_3:func.10:11numerator930,24336
-canHom_Rat;RING_3:func.11:12canHom_Rat935,24420
-Image;RING_3:func.12:13Image982,25470
-canHom_Z/;RING_3:func.13:14canHom_Z/1012,26137
+includes_an_isomorphic_copy_of;RING_3:pred.1:1includes_an_isomorphic_copy_of262,8481
+includes;RING_3:pred.1:2includes269,8635
+are_isomorphic;RING_3:pred.2:3are_isomorphic274,8734
+Z/;RING_3:func.0:1Z/384,11775
+'*';RING_3:func.1:2'*'419,12426
+-monomorphic;RING_3:attr.1:1-monomorphic483,14596
+Monomorphism;RING_3:mode.0:1Monomorphism524,15444
+-isomorphic;RING_3:attr.2:2-isomorphic566,16465
+Isomorphism;RING_3:mode.0:2Isomorphism607,17258
+";RING_3:func.2:3"615,17471
+Isomorphism;RING_3:mode.0:3Isomorphism628,17720
+Char;RING_3:func.3:4Char673,18717
+-characteristic;RING_3:attr.3:3-characteristic684,18966
+CharSet;RING_3:func.4:5CharSet717,19476
+canHom_Int;RING_3:func.5:6canHom_Int747,20131
+carrier/\;RING_3:func.6:7carrier/\847,22243
+PrimeField;RING_3:func.7:8PrimeField854,22403
+PrimeField;RING_3:func.8:9PrimeField887,23127
+denominator;RING_3:func.9:10denominator928,24260
+numerator;RING_3:func.10:11numerator929,24322
+canHom_Rat;RING_3:func.11:12canHom_Rat934,24406
+Image;RING_3:func.12:13Image981,25456
+canHom_Z/;RING_3:func.13:14canHom_Z/1011,26123
 
 ring_4.abs,
 {;RING_4:func.1:1{46,2387
@@ -15148,18 +15618,32 @@ comp;RINGCAT1:func.16:16comp420,9553
 RingCat;RINGCAT1:func.17:17RingCat433,9876
 
 ringder1.abs,
-derivation;RINGDER1:attr.1:1derivation75,3076
-Derivation;RINGDER1:mode.0:1Derivation93,3391
-Der;RINGDER1:func.1:1Der98,3471
-*;RINGDER1:func.2:2*146,4864
-DProd;RINGDER1:func.3:3DProd169,5649
-LBZ;RINGDER1:func.4:4LBZ194,6501
-LBZ0;RINGDER1:func.5:5LBZ0209,6873
-LBZ1;RINGDER1:func.6:6LBZ1218,7130
-LBZ2;RINGDER1:func.7:7LBZ2228,7375
-.;RINGDER1:func.8:8.285,9367
-Der1;RINGDER1:func.9:9Der1290,9466
-poly_diff;RINGDER1:func.10:10poly_diff374,12185
+derivation;RINGDER1:attr.1:1derivation75,3101
+Derivation;RINGDER1:mode.0:1Derivation93,3416
+Der;RINGDER1:func.1:1Der98,3496
+*;RINGDER1:func.2:2*146,4889
+DProd;RINGDER1:func.3:3DProd169,5674
+LBZ;RINGDER1:func.4:4LBZ194,6526
+LBZ0;RINGDER1:func.5:5LBZ0209,6898
+LBZ1;RINGDER1:func.6:6LBZ1218,7155
+LBZ2;RINGDER1:func.7:7LBZ2228,7400
+.;RINGDER1:func.8:8.285,9392
+Der1;RINGDER1:func.9:9Der1290,9491
+poly_diff;RINGDER1:func.10:10poly_diff374,12210
+
+ring_emb.abs,
+addemb;RING_EMB:func.1:1addemb65,2701
+addemb;RING_EMB:func.2:2addemb78,3070
+multemb;RING_EMB:func.3:3multemb95,3507
+multemb;RING_EMB:func.4:4multemb103,3688
+emb_Ring;RING_EMB:func.5:5emb_Ring111,3887
+SubAbGr;RING_EMB:mode.1:1SubAbGr142,4865
+Image;RING_EMB:func.6:6Image151,5099
+addemb;RING_EMB:func.7:7addemb169,5587
+addemb;RING_EMB:func.8:8addemb182,5963
+emb_AbGr;RING_EMB:func.9:9emb_AbGr191,6164
+1_1;RING_EMB:func.10:101_1235,7567
+indeterminate;RING_EMB:attr.1:1indeterminate315,10015
 
 ringfrac.abs,
 zero_divisible;RINGFRAC:attr.1:1zero_divisible49,2145
@@ -15655,6 +16139,15 @@ Ort_Comp;RUSUB_5:func.3:3Ort_Comp154,5599
 Family_open_set;RUSUB_5:func.4:4Family_open_set214,7567
 TopUnitSpace;RUSUB_5:func.5:5TopUnitSpace264,9111
 
+rusub_6.abs,
+(*);RUSUB_6:func.1:1(*)41,1798
+.|.;RUSUB_6:func.2:2.|.72,2559
+ProjSeq;RUSUB_6:func.3:3ProjSeq119,3827
+GramSchmidt;RUSUB_6:func.4:4GramSchmidt163,5004
+
+rusub_7.abs,
+Ort_CompSet;RUSUB_7:func.1:1Ort_CompSet192,6233
+
 rvsum_1.abs,
 rng;RVSUM_1:func.1:1rng49,1987
 diffreal;RVSUM_1:func.0:2diffreal101,2944
@@ -15686,19 +16179,19 @@ are_orthogonal;RVSUM_1:pred.1:1are_orthogonal766,16812
 
 rvsum_2.abs,
 rng;RVSUM_2:func.1:1rng36,1689
-sqrcomplex;RVSUM_2:func.2:2sqrcomplex54,2090
-+;RVSUM_2:func.3:3+68,2377
-+;RVSUM_2:func.4:4+75,2521
--;RVSUM_2:func.5:5-91,2818
--;RVSUM_2:func.6:6-97,2930
--;RVSUM_2:func.7:7-113,3202
--;RVSUM_2:func.8:8-119,3330
-*;RVSUM_2:func.0:9*153,3943
-*;RVSUM_2:func.9:10*157,3994
-*;RVSUM_2:func.10:11*163,4113
-mlt;RVSUM_2:func.0:12mlt179,4384
-mlt;RVSUM_2:func.11:13mlt183,4446
-mlt;RVSUM_2:func.12:14mlt190,4594
+sqrcomplex;RVSUM_2:func.2:2sqrcomplex53,2060
++;RVSUM_2:func.3:3+67,2347
++;RVSUM_2:func.4:4+74,2491
+-;RVSUM_2:func.5:5-90,2788
+-;RVSUM_2:func.6:6-96,2900
+-;RVSUM_2:func.7:7-112,3172
+-;RVSUM_2:func.8:8-118,3300
+*;RVSUM_2:func.0:9*152,3913
+*;RVSUM_2:func.9:10*156,3964
+*;RVSUM_2:func.10:11*162,4083
+mlt;RVSUM_2:func.0:12mlt178,4354
+mlt;RVSUM_2:func.11:13mlt182,4416
+mlt;RVSUM_2:func.12:14mlt189,4564
 
 rvsum_3.abs,
 positive;RVSUM_3:attr.0:1positive52,2421
@@ -16615,22 +17108,22 @@ pop;STACKS_1:func.5:5pop151,4470
 top;STACKS_1:func.6:6top154,4542
 push;STACKS_1:func.7:7push163,4724
 StandardStackSystem;STACKS_1:func.8:8StandardStackSystem170,4848
-pop-finite;STACKS_1:attr.2:1pop-finite205,5730
-push-pop;STACKS_1:attr.3:2push-pop212,5897
-top-push;STACKS_1:attr.4:3top-push217,5988
-pop-push;STACKS_1:attr.5:4pop-push222,6057
-push-non-empty;STACKS_1:attr.6:5push-non-empty227,6126
-StackAlgebra;STACKS_1:mode.0:3StackAlgebra248,6622
-|.;STACKS_1:func.9:9|.315,8719
-==;STACKS_1:pred.2:2==350,9522
-proper-for-identity;STACKS_1:attr.7:6proper-for-identity377,10033
-==_;STACKS_1:func.10:10==_390,10240
-coset;STACKS_1:func.11:11coset406,10518
-ConstructionRed;STACKS_1:func.12:12ConstructionRed437,11250
-core;STACKS_1:func.13:13core466,12008
-/==;STACKS_1:func.14:14/==504,12852
-form_isomorphism_between;STACKS_1:pred.3:3form_isomorphism_between572,14637
-are_isomorphic;STACKS_1:pred.4:4are_isomorphic605,15759
+pop-finite;STACKS_1:attr.2:1pop-finite204,5724
+push-pop;STACKS_1:attr.3:2push-pop210,5889
+top-push;STACKS_1:attr.4:3top-push214,5979
+pop-push;STACKS_1:attr.5:4pop-push218,6047
+push-non-empty;STACKS_1:attr.6:5push-non-empty222,6115
+StackAlgebra;STACKS_1:mode.0:3StackAlgebra242,6610
+|.;STACKS_1:func.9:9|.309,8707
+==;STACKS_1:pred.2:2==344,9510
+proper-for-identity;STACKS_1:attr.7:6proper-for-identity371,10021
+==_;STACKS_1:func.10:10==_384,10228
+coset;STACKS_1:func.11:11coset400,10506
+ConstructionRed;STACKS_1:func.12:12ConstructionRed431,11238
+core;STACKS_1:func.13:13core460,11996
+/==;STACKS_1:func.14:14/==498,12840
+form_isomorphism_between;STACKS_1:pred.3:3form_isomorphism_between566,14625
+are_isomorphic;STACKS_1:pred.4:4are_isomorphic599,15747
 
 stirl2_1.abs,
 ";STIRL2_1:func.1:1"93,2803
@@ -17849,25 +18342,29 @@ valued_0.abs,
 complex-valued;VALUED_0:attr.1:1complex-valued35,1504
 ext-real-valued;VALUED_0:attr.2:2ext-real-valued39,1576
 real-valued;VALUED_0:attr.3:3real-valued43,1649
-natural-valued;VALUED_0:attr.4:4natural-valued48,1723
-complex-valued;VALUED_0:attr.1:5complex-valued433,8840
-ext-real-valued;VALUED_0:attr.2:6ext-real-valued437,8945
-real-valued;VALUED_0:attr.3:7real-valued441,9052
-natural-valued;VALUED_0:attr.4:8natural-valued446,9159
-increasing;VALUED_0:attr.5:9increasing718,14261
-decreasing;VALUED_0:attr.6:10decreasing722,14380
-non-decreasing;VALUED_0:attr.7:11non-decreasing726,14499
-non-increasing;VALUED_0:attr.8:12non-increasing730,14624
-subsequence;VALUED_0:mode.1:1subsequence792,16003
-subsequence;VALUED_0:mode.2:2subsequence805,16318
-^\;VALUED_0:func.1:1^\810,16442
-*;VALUED_0:func.2:2*845,17213
-constant;VALUED_0:attr.9:13constant877,17925
-zeroed;VALUED_0:attr.10:14zeroed913,18772
-constant;VALUED_0:attr.0:15constant929,19142
+rational-valued;VALUED_0:attr.4:4rational-valued47,1715
+integer-valued;VALUED_0:attr.5:5integer-valued51,1784
+natural-valued;VALUED_0:attr.6:6natural-valued55,1852
+complex-valued;VALUED_0:attr.1:7complex-valued440,9167
+ext-real-valued;VALUED_0:attr.2:8ext-real-valued443,9271
+real-valued;VALUED_0:attr.3:9real-valued447,9378
+rational-valued;VALUED_0:attr.4:10rational-valued450,9476
+integer-valued;VALUED_0:attr.5:11integer-valued453,9583
+natural-valued;VALUED_0:attr.6:12natural-valued456,9688
+increasing;VALUED_0:attr.7:13increasing728,14882
+decreasing;VALUED_0:attr.8:14decreasing732,15001
+non-decreasing;VALUED_0:attr.9:15non-decreasing736,15120
+non-increasing;VALUED_0:attr.10:16non-increasing740,15245
+subsequence;VALUED_0:mode.1:1subsequence802,16624
+subsequence;VALUED_0:mode.2:2subsequence815,16939
+^\;VALUED_0:func.1:1^\820,17063
+*;VALUED_0:func.2:2*855,17834
+constant;VALUED_0:attr.11:17constant887,18546
+zeroed;VALUED_0:attr.12:18zeroed923,19393
+constant;VALUED_0:attr.0:19constant947,20196
 
 valued_1.abs,
-+;VALUED_1:func.1:1+49,1925
++;VALUED_1:func.1:1+49,1916
 +;VALUED_1:func.2:2+87,2664
 +;VALUED_1:func.3:3+95,2839
 +;VALUED_1:func.4:4+103,3015
@@ -17875,69 +18372,69 @@ valued_1.abs,
 +;VALUED_1:func.6:6+119,3363
 +;VALUED_1:func.7:7+176,4745
 +;VALUED_1:func.7:8+185,4937
-+;VALUED_1:func.8:9+218,5560
-+;VALUED_1:func.9:10+226,5714
-+;VALUED_1:func.10:11+234,5873
-+;VALUED_1:func.11:12+242,6029
-+;VALUED_1:func.12:13+250,6181
--;VALUED_1:func.13:14-308,7462
--;VALUED_1:func.14:15-342,8184
--;VALUED_1:func.15:16-350,8338
--;VALUED_1:func.16:17-358,8497
--;VALUED_1:func.17:18-366,8653
-(#);VALUED_1:func.18:19(#)415,9756
-(#);VALUED_1:func.19:20(#)457,10627
-(#);VALUED_1:func.20:21(#)465,10804
-(#);VALUED_1:func.21:22(#)473,10982
-(#);VALUED_1:func.22:23(#)481,11158
-(#);VALUED_1:func.23:24(#)489,11334
-(#);VALUED_1:func.24:25(#)541,12530
-(#);VALUED_1:func.24:26(#)550,12724
-(#);VALUED_1:func.25:27(#)587,13487
-(#);VALUED_1:func.26:28(#)595,13643
-(#);VALUED_1:func.27:29(#)603,13804
-(#);VALUED_1:func.28:30(#)611,13962
-(#);VALUED_1:func.29:31(#)619,14116
--;VALUED_1:func.30:32-676,15442
--;VALUED_1:func.31:33-714,16250
--;VALUED_1:func.32:34-721,16386
--;VALUED_1:func.33:35-728,16523
--;VALUED_1:func.34:36-735,16658
-";VALUED_1:func.35:37"775,17464
-";VALUED_1:func.36:38"802,17992
-";VALUED_1:func.37:39"809,18128
-";VALUED_1:func.38:40"816,18265
-^2;VALUED_1:func.39:41^2849,18921
-^2;VALUED_1:func.40:42^2887,19624
-^2;VALUED_1:func.41:43^2894,19761
-^2;VALUED_1:func.42:44^2901,19899
-^2;VALUED_1:func.43:45^2908,20035
-^2;VALUED_1:func.44:46^2915,20171
--;VALUED_1:func.45:47-962,21144
--;VALUED_1:func.46:48-1005,22123
--;VALUED_1:func.47:49-1013,22298
--;VALUED_1:func.48:50-1021,22474
--;VALUED_1:func.49:51-1029,22648
-/";VALUED_1:func.50:52/"1078,23834
-/";VALUED_1:func.51:53/"1111,24532
-/";VALUED_1:func.52:54/"1119,24708
-/";VALUED_1:func.53:55/"1127,24885
-|.;VALUED_1:func.54:56|.1163,25676
-abs;VALUED_1:func.54:57abs1173,25887
-|.;VALUED_1:func.55:58|.1194,26287
-abs;VALUED_1:func.56:59abs1201,26426
-|.;VALUED_1:func.57:60|.1208,26567
-abs;VALUED_1:func.58:61abs1215,26706
-|.;VALUED_1:func.59:62|.1222,26845
-abs;VALUED_1:func.60:63abs1229,26983
-Shift;VALUED_1:func.61:64Shift1270,27850
-increasing;VALUED_1:attr.1:1increasing1321,29158
-decreasing;VALUED_1:attr.2:2decreasing1324,29254
-non-decreasing;VALUED_1:attr.3:3non-decreasing1327,29350
-non-increasing;VALUED_1:attr.4:4non-increasing1330,29451
-LastLoc;VALUED_1:func.62:65LastLoc1393,30821
-CutLastLoc;VALUED_1:func.63:66CutLastLoc1400,30963
-FirstLoc;VALUED_1:func.64:67FirstLoc1424,31595
++;VALUED_1:func.8:9+218,5569
++;VALUED_1:func.9:10+226,5723
++;VALUED_1:func.10:11+234,5882
++;VALUED_1:func.11:12+242,6038
++;VALUED_1:func.12:13+250,6190
+-;VALUED_1:func.13:14-308,7471
+-;VALUED_1:func.14:15-342,8202
+-;VALUED_1:func.15:16-350,8356
+-;VALUED_1:func.16:17-358,8515
+-;VALUED_1:func.17:18-366,8671
+(#);VALUED_1:func.18:19(#)415,9774
+(#);VALUED_1:func.19:20(#)457,10654
+(#);VALUED_1:func.20:21(#)465,10831
+(#);VALUED_1:func.21:22(#)473,11009
+(#);VALUED_1:func.22:23(#)481,11185
+(#);VALUED_1:func.23:24(#)489,11361
+(#);VALUED_1:func.24:25(#)541,12557
+(#);VALUED_1:func.24:26(#)550,12751
+(#);VALUED_1:func.25:27(#)587,13523
+(#);VALUED_1:func.26:28(#)595,13679
+(#);VALUED_1:func.27:29(#)603,13840
+(#);VALUED_1:func.28:30(#)611,13998
+(#);VALUED_1:func.29:31(#)619,14152
+-;VALUED_1:func.30:32-676,15478
+-;VALUED_1:func.31:33-714,16295
+-;VALUED_1:func.32:34-721,16431
+-;VALUED_1:func.33:35-728,16568
+-;VALUED_1:func.34:36-735,16703
+";VALUED_1:func.35:37"775,17509
+";VALUED_1:func.36:38"802,18042
+";VALUED_1:func.37:39"809,18178
+";VALUED_1:func.38:40"816,18315
+^2;VALUED_1:func.39:41^2849,18971
+^2;VALUED_1:func.40:42^2887,19683
+^2;VALUED_1:func.41:43^2894,19820
+^2;VALUED_1:func.42:44^2901,19958
+^2;VALUED_1:func.43:45^2908,20094
+^2;VALUED_1:func.44:46^2915,20230
+-;VALUED_1:func.45:47-962,21203
+-;VALUED_1:func.46:48-1005,22193
+-;VALUED_1:func.47:49-1013,22368
+-;VALUED_1:func.48:50-1021,22544
+-;VALUED_1:func.49:51-1029,22718
+/";VALUED_1:func.50:52/"1078,23904
+/";VALUED_1:func.51:53/"1111,24607
+/";VALUED_1:func.52:54/"1119,24783
+/";VALUED_1:func.53:55/"1127,24960
+|.;VALUED_1:func.54:56|.1163,25751
+abs;VALUED_1:func.54:57abs1173,25962
+|.;VALUED_1:func.55:58|.1194,26371
+abs;VALUED_1:func.56:59abs1201,26510
+|.;VALUED_1:func.57:60|.1208,26651
+abs;VALUED_1:func.58:61abs1215,26790
+|.;VALUED_1:func.59:62|.1222,26929
+abs;VALUED_1:func.60:63abs1229,27067
+Shift;VALUED_1:func.61:64Shift1270,27934
+increasing;VALUED_1:attr.1:1increasing1321,29242
+decreasing;VALUED_1:attr.2:2decreasing1324,29338
+non-decreasing;VALUED_1:attr.3:3non-decreasing1327,29434
+non-increasing;VALUED_1:attr.4:4non-increasing1330,29535
+LastLoc;VALUED_1:func.62:65LastLoc1393,30905
+CutLastLoc;VALUED_1:func.63:66CutLastLoc1400,31047
+FirstLoc;VALUED_1:func.64:67FirstLoc1424,31679
 
 valued_2.abs,
 DOMS;VALUED_2:func.1:1DOMS37,1635
@@ -18715,11 +19212,11 @@ is_order_type_of;WELLORD2:pred.1:1is_order_type_of94,2448
 are_equipotent;WELLORD2:pred.2:2are_equipotent106,2649
 
 wsierp_1.abs,
-Sum;WSIERP_1:func.1:1Sum114,3273
-Product;WSIERP_1:func.2:2Product119,3343
-Del;WSIERP_1:func.0:3Del124,3425
-Del;WSIERP_1:func.3:4Del136,3686
-Del;WSIERP_1:func.4:5Del144,3841
+Sum;WSIERP_1:func.1:1Sum114,3313
+Product;WSIERP_1:func.2:2Product124,3471
+Del;WSIERP_1:func.0:3Del134,3645
+Del;WSIERP_1:func.3:4Del146,3910
+Del;WSIERP_1:func.4:5Del154,4069
 
 xboole_0.abs,
 empty;XBOOLE_0:attr.1:1empty32,968
@@ -19325,18 +19822,18 @@ Zero_;ZMODUL02:func.2:2Zero_63,2637
 Add_;ZMODUL02:func.3:3Add_72,2789
 Mult_;ZMODUL02:func.4:4Mult_81,2992
 (*);ZMODUL02:func.5:5(*)90,3225
-Mult_Mod_pV;ZMODUL02:func.6:6Mult_Mod_pV127,4150
-Z_MQ_VectSp;ZMODUL02:func.7:7Z_MQ_VectSp139,4531
-ZMtoMQV;ZMODUL02:func.8:8ZMtoMQV155,5089
-Mult_INT*;ZMODUL02:func.9:9Mult_INT*162,5237
-modetrans;ZMODUL02:func.10:10modetrans171,5433
-LinComb;ZMODUL02:func.11:11LinComb327,9269
-@;ZMODUL02:func.12:12@341,9506
-@;ZMODUL02:func.13:13@348,9605
-LCAdd;ZMODUL02:func.14:14LCAdd355,9699
-LCMult;ZMODUL02:func.15:15LCMult362,9834
-LC_Z_Module;ZMODUL02:func.16:16LC_Z_Module369,10003
-LC_Z_Module;ZMODUL02:func.17:17LC_Z_Module410,10997
+Mult_Mod_pV;ZMODUL02:func.6:6Mult_Mod_pV127,4143
+Z_MQ_VectSp;ZMODUL02:func.7:7Z_MQ_VectSp139,4524
+ZMtoMQV;ZMODUL02:func.8:8ZMtoMQV155,5082
+Mult_INT*;ZMODUL02:func.9:9Mult_INT*162,5230
+modetrans;ZMODUL02:func.10:10modetrans171,5426
+LinComb;ZMODUL02:func.11:11LinComb327,9262
+@;ZMODUL02:func.12:12@341,9499
+@;ZMODUL02:func.13:13@348,9598
+LCAdd;ZMODUL02:func.14:14LCAdd355,9692
+LCMult;ZMODUL02:func.15:15LCMult362,9827
+LC_Z_Module;ZMODUL02:func.16:16LC_Z_Module369,9996
+LC_Z_Module;ZMODUL02:func.17:17LC_Z_Module410,10990
 
 zmodul03.abs,
 Basis;ZMODUL03:mode.0:1Basis97,3372
@@ -19366,13 +19863,13 @@ torsion;ZMODUL06:attr.2:2torsion113,4125
 torsion-free;ZMODUL06:attr.3:3torsion-free147,4822
 
 zmodul07.abs,
-torsion_part;ZMODUL07:func.1:1torsion_part127,4930
-ZQMorph;ZMODUL07:func.2:2ZQMorph150,5466
-Rat-Module;ZMODUL07:func.3:3Rat-Module185,6331
-rank;ZMODUL07:func.4:4rank259,8153
-nullity;ZMODUL07:func.5:5nullity268,8332
-Zdecom;ZMODUL07:func.6:6Zdecom320,9826
-*;ZMODUL07:func.7:7*345,10513
+torsion_part;ZMODUL07:func.1:1torsion_part127,4920
+ZQMorph;ZMODUL07:func.2:2ZQMorph150,5456
+Rat-Module;ZMODUL07:func.3:3Rat-Module185,6321
+rank;ZMODUL07:func.4:4rank258,8141
+nullity;ZMODUL07:func.5:5nullity267,8320
+Zdecom;ZMODUL07:func.6:6Zdecom319,9814
+*;ZMODUL07:func.7:7*344,10501
 
 zmodul08.abs,
 divisible;ZMODUL08:attr.1:1divisible43,2205

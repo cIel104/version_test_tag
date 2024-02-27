@@ -2,7 +2,7 @@
 ::  by Yasushige Watase , Noboru Endou and Yasunari Shidama
 ::
 :: Received August 26, 2008
-:: Copyright (c) 2008-2021 Association of Mizar Users
+:: Copyright (c) 2008-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -22,10 +22,10 @@ environ
       COMPLEX1, PRE_TOPC, NORMSP_1, LPSPACE1, XCMPLX_0;
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, ORDINAL1, XXREAL_3, XCMPLX_0,
       NUMBERS, COMPLEX1, XXREAL_0, XREAL_0, SUPINF_1, SUPINF_2, EXTREAL1,
-      REALSET1, FUNCT_1, RELSET_1, PARTFUN1, FUNCT_2, VALUED_1, RFUNCT_3,
-      BINOP_1, NAT_1, FUNCOP_1, REAL_1, STRUCT_0, ALGSTR_0, RLVECT_1, RLSUB_1,
-      IDEAL_1, SETFAM_1, DOMAIN_1, PRE_TOPC, NORMSP_0, NORMSP_1, PROB_1,
-      MEASURE1, MEASURE2, MEASURE3, MEASURE6, MESFUNC1, MESFUNC2, MESFUNC5,
+      REALSET1, FUNCT_1, RELSET_1, PARTFUN1, FUNCT_2, BINOP_1, NAT_1, REAL_1,
+      STRUCT_0, ALGSTR_0, RLVECT_1, RLSUB_1, IDEAL_1, SETFAM_1, DOMAIN_1,
+      PRE_TOPC, NORMSP_0, NORMSP_1, PROB_1, MEASURE1, MEASURE2, MEASURE3,
+      MEASURE6, MESFUNC1, VALUED_1, RFUNCT_3, FUNCOP_1, MESFUNC2, MESFUNC5,
       MESFUNC6, FUNCT_7;
  constructors COMPLEX1, EXTREAL1, BINOP_1, REAL_1, RLSUB_1, IDEAL_1, NORMSP_1,
       MEASURE3, MEASURE6, MESFUNC2, MESFUNC5, MESFUNC6, SUPINF_1, FUNCT_7,

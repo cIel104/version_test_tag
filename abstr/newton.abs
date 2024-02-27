@@ -2,7 +2,7 @@
 ::  by Rafa{\l} Kwiatek
 ::
 :: Received July 27, 1990
-:: Copyright (c) 1990-2021 Association of Mizar Users
+:: Copyright (c) 1990-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -34,7 +34,7 @@ begin
 
 reserve i,j,k,n,m,l,s,t for Nat;
 reserve a,b for Real;
-reserve F,G,H for FinSequence of REAL;
+reserve F for real-valued FinSequence;
 
 theorem :: NEWTON:1
   n>=1 implies Seg n = {1} \/ {k where k is Element of NAT: 1<k & k <n} \/ {n};
@@ -43,7 +43,7 @@ theorem :: NEWTON:2
   len (a*F) = len F;
 
 theorem :: NEWTON:3
-  dom G = dom (a*G);
+  dom F = dom (a*F);
 
 :: x |^ n Function
 
@@ -384,11 +384,6 @@ end;
 
 registration
   cluster prime for Element of NAT;
-  cluster prime for Nat;
-end;
-
-definition
-  mode Prime is prime Nat;
 end;
 
 reserve x for set;
@@ -421,7 +416,7 @@ end;
 reserve p for Prime;
 
 theorem :: NEWTON:72
-  ex p st p>l;
+  for l being Nat ex p being Prime st p > l;
 
 registration
   cluster SetPrimes -> non empty;
@@ -463,7 +458,7 @@ theorem :: NEWTON:79
   SetPrimes is infinite;
 
 registration
-  cluster SetPrimes -> non empty infinite;
+  cluster SetPrimes -> infinite;
 end;
 
 reserve i for Nat;

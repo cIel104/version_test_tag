@@ -2,7 +2,7 @@
 ::  by Andrzej Trybulec
 ::
 :: Received May 24, 1995
-:: Copyright (c) 1995-2021 Association of Mizar Users
+:: Copyright (c) 1995-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -343,7 +343,6 @@ definition
   let D,f,p;
   func Rotate(f,p) -> FinSequence of D equals
 :: FINSEQ_6:def 2
-
   (f:-p)^((f-:p)/^1) if p
   in rng f otherwise f;
 end;
@@ -409,40 +408,41 @@ theorem :: FINSEQ_6:102
   p2 in rng f \ rng(f-:p1) implies Rotate(Rotate(f,p1),p2) = Rotate(f,p2);
 
 theorem :: FINSEQ_6:103
-  p2..f <> 1 & p2 in rng f \ rng(f:-p1) implies Rotate(Rotate(f,
-  p1),p2) = Rotate(f,p2);
+  p2..f <> 1 & p2 in rng f \ rng(f:-p1) implies
+  Rotate(Rotate(f,p1),p2) = Rotate(f,p2);
 
 theorem :: FINSEQ_6:104
-  p2 in rng(f/^1) & f just_once_values p2 implies Rotate(Rotate(f
-  ,p1),p2) = Rotate(f,p2);
+  p2 in rng(f/^1) & f just_once_values p2 implies
+  Rotate(Rotate(f,p1),p2) = Rotate(f,p2);
 
 theorem :: FINSEQ_6:105
-  f is circular & f just_once_values p2 implies Rotate(Rotate(f,p1),p2)
-  = Rotate(f,p2);
+  f is circular & f just_once_values p2 implies
+  Rotate(Rotate(f,p1),p2) = Rotate(f,p2);
 
 theorem :: FINSEQ_6:106
-  f is circular & f just_once_values p implies Rev Rotate(f,p) = Rotate(
-  Rev f,p);
+  f is circular & f just_once_values p implies
+  Rev Rotate(f,p) = Rotate(Rev f,p);
 
 begin :: Addenda
 :: from AMISTD_1, 2007.07.26, A.T.
 
 theorem :: FINSEQ_6:107
-  for f being trivial FinSequence of D holds f is empty or ex x being
-  Element of D st f = <*x*>;
+  for f being trivial FinSequence of D holds
+  f is empty or ex x being Element of D st f = <*x*>;
 
 begin :: from JORDAN3, 2010.02.25, A.T.
 
 reserve D for non empty set;
 
 theorem :: FINSEQ_6:108
-  for i be Nat for p,q being FinSequence st len p<i & (i<=len p +
-  len q or i<=len (p^q)) holds (p^q).i=q.(i-len p);
+  for i be Nat for p,q being FinSequence st
+  len p<i & (i<=len p + len q or i<=len (p^q)) holds
+  (p^q).i=q.(i-len p);
 
 theorem :: FINSEQ_6:109
-  for x being set,f being FinSequence of D st 1<=len f holds (f^<*
-x*>).1=f.1 & (f^<*x*>).1=f/.1 & (<*x*>^f).(len f +1)=f.len f & (<*x*>^f).(len f
-  +1)=f/.len f;
+  for x being set,f being FinSequence of D st 1<=len f holds
+  (f^<*x*>).1=f.1 & (f^<*x*>).1=f/.1 & (<*x*>^f).(len f +1)=f.len f &
+  (<*x*>^f).(len f+1)=f/.len f;
 
 theorem :: FINSEQ_6:110
   for f being FinSequence st len f=1 holds Rev f=f;
@@ -454,7 +454,6 @@ definition
   let f be FinSequence,k1,k2 be Nat;
   func mid(f,k1,k2) -> FinSequence equals
 :: FINSEQ_6:def 3
-
   (f/^(k1-'1))|(k2-'k1+1)
   if k1<=k2 otherwise Rev ((f/^(k2-'1))|(k1-'k2+1));
 end;
@@ -469,12 +468,12 @@ end;
 
 theorem :: FINSEQ_6:113
   for f being FinSequence of D,k1,k2 being Nat st 1<=k1
-  & k1<=len f & 1<=k2 & k2<=len f holds Rev mid(f,k1,k2)=mid(Rev f,len f-'k2+1,
-  len f-'k1+1);
+  & k1<=len f & 1<=k2 & k2<=len f holds
+  Rev mid(f,k1,k2)=mid(Rev f,len f-'k2+1,len f-'k1+1);
 
 theorem :: FINSEQ_6:114
-  for n,m being Nat,f being FinSequence st 1<= m &
-  m+n<=len f holds (f/^n).m=f.(m+n);
+  for n,m being Nat,f being FinSequence st
+  1<= m & m+n<=len f holds (f/^n).m=f.(m+n);
 
 theorem :: FINSEQ_6:115
   for i being Nat, f being FinSequence st
@@ -507,8 +506,8 @@ theorem :: FINSEQ_6:121
   for f being FinSequence of D st 1<=len f holds mid(f,len f,1)=Rev f;
 
 theorem :: FINSEQ_6:122
-  for f being FinSequence, k1,k2,i being Nat st 1
-  <=k1 & k1<=k2 & k2<=len f & 1<=i & (i<=k2-'k1+1 or i<=k2-k1+1 or i<=k2+1-k1)
+  for f being FinSequence, k1,k2,i being Nat st
+  1<=k1 & k1<=k2 & k2<=len f & 1<=i & (i<=k2-'k1+1 or i<=k2-k1+1 or i<=k2+1-k1)
 holds mid(f,k1,k2).i=f.(i+k1-'1) & mid(f,k1,k2).i=f.(i-'1+k1) & mid(f,k1,k2).i=
   f.(i+k1-1) & mid(f,k1,k2).i=f.(i-1+k1);
 
@@ -572,15 +571,15 @@ theorem :: FINSEQ_6:133
   (1, len p)-cut p = p;
 
 theorem :: FINSEQ_6:134
-  m<=n & n<=r & r<=len p implies (m+1, n)-cut p ^ (n+1, r)-cut p =
-  (m+1, r)-cut p;
+  m<=n & n<=r & r<=len p implies
+  (m+1, n)-cut p ^ (n+1, r)-cut p = (m+1, r)-cut p;
 
 theorem :: FINSEQ_6:135
   m<=len p implies (1, m)-cut p ^ (m+1, len p)-cut p = p;
 
 theorem :: FINSEQ_6:136
-  m<=n & n<=len p implies (1, m)-cut p ^ (m+1, n)-cut p ^ (n+1, len p)
-  -cut p = p;
+  m<=n & n<=len p implies
+  (1, m)-cut p ^ (m+1, n)-cut p ^ (n+1, len p)-cut p = p;
 
 theorem :: FINSEQ_6:137
   rng ((m,n)-cut p) c= rng p;
@@ -591,8 +590,8 @@ definition
 end;
 
 theorem :: FINSEQ_6:138
-  1<=m & m<=n & n<=len p implies ((m,n)-cut p).1 = p.m & ((m,n)
-  -cut p).len ((m,n)-cut p)=p.n;
+  1<=m & m<=n & n<=len p implies ((m,n)-cut p).1 = p.m &
+  ((m,n)-cut p).len ((m,n)-cut p)=p.n;
 
 begin  :: The glueing catenation
 
@@ -656,12 +655,12 @@ theorem :: FINSEQ_6:146
   len a1 = len a2 & rng a1 = rng a2 & a1.1 = a2.1 implies a1 = a2;
 
 theorem :: FINSEQ_6:147
-  a1<>a2 & len a1 = len a2 & rng a1 = rng a2 implies for i st 1<=i
-  & i<=len a1 holds a1.i<>a2.i;
+  a1<>a2 & len a1 = len a2 & rng a1 = rng a2 implies
+  for i st 1<=i & i<=len a1 holds a1.i<>a2.i;
 
 theorem :: FINSEQ_6:148
-  a1<>a2 & len a1 = len a2 & rng a1 = rng a2 implies for a st len
-  a=len a1 & rng a=rng a1 holds a=a1 or a=a2;
+  a1<>a2 & len a1 = len a2 & rng a1 = rng a2 implies
+  for a st len a=len a1 & rng a=rng a1 holds a=a1 or a=a2;
 
 theorem :: FINSEQ_6:149
   X <> Y & n > 1 implies ex a1 st rng a1 = {X, Y} & len a1 = n & a1.1 = X;
@@ -713,8 +712,8 @@ theorem :: FINSEQ_6:158
   for f being FinSequence holds f^'<*x*> = f;
 
 theorem :: FINSEQ_6:159 :: GRAPH_2:14
-  for f1, f2 being FinSequence of D holds 1<=n & n<=len f1 implies (f1^'
-  f2)/.n = f1/.n;
+  for f1, f2 being FinSequence of D holds 1<=n & n<=len f1 implies
+  (f1^'f2)/.n = f1/.n;
 
 theorem :: FINSEQ_6:160 :: GRAPH_2:15
   for f1, f2 being FinSequence of D holds 1<=n & n<len f2 implies
@@ -738,9 +737,10 @@ reserve F, F1 for FinSequence of INT,
   k, m, n, ma for Nat;
 
 theorem :: FINSEQ_6:161
-  1 <= m & m <= n & n <= len F implies (ma = min_at(F, m, n) iff m
-<= ma & ma <= n & (for i being Nat st m <= i & i <= n holds F.ma <=
-  F.i) & for i being Nat st m <= i & i < ma holds F.ma < F.i);
+  1 <= m & m <= n & n <= len F implies (ma = min_at(F, m, n) iff
+  m <= ma & ma <= n &
+  (for i being Nat st m <= i & i <= n holds F.ma <= F.i) &
+  for i being Nat st m <= i & i < ma holds F.ma < F.i);
 
 theorem :: FINSEQ_6:162
   1 <= m & m <= len F implies min_at(F, m, m) = m;
@@ -766,8 +766,8 @@ theorem :: FINSEQ_6:163
   implies F1 is_non_decreasing_on 1, k+1;
 
 theorem :: FINSEQ_6:164
-  k+1 <= len F & ma = min_at(F, k+1, len F) & F is_split_at k & F1 = F+*
-  (k+1, F.ma)+*(ma, F.(k+1)) implies F1 is_split_at k+1;
+  k+1 <= len F & ma = min_at(F, k+1, len F) & F is_split_at k &
+  F1 = F+*(k+1, F.ma)+*(ma, F.(k+1)) implies F1 is_split_at k+1;
 
 :: from SCPISORT, 2011.02.13
 
@@ -791,12 +791,12 @@ definition
 end;
 
 theorem :: FINSEQ_6:166
-  for D being non empty set, f being FinSequence of D st f
-  just_once_values f/.len f holds f/.len f..f = len f;
+  for D being non empty set, f being FinSequence of D st
+    f just_once_values f/.len f holds f/.len f..f = len f;
 
 theorem :: FINSEQ_6:167
-  for D being non empty set, f being FinSequence of D holds f /^ len f =
-  {};
+  for D being non empty set, f being FinSequence of D holds
+    f /^ len f = {};
 
 theorem :: FINSEQ_6:168
   for D being non empty set, f being non empty FinSequence of D
@@ -806,24 +806,25 @@ definition
   let D be non empty set, f be FinSequence of D, y be set;
   redefine pred f just_once_values y means
 :: FINSEQ_6:def 12
-  ex x being set st x in dom f & y =
-  f/.x & for z being set st z in dom f & z <> x holds f/.z <> y;
+  ex x being set st x in dom f & y = f/.x &
+    for z being set st z in dom f & z <> x holds f/.z <> y;
 end;
 
 theorem :: FINSEQ_6:169
-  for D being non empty set, f being FinSequence of D st f
-  just_once_values f/.len f holds f-:f/.len f = f;
+  for D being non empty set, f being FinSequence of D st
+    f just_once_values f/.len f holds f-:f/.len f = f;
 
 theorem :: FINSEQ_6:170
-  for D being non empty set, f being FinSequence of D st f
-  just_once_values f/.len f holds f:-f/.len f = <*f/.len f*>;
+  for D being non empty set, f being FinSequence of D st
+    f just_once_values f/.len f holds f:-f/.len f = <*f/.len f*>;
 
 theorem :: FINSEQ_6:171
   1 <= len (f:-p);
 
 theorem :: FINSEQ_6:172
-  for D being non empty set, p being Element of D, f being FinSequence
-  of D st p in rng f holds len(f:-p) <= len f;
+  for D being non empty set, p being Element of D,
+      f being FinSequence of D st p in rng f holds
+        len(f:-p) <= len f;
 
 theorem :: FINSEQ_6:173
   for D being non empty set, f being circular non empty FinSequence of D
@@ -840,19 +841,19 @@ theorem :: FINSEQ_6:174
   /.(i -' 1 + p..f);
 
 theorem :: FINSEQ_6:175
-  p in rng f & p..f <= i & i <= len f implies f/.i = (Rotate(f,p))
-  /.(i+1 -' p..f);
+  p in rng f & p..f <= i & i <= len f implies
+    f/.i = (Rotate(f,p))/.(i+1 -' p..f);
 
 theorem :: FINSEQ_6:176
   p in rng f implies (Rotate(f,p))/.len(f:-p) = f/.len f;
 
 theorem :: FINSEQ_6:177
-  p in rng f & len(f:-p) < i & i <= len f implies (Rotate(f,p))/.i
-  = f/.(i + p..f -' len f);
+  p in rng f & len(f:-p) < i & i <= len f implies
+    (Rotate(f,p))/.i = f/.(i + p..f -' len f);
 
 theorem :: FINSEQ_6:178
-  p in rng f & 1 < i & i <= p..f implies f/.i = (Rotate(f,p))/.(i + len
-  f -' p..f);
+  p in rng f & 1 < i & i <= p..f implies
+    f/.i = (Rotate(f,p))/.(i + len f -' p..f);
 
 theorem :: FINSEQ_6:179
   len Rotate(f,p) = len f;
@@ -861,21 +862,21 @@ theorem :: FINSEQ_6:180
   dom Rotate(f,p) = dom f;
 
 theorem :: FINSEQ_6:181
-  for D being non empty set, f being circular FinSequence of D, p
-be Element of D st for i st 1 < i & i < len f holds f/.i <> f/.1 holds Rotate(
-  Rotate(f,p),f/.1) = f;
+  for D being non empty set, f being circular FinSequence of D,
+      p be Element of D st for i st 1 < i & i < len f holds
+    f/.i <> f/.1 holds Rotate(Rotate(f,p),f/.1) = f;
 
 begin :: Rotating circular
 
 reserve f for circular FinSequence of D;
 
 theorem :: FINSEQ_6:182
-  p in rng f & len(f:-p) <= i & i <= len f implies (Rotate(f,p))/.
-  i = f/.(i + p..f -' len f);
+  p in rng f & len(f:-p) <= i & i <= len f implies
+    (Rotate(f,p))/.i = f/.(i + p..f -' len f);
 
 theorem :: FINSEQ_6:183
-  p in rng f & 1 <= i & i <= p..f implies f/.i = (Rotate(f,p))/.(i
-  + len f -' p..f);
+  p in rng f & 1 <= i & i <= p..f implies
+    f/.i = (Rotate(f,p))/.(i + len f -' p..f);
 
 registration
   let D be non trivial set;
@@ -888,3 +889,56 @@ registration
   cluster Rotate(f,p) -> non constant;
 end;
 
+begin :: Moved from JORDAN4, 2023.01.14, S.K.
+
+reserve i, i1, i2, j, k for Nat;
+reserve D for non empty set,
+  f1 for FinSequence of D;
+
+theorem :: FINSEQ_6:184
+  for f1 st f1 is circular & 1<=len f1 holds f1.1=f1.len f1;
+
+theorem :: FINSEQ_6:185
+  for f1,k st k<len f1 holds (f1/^k).len (f1/^k)=f1.len f1 &
+    (f1/^k)/.len (f1/^k)=f1/.len f1;
+
+theorem :: FINSEQ_6:186
+  for f1,i1,i2 st 1<=i2 & i2<=i1 & i1<=len f1 holds
+    len mid(f1,i2, i1)=i1-'i2+1;
+
+theorem :: FINSEQ_6:187
+  for f1,i1,i2 st 1<=i2 & i2<=i1 & i1<=len f1 holds
+    len mid(f1,i1, i2)=i1-'i2+1;
+
+theorem :: FINSEQ_6:188
+  for f1,i1,i2,j st 1<=i1 & i1<=i2 & i2<=len f1 holds
+    mid(f1,i1,i2).(len mid(f1,i1,i2))=f1.i2;
+
+theorem :: FINSEQ_6:189
+  for f1,i1,i2,j st 1<=i1 & i1<=len f1 & 1<=i2 & i2<=len f1 holds
+    mid(f1,i1,i2).(len mid(f1,i1,i2))=f1.i2;
+
+theorem :: FINSEQ_6:190
+  for f1,i1,i2,j st 1<=i2 & i2<=i1 & i1<=len f1 & 1<=j & j<=i1-'i2+1 holds
+    mid(f1,i1,i2).j=f1.(i1-'j+1);
+
+theorem :: FINSEQ_6:191
+  for f1,i1,i2 st 1<=i2 & i2<=i1 & i1<=len f1 & 1<=j & j<=i1-'i2+1 holds
+    mid(f1,i1,i2).j=mid(f1,i2,i1).(i1-i2+1-j+1) & i1-i2+1-j+1=i1-'i2+1-'j+1;
+
+theorem :: FINSEQ_6:192
+  for f1,i1,i2 st 1<=i1 & i1<=i2 & i2<=len f1 & 1<=j & j<=i2-'i1+1 holds
+  mid(f1,i1,i2).j=mid(f1,i2,i1).(i2-i1+1-j+1) & i2-i1+1-j+1=i2-'i1+1-'j+1;
+
+theorem :: FINSEQ_6:193
+  for f1 being FinSequence st
+  k in dom f1 holds mid(f1,k,k)=<*f1.k*> & len mid(f1,k,k)=1;
+
+theorem :: FINSEQ_6:194
+  for f1 being FinSequence holds mid(f1,0,0)=f1|1;
+
+theorem :: FINSEQ_6:195
+  for f1 being FinSequence st len f1<k holds mid(f1,k,k)={};
+
+theorem :: FINSEQ_6:196
+  for f1 being FinSequence holds mid(f1,i1,i2)=Rev mid(f1,i2,i1);

@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received June 13, 2014
-:: Copyright (c) 2014-2021 Association of Mizar Users
+:: Copyright (c) 2014-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -1229,7 +1229,8 @@ end;
 
 reserve
   s2 for s1-reachable SortSymbol of S,
-  g1 for Translation of Free(S,Y),s1,s2;
+  g1 for Translation of Free(S,Y),s1,s2,
+  g for Translation of Free(S,X),s1,s2;
 
 theorem :: MSAFREE5:115
   TranslationRel S reduces s,the_sort_of C9;

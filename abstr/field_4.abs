@@ -2,7 +2,7 @@
 ::  by Christoph Schwarzweller
 ::
 :: Received August 29, 2019
-:: Copyright (c) 2019-2021 Association of Mizar Users
+:: Copyright (c) 2019-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -45,7 +45,7 @@ environ
       STRUCT_0, VECTSP_1, ALGSTR_1, VFUNCT_1, POLYNOM4, FUNCT_2, ALGSTR_0,
       POLYNOM3, SUBSET_1, RLVECT_1, COMPLFLD, FUNCT_1, FINSET_1, INT_3,
       RATFUNC1, GAUSSINT, RELAT_1, MOD_4, RING_2, RING_3, RING_4, RING_5,
-      REALSET1, FIELD_2, FIELD_3;
+      REALSET1, FIELD_1, FIELD_2, FIELD_3;
  requirements NUMERALS, SUBSET, BOOLE, REAL, ARITHM;
 
 

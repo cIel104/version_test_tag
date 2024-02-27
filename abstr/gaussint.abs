@@ -2,7 +2,7 @@
 ::  by Yuichi Futa , Hiroyuki Okazaki , Daichi Mizushima and Yasunari Shidama
 ::
 :: Received May 19, 2013
-:: Copyright (c) 2013-2021 Association of Mizar Users
+:: Copyright (c) 2013-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -24,9 +24,8 @@ environ
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, RELAT_1, FUNCT_1, ORDINAL1,
       PARTFUN1, FUNCT_2, BINOP_1, DOMAIN_1, REALSET1, FINSET_1, CARD_1, CARD_3,
       NUMBERS, XCMPLX_0, XXREAL_0, XREAL_0, SQUARE_1, INT_1, RAT_1, COMPLEX1,
-      INT_2, INT_3, BINOP_2, NEWTON, STRUCT_0, ALGSTR_0, RLVECT_1, GROUP_1,
-      VECTSP_1, FUNCSDOM, VECTSP_2, GCD_1, QUOFIELD, EC_PF_1, ZMODUL01,
-      POLYALG1;
+      INT_2, INT_3, BINOP_2, STRUCT_0, ALGSTR_0, RLVECT_1, GROUP_1, VECTSP_1,
+      FUNCSDOM, VECTSP_2, GCD_1, QUOFIELD, EC_PF_1, ZMODUL01, POLYALG1;
  constructors REAL_1, SQUARE_1, MEMBERED, RELSET_1, NAT_1, BINOP_2, ZMODUL01,
       FUNCSDOM, WELLORD2, CARD_3, QUOFIELD, REALSET1, EC_PF_1, GCD_1, RAT_1,
       POLYALG1;

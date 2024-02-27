@@ -2,7 +2,7 @@
 ::  by Christoph Schwarzweller
 ::
 :: Received February 8, 2012
-:: Copyright (c) 2012-2021 Association of Mizar Users
+:: Copyright (c) 2012-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -25,11 +25,12 @@ environ
       GROUP_4, FUNCT_7, VECTSP_2, NUMBERS, XTUPLE_0, MCART_1, ALGSTR_0,
       ALGSTR_1, VECTSP_1, RLVECT_1, ARYTM_3, RELSET_1, FINSEQ_1, FUNCT_1,
       FUNCT_2, GROUP_1, INT_1, NAT_1, FINSEQ_3, VFUNCT_1, RFINSEQ, NORMSP_1,
-      POLYNOM3, POLYNOM4, FINSEQ_5, POLYNOM5, STRUCT_0, ALGSEQ_1, UPROOTS,
-      HURWITZ;
+      WSIERP_1, POLYNOM3, POLYNOM4, FINSEQ_5, POLYNOM5, STRUCT_0, ALGSEQ_1,
+      UPROOTS, HURWITZ;
  constructors BINOP_1, REAL_1, SQUARE_1, VECTSP_2, POLYNOM4, POLYNOM5,
       XTUPLE_0, ALGSTR_2, HURWITZ, FUNCT_4, RELSET_1, ARYTM_3, FUNCT_7,
-      GROUP_4, NAT_D, VFUNCT_1, RFINSEQ, FINSEQ_5, NAT_1, ALGSEQ_1, UPROOTS;
+      GROUP_4, NAT_D, VFUNCT_1, RFINSEQ, FINSEQ_5, NAT_1, ALGSEQ_1, UPROOTS,
+      WSIERP_1;
  registrations XBOOLE_0, ORDINAL1, RELSET_1, XCMPLX_0, XXREAL_0, XREAL_0,
       NAT_1, INT_1, MEMBERED, FINSEQ_1, STRUCT_0, VECTSP_1, ALGSTR_1, POLYNOM3,
       POLYNOM4, POLYNOM5, POLYNOM1, FUNCT_2, VFUNCT_1, CARD_1, RELAT_1,

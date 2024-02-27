@@ -2,7 +2,7 @@
 ::  by Library Committee
 ::
 :: Received December 18, 2007
-:: Copyright (c) 2007-2021 Association of Mizar Users
+:: Copyright (c) 2007-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -18,7 +18,7 @@ environ
       XXREAL_0, VALUED_0, RAT_1, COMPLEX1, ARYTM_1, ARYTM_3, MEMBERED,
       PARTFUN1, TARSKI, SUBSET_1, CARD_1, XCMPLX_0, INT_1, SQUARE_1, FUNCT_4,
       FINSET_1, NAT_1, ORDINAL2, VALUED_1, AMISTD_1, FUNCOP_1, AMISTD_2,
-      AMISTD_3, ORDINAL4, REAL_1, XREAL_0;
+      AMISTD_3, ORDINAL4, REAL_1;
  notations TARSKI, XBOOLE_0, SUBSET_1, ORDINAL1, FINSET_1, CARD_1, XCMPLX_0,
       NUMBERS, COMPLEX1, XXREAL_0, XXREAL_2, FUNCOP_1, XREAL_0, RAT_1, INT_1,
       INT_2, SQUARE_1, RELAT_1, FUNCT_1, RELSET_1, PARTFUN1, FUNCT_2, FUNCT_4,
@@ -65,12 +65,12 @@ registration
 end;
 
 registration
-  let f1,f2 be RAT-valued Function;
+  let f1,f2 be rational-valued Function;
   cluster f1+f2 -> RAT-valued;
 end;
 
 registration
-  let f1,f2 be INT-valued Function;
+  let f1,f2 be integer-valued Function;
   cluster f1+f2 -> INT-valued;
 end;
 
@@ -196,12 +196,12 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function, r be Rational;
+  let f be rational-valued Function, r be Rational;
   cluster r+f -> RAT-valued;
 end;
 
 registration
-  let f be INT-valued Function, r be Integer;
+  let f be integer-valued Function, r be Integer;
   cluster r+f -> INT-valued;
 end;
 
@@ -325,12 +325,12 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function, r be Rational;
+  let f be rational-valued Function, r be Rational;
   cluster f-r -> RAT-valued;
 end;
 
 registration
-  let f be INT-valued Function, r be Integer;
+  let f be integer-valued Function, r be Integer;
   cluster f-r -> INT-valued;
 end;
 
@@ -435,12 +435,12 @@ registration
 end;
 
 registration
-  let f1,f2 be RAT-valued Function;
+  let f1,f2 be rational-valued Function;
   cluster f1(#)f2 -> RAT-valued;
 end;
 
 registration
-  let f1,f2 be INT-valued Function;
+  let f1,f2 be integer-valued Function;
   cluster f1(#)f2 -> INT-valued;
 end;
 
@@ -565,12 +565,12 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function, r be Rational;
+  let f be rational-valued Function, r be Rational;
   cluster r(#)f -> RAT-valued;
 end;
 
 registration
-  let f be INT-valued Function, r be Integer;
+  let f be integer-valued Function, r be Integer;
   cluster r(#)f -> INT-valued;
 end;
 
@@ -698,12 +698,12 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function;
+  let f be rational-valued Function;
   cluster -f -> RAT-valued;
 end;
 
 registration
-  let f be INT-valued Function;
+  let f be integer-valued Function;
   cluster -f -> INT-valued;
 end;
 
@@ -791,7 +791,7 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function;
+  let f be rational-valued Function;
   cluster f" -> RAT-valued;
 end;
 
@@ -866,12 +866,12 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function;
+  let f be rational-valued Function;
   cluster f^2 -> RAT-valued;
 end;
 
 registration
-  let f be INT-valued Function;
+  let f be integer-valued Function;
   cluster f^2 -> INT-valued;
 end;
 
@@ -975,12 +975,12 @@ registration
 end;
 
 registration
-  let f1,f2 be RAT-valued Function;
+  let f1,f2 be rational-valued Function;
   cluster f1-f2 -> RAT-valued;
 end;
 
 registration
-  let f1,f2 be INT-valued Function;
+  let f1,f2 be integer-valued Function;
   cluster f1-f2 -> INT-valued;
 end;
 
@@ -990,7 +990,7 @@ theorem :: VALUED_1:12
 
 theorem :: VALUED_1:13
   for f1,f2 being complex-valued Function
-for c being object st c in dom (f1-f2) holds (f1-f2).c = f1.c - f2.c;
+  for c being object st c in dom (f1-f2) holds (f1-f2).c = f1.c - f2.c;
 
 theorem :: VALUED_1:14
   for f1,f2 being complex-valued Function, f being Function st dom f =
@@ -1099,7 +1099,7 @@ registration
 end;
 
 registration
-  let f1,f2 be RAT-valued Function;
+  let f1,f2 be rational-valued Function;
   cluster f1/"f2 -> RAT-valued;
 end;
 
@@ -1178,12 +1178,12 @@ theorem :: VALUED_1:18
    for c being object holds |.f.|.c = |.f.c.|;
 
 registration
-  let f be RAT-valued Function;
+  let f be rational-valued Function;
   cluster |.f.| -> RAT-valued;
 end;
 
 registration
-  let f be INT-valued Function;
+  let f be integer-valued Function;
   cluster |.f.| -> natural-valued;
 end;
 

@@ -2,7 +2,7 @@
 ::  by Kenichi Arai and Hiroyuki Okazaki
 ::
 :: Received April 7, 2009
-:: Copyright (c) 2009-2021 Association of Mizar Users
+:: Copyright (c) 2009-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -40,8 +40,8 @@ begin :: Properties of Primes
 :: Safe Prime & Sophie_Germain Prime & Mersenne number
 
 theorem :: GR_CY_3:1
-  for p,q be Prime, k be Nat st k divides p*q holds k = 1 or k = p
-  or k = q or k = p*q;
+  for p,q be Prime, k be Nat st
+  k divides p*q holds k = 1 or k = p or k = q or k = p*q;
 
 definition
   let p be Nat;
@@ -95,11 +95,11 @@ theorem :: GR_CY_3:10
   for p be Safe Prime ex q be Sophie_Germain Prime st p = 2*q+1;
 
 theorem :: GR_CY_3:11
-  for p be Safe Prime ex q be Sophie_Germain Prime st Euler p = 2* q;
+  for p be Safe Prime ex q be Sophie_Germain Prime st Euler p = 2*q;
 
 theorem :: GR_CY_3:12
-  for p1,p2 be Safe Prime, N be Nat st p1 <> p2 & N = p1*p2 holds ex q1,
-  q2 be Sophie_Germain Prime st Euler (N) = 4*q1*q2;
+  for p1,p2 be Safe Prime, N be Nat st p1 <> p2 & N = p1*p2 holds
+  ex q1,q2 be Sophie_Germain Prime st Euler (N) = 4*q1*q2;
 
 theorem :: GR_CY_3:13
   for p be Safe Prime ex q be Sophie_Germain Prime st card (Z/Z*(p )) = 2*q;
@@ -109,10 +109,11 @@ theorem :: GR_CY_3:14
   ex a being Element of G st ord a = n & gr {a} is strict Subgroup of G;
 
 theorem :: GR_CY_3:15
-  for p be Safe Prime ex q be Sophie_Germain Prime, H1,H2,Hq,H2q be
-strict Subgroup of (Z/Z*(p)) st card H1 = 1 & card H2 = 2 & card Hq = q & card
-H2q = 2*q & for H be strict Subgroup of (Z/Z*(p)) holds H = H1 or H = H2 or H =
-  Hq or H = H2q;
+  for p be Safe Prime ex q be Sophie_Germain Prime,
+      H1,H2,Hq,H2q be strict Subgroup of Z/Z*(p) st
+   card H1 = 1 & card H2 = 2 & card Hq = q & card H2q = 2*q &
+   for H be strict Subgroup of Z/Z*(p) holds
+   H = H1 or H = H2 or H = Hq or H = H2q;
 
 definition
   let n be Nat;
@@ -153,17 +154,17 @@ theorem :: GR_CY_3:25
   ex q be Safe Prime st q divides Mersenne(p);
 
 theorem :: GR_CY_3:26
-  for p be Sophie_Germain Prime st p > 2 & p mod 4 = 1 holds ex q be
-  Safe Prime st Mersenne(p) mod q = q-2;
+  for p be Sophie_Germain Prime st p > 2 & p mod 4 = 1 holds
+  ex q be Safe Prime st Mersenne(p) mod q = q-2;
 
 theorem :: GR_CY_3:27
-  for a,n be Nat st a > 1 holds a-1 divides a|^n-1;
+  for a,n be Nat holds a-1 divides a|^n-1;
 
 theorem :: GR_CY_3:28
-  for a,p be Nat st p > 1 & a|^p-1 is Prime holds a = 2 & p is Prime;
+  for a,p be Nat st p <> 1 & a|^p-1 is Prime holds a = 2 & p is Prime;
 
 theorem :: GR_CY_3:29
-  for p be Nat st p > 1 & Mersenne(p) is Prime holds p is Prime;
+  for p be Nat st p <> 1 & Mersenne(p) is Prime holds p is Prime;
 
 :: Other theorems
 
@@ -171,24 +172,24 @@ theorem :: GR_CY_3:30
   for a be Integer,x,n be Nat holds a|^x mod n = (a mod n)|^x mod n;
 
 theorem :: GR_CY_3:31
-  for x,y,n be Integer st x,n are_coprime & x,y
-  are_congruent_mod n holds y,n are_coprime;
+  for x,y,n be Integer st
+  x,n are_coprime & x,y are_congruent_mod n holds y,n are_coprime;
 
 theorem :: GR_CY_3:32
-  for a,x be Nat, p be Prime st a,p are_coprime & a,x*x
-  are_congruent_mod p holds x,p are_coprime;
+  for a,x be Nat, p be Prime st
+  a,p are_coprime & a,x*x are_congruent_mod p holds x,p are_coprime;
 
 theorem :: GR_CY_3:33
-  for a,x be Integer, p be Prime st a,p are_coprime & a,x*x
-  are_congruent_mod p holds x,p are_coprime;
+  for a,x be Integer, p be Prime st
+  a,p are_coprime & a,x*x are_congruent_mod p holds x,p are_coprime;
 
 theorem :: GR_CY_3:34
-  for a,b be Integer,n,x be Nat st a,b are_congruent_mod n & n <> 0
-  holds a|^x,b|^x are_congruent_mod n;
+  for a,b be Integer,n,x be Nat st
+  a,b are_congruent_mod n & n <> 0 holds a|^x,b|^x are_congruent_mod n;
 
 theorem :: GR_CY_3:35
-  for a be Integer, n be Prime st a*a mod n = 1 holds a,1
-  are_congruent_mod n or a,(-1) are_congruent_mod n;
+  for a be Integer, n be Prime st a*a mod n = 1 holds
+  a,1 are_congruent_mod n or a,(-1) are_congruent_mod n;
 
 begin :: Multiplicative Group of a Field
 
@@ -201,8 +202,8 @@ registration
 end;
 
 theorem :: GR_CY_3:37
-  for F be commutative Skew-Field, x be Element of MultGroup (F), x1 be
-  Element of F st x = x1 holds x" = x1";
+  for F be commutative Skew-Field, x be Element of MultGroup (F),
+  x1 be Element of F st x = x1 holds x" = x1";
 
 theorem :: GR_CY_3:38
   for F be commutative Skew-Field, G be finite Subgroup of MultGroup(F)

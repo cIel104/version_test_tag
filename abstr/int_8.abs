@@ -2,7 +2,7 @@
 ::  by Na Ma and Xiquan Liang
 ::
 :: Received August 6, 2012
-:: Copyright (c) 2012-2021 Association of Mizar Users
+:: Copyright (c) 2012-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -27,7 +27,7 @@ environ
       ABIAN, INT_4, INT_5, POLYEQ_3;
  registrations RELAT_1, FINSEQ_1, CARD_1, NAT_1, INT_1, MEMBERED, FINSET_1,
       NEWTON, NAT_3, XXREAL_0, NUMBERS, XBOOLE_0, XREAL_0, ORDINAL1, VALUED_0,
-      ABIAN, MEMBER_1, XCMPLX_0, WSIERP_1, INT_4;
+      ABIAN, MEMBER_1, XCMPLX_0, WSIERP_1, INT_4, VALUED_1;
  requirements REAL, NUMERALS, SUBSET, BOOLE, ARITHM;
 
 
@@ -192,12 +192,12 @@ theorem :: INT_8:28
  holds rng fn is_RRS_of n);
 
 theorem :: INT_8:29
-  p>2 & i,p are_coprime & i is_primitive_root_of p
-    implies (for k be Nat holds not i|^(2*k+1) is_quadratic_residue_mod p);
+  p>2 & i,p are_coprime & i is_primitive_root_of p implies
+  for k be Nat holds not i|^(2*k+1) is_quadratic_residue_mod p;
 
 theorem :: INT_8:30
-  for k be Nat st k>=3 holds (for m st m,2|^k are_coprime
-    holds not m is_primitive_root_of 2|^k);
+  for k be Nat st k>=3 holds
+  for m st m,2|^k are_coprime holds not m is_primitive_root_of 2|^k;
 
 theorem :: INT_8:31
   p>2 & k>=2 & i,p are_coprime & i is_primitive_root_of p

@@ -2,7 +2,7 @@
 ::  by Bo Zhang , Hiroshi Yamazaki and Yatsuka Nakamura
 ::
 :: Received August 12, 2005
-:: Copyright (c) 2005-2021 Association of Mizar Users
+:: Copyright (c) 2005-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -21,15 +21,16 @@ environ
       FINSOP_1, SEQM_3, SETLIM_2, PROB_3, SEQ_4, REAL_1;
  notations FINSEQ_1, ORDINAL1, CARD_3, REAL_1, RELAT_1, TARSKI, XBOOLE_0,
       RVSUM_1, FINSOP_1, SUBSET_1, NUMBERS, XCMPLX_0, XREAL_0, SETFAM_1,
-      BINOP_1, SETWOP_2, BINOP_2, SETWISEO, NAT_1, FINSEQ_2, COMPLEX1, SEQ_1,
-      COMSEQ_2, SEQ_2, FUNCT_1, RELSET_1, PARTFUN1, FUNCT_2, PROB_1, PROB_2,
-      KURATO_0, SETLIM_2, SEQM_3, SETLIM_1, RINFSUP1, SERIES_1, XXREAL_0;
+      VALUED_0, BINOP_1, SETWOP_2, BINOP_2, SETWISEO, NAT_1, FINSEQ_2,
+      COMPLEX1, SEQ_1, COMSEQ_2, SEQ_2, FUNCT_1, RELSET_1, PARTFUN1, FUNCT_2,
+      PROB_1, PROB_2, KURATO_0, SETLIM_2, SEQM_3, SETLIM_1, RINFSUP1, SERIES_1,
+      XXREAL_0;
  constructors SETFAM_1, PARTFUN1, SETWISEO, XXREAL_0, REAL_1, NAT_1, BINOP_2,
       COMPLEX1, SEQ_2, SEQM_3, PROB_2, FINSOP_1, RVSUM_1, SERIES_1, BINOP_1,
       KURATO_0, SETLIM_1, RINFSUP1, SETLIM_2, PROB_1, RELSET_1, SETWOP_2,
       COMSEQ_2;
  registrations SUBSET_1, ORDINAL1, RELSET_1, NUMBERS, XREAL_0, NAT_1, PROB_1,
-      VALUED_0, SEQ_2, FUNCT_2;
+      VALUED_0, SEQ_2, FUNCT_2, FINSEQ_1;
  requirements REAL, NUMERALS, BOOLE, SUBSET, ARITHM;
 
 
@@ -40,7 +41,7 @@ reserve n,m,k,i for Nat,
   x,y,z for object, X,Y,Z for set,
   A1 for SetSequence of X,
   F1 for FinSequence of bool X,
-  RFin for FinSequence of REAL,
+  RFin for real-valued FinSequence,
   Si for SigmaField of X,
   XSeq,YSeq for SetSequence of Si,
   Omega for non empty set,
@@ -365,8 +366,8 @@ theorem :: PROB_3:62
 
 theorem :: PROB_3:63
   len RFin >= 1 implies ex f being Real_Sequence st f.1 = RFin.1 &
-(for n st 0 <> n & n < len RFin holds f.(n+1) = f.n+RFin.(n+1)) & Sum(RFin) = f
-  .(len RFin);
+  (for n st 0 <> n & n < len RFin holds f.(n+1) = f.n+RFin.(n+1)) &
+  Sum(RFin) = f.(len RFin);
 
 theorem :: PROB_3:64
   for FSeq being FinSequence of Sigma, ASeq being SetSequence of

@@ -2,7 +2,7 @@
 ::  by Library Committee
 ::
 :: Received November 22, 2007
-:: Copyright (c) 2007-2021 Association of Mizar Users
+:: Copyright (c) 2007-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -44,7 +44,14 @@ definition
 :: VALUED_0:def 3
 
   rng f c= REAL;
-::$CD 2
+  attr f is rational-valued means
+:: VALUED_0:def 4
+
+  rng f c= RAT;
+  attr f is integer-valued means
+:: VALUED_0:def 5
+
+  rng f c= INT;
   attr f is natural-valued means
 :: VALUED_0:def 6
 
@@ -52,13 +59,13 @@ definition
 end;
 
 registration
-  cluster natural-valued -> INT-valued for Relation;
-  cluster INT-valued -> RAT-valued for Relation;
-  cluster INT-valued -> real-valued for Relation;
-  cluster RAT-valued -> real-valued for Relation;
+  cluster natural-valued -> integer-valued for Relation;
+  cluster integer-valued -> rational-valued for Relation;
+  cluster integer-valued -> real-valued for Relation;
+  cluster rational-valued -> real-valued for Relation;
   cluster real-valued -> ext-real-valued for Relation;
   cluster real-valued -> complex-valued for Relation;
-  cluster natural-valued -> RAT-valued for Relation;
+  cluster natural-valued -> rational-valued for Relation;
   cluster natural-valued -> real-valued for Relation;
 end;
 
@@ -86,12 +93,12 @@ registration
 end;
 
 registration
-  let R be RAT-valued Relation;
+  let R be rational-valued Relation;
   cluster rng R -> rational-membered;
 end;
 
 registration
-  let R be INT-valued Relation;
+  let R be integer-valued Relation;
   cluster rng R -> integer-membered;
 end;
 
@@ -114,10 +121,10 @@ theorem :: VALUED_0:3
   for S being real-valued Relation st R c= S holds R is real-valued;
 
 theorem :: VALUED_0:4
-  for S being RAT-valued Relation st R c= S holds R is RAT-valued;
+  for S being rational-valued Relation st R c= S holds R is rational-valued;
 
 theorem :: VALUED_0:5
-  for S being INT-valued Relation st R c= S holds R is INT-valued;
+  for S being integer-valued Relation st R c= S holds R is integer-valued;
 
 theorem :: VALUED_0:6
   for S being natural-valued Relation st R c= S holds R is natural-valued;
@@ -138,13 +145,13 @@ registration
 end;
 
 registration
-  let R be RAT-valued Relation;
-  cluster -> RAT-valued for Subset of R;
+  let R be rational-valued Relation;
+  cluster -> rational-valued for Subset of R;
 end;
 
 registration
-  let R be INT-valued Relation;
-  cluster -> INT-valued for Subset of R;
+  let R be integer-valued Relation;
+  cluster -> integer-valued for Subset of R;
 end;
 
 registration
@@ -168,13 +175,13 @@ registration
 end;
 
 registration
-  let R,S be RAT-valued Relation;
-  cluster R \/ S -> RAT-valued;
+  let R,S be rational-valued Relation;
+  cluster R \/ S -> rational-valued;
 end;
 
 registration
-  let R,S be INT-valued Relation;
-  cluster R \/ S -> INT-valued;
+  let R,S be integer-valued Relation;
+  cluster R \/ S -> integer-valued;
 end;
 
 registration
@@ -204,17 +211,17 @@ registration
 end;
 
 registration
-  let R be RAT-valued Relation;
+  let R be rational-valued Relation;
   let S;
-  cluster R /\ S -> RAT-valued;
-  cluster R \ S -> RAT-valued;
+  cluster R /\ S -> rational-valued;
+  cluster R \ S -> rational-valued;
 end;
 
 registration
-  let R be INT-valued Relation;
+  let R be integer-valued Relation;
   let S;
-  cluster R /\ S -> INT-valued;
-  cluster R \ S -> INT-valued;
+  cluster R /\ S -> integer-valued;
+  cluster R \ S -> integer-valued;
 end;
 
 registration
@@ -240,13 +247,13 @@ registration
 end;
 
 registration
-  let R,S be RAT-valued Relation;
-  cluster R \+\ S -> RAT-valued;
+  let R,S be rational-valued Relation;
+  cluster R \+\ S -> rational-valued;
 end;
 
 registration
-  let R,S be INT-valued Relation;
-  cluster R \+\ S -> INT-valued;
+  let R,S be integer-valued Relation;
+  cluster R \+\ S -> integer-valued;
 end;
 
 registration
@@ -273,13 +280,13 @@ registration
 end;
 
 registration
-  let R be RAT-valued Relation;
+  let R be rational-valued Relation;
   let X;
   cluster R.:X -> rational-membered;
 end;
 
 registration
-  let R be INT-valued Relation;
+  let R be integer-valued Relation;
   let X;
   cluster R.:X -> integer-membered;
 end;
@@ -309,13 +316,13 @@ registration
 end;
 
 registration
-  let R be RAT-valued Relation;
+  let R be rational-valued Relation;
   let x;
   cluster Im(R,x) -> rational-membered;
 end;
 
 registration
-  let R be INT-valued Relation;
+  let R be integer-valued Relation;
   let x;
   cluster Im(R,x) -> integer-membered;
 end;
@@ -345,15 +352,15 @@ registration
 end;
 
 registration
-  let R be RAT-valued Relation;
+  let R be rational-valued Relation;
   let X;
-  cluster R|X -> RAT-valued;
+  cluster R|X -> rational-valued;
 end;
 
 registration
-  let R be INT-valued Relation;
+  let R be integer-valued Relation;
   let X;
-  cluster R|X -> INT-valued;
+  cluster R|X -> integer-valued;
 end;
 
 registration
@@ -379,12 +386,12 @@ end;
 
 registration
   let X be rational-membered set;
-  cluster id X -> RAT-valued;
+  cluster id X -> rational-valued;
 end;
 
 registration
   let X be integer-membered set;
-  cluster id X -> INT-valued;
+  cluster id X -> integer-valued;
 end;
 
 registration
@@ -412,14 +419,14 @@ end;
 
 registration
   let R;
-  let S be RAT-valued Relation;
-  cluster R*S -> RAT-valued;
+  let S be rational-valued Relation;
+  cluster R*S -> rational-valued;
 end;
 
 registration
   let R;
-  let S be INT-valued Relation;
-  cluster R*S -> INT-valued;
+  let S be integer-valued Relation;
+  cluster R*S -> integer-valued;
 end;
 
 registration
@@ -432,7 +439,6 @@ definition
   let f be Function;
   redefine attr f is complex-valued means
 :: VALUED_0:def 7
-
   for x st x in dom f holds f.x is complex;
   redefine attr f is ext-real-valued means
 :: VALUED_0:def 8
@@ -440,12 +446,15 @@ definition
   for x st x in dom f holds f.x is ext-real;
   redefine attr f is real-valued means
 :: VALUED_0:def 9
-
   for x st x in dom f holds f.x is real;
-::$CD 2
+  redefine attr f is rational-valued means
+:: VALUED_0:def 10
+  for x st x in dom f holds f.x is rational;
+  redefine attr f is integer-valued means
+:: VALUED_0:def 11
+  for x st x in dom f holds f.x is integer;
   redefine attr f is natural-valued means
 :: VALUED_0:def 12
-
   for x st x in dom f holds f.x is natural;
 end;
 
@@ -459,10 +468,10 @@ theorem :: VALUED_0:9
   f is real-valued iff for x holds f.x is real;
 
 theorem :: VALUED_0:10
-  f is RAT-valued iff for x holds f.x is rational;
+  f is rational-valued iff for x holds f.x is rational;
 
 theorem :: VALUED_0:11
-  f is INT-valued iff for x holds f.x is integer;
+  f is integer-valued iff for x holds f.x is integer;
 
 theorem :: VALUED_0:12
   f is natural-valued iff for x holds f.x is natural;
@@ -486,13 +495,13 @@ registration
 end;
 
 registration
-  let f be RAT-valued Function;
+  let f be rational-valued Function;
   let x be object;
   cluster f.x -> rational;
 end;
 
 registration
-  let f be INT-valued Function;
+  let f be integer-valued Function;
   let x be object;
   cluster f.x -> integer;
 end;
@@ -524,13 +533,13 @@ end;
 registration
   let X;
   let x be Rational;
-  cluster X --> x -> RAT-valued;
+  cluster X --> x -> rational-valued;
 end;
 
 registration
   let X;
   let x be Integer;
-  cluster X --> x -> INT-valued;
+  cluster X --> x -> integer-valued;
 end;
 
 registration
@@ -555,13 +564,13 @@ registration
 end;
 
 registration
-  let f,g be RAT-valued Function;
-  cluster f +* g -> RAT-valued;
+  let f,g be rational-valued Function;
+  cluster f +* g -> rational-valued;
 end;
 
 registration
-  let f,g be INT-valued Function;
-  cluster f +* g -> INT-valued;
+  let f,g be integer-valued Function;
+  cluster f +* g -> integer-valued;
 end;
 
 registration
@@ -590,13 +599,13 @@ end;
 registration
   let x;
   let y be Rational;
-  cluster x .--> y -> RAT-valued;
+  cluster x .--> y -> rational-valued;
 end;
 
 registration
   let x;
   let y be Integer;
-  cluster x .--> y -> INT-valued;
+  cluster x .--> y -> integer-valued;
 end;
 
 registration
@@ -626,13 +635,13 @@ end;
 registration
   let X;
   let Y be rational-membered set;
-  cluster -> RAT-valued for Relation of X,Y;
+  cluster -> rational-valued for Relation of X,Y;
 end;
 
 registration
   let X;
   let Y be integer-membered set;
-  cluster -> INT-valued for Relation of X,Y;
+  cluster -> integer-valued for Relation of X,Y;
 end;
 
 registration
@@ -662,13 +671,13 @@ end;
 registration
   let X;
   let Y be rational-membered set;
-  cluster [:X,Y:] -> RAT-valued;
+  cluster [:X,Y:] -> rational-valued;
 end;
 
 registration
   let X;
   let Y be integer-membered set;
-  cluster [:X,Y:] -> INT-valued;
+  cluster [:X,Y:] -> integer-valued;
 end;
 
 registration
@@ -682,7 +691,8 @@ end;
 :::end;
 
 registration
-  cluster non empty constant natural-valued INT-valued RAT-valued for Function;
+  cluster non empty constant natural-valued integer-valued rational-valued
+   for Function;
 end;
 
 theorem :: VALUED_0:13
@@ -698,11 +708,11 @@ theorem :: VALUED_0:15
  st for x being object st x in dom f holds f.x = r;
 
 theorem :: VALUED_0:16
-  for f being non empty constant RAT-valued Function ex r being
-  Rational st for x being object st x in dom f holds f.x = r;
+  for f being non empty constant rational-valued Function
+  ex r being Rational st for x being object st x in dom f holds f.x = r;
 
 theorem :: VALUED_0:17
-  for f being non empty constant INT-valued Function ex r being
+  for f being non empty constant integer-valued Function ex r being
   Integer st for x being object st x in dom f holds f.x = r;
 
 theorem :: VALUED_0:18
@@ -919,16 +929,24 @@ end;
 
 registration
   cluster COMPLEX-valued -> complex-valued for Relation;
+  cluster complex-valued -> COMPLEX-valued for Relation;
   cluster ExtREAL-valued -> ext-real-valued for Relation;
+  cluster ext-real-valued -> ExtREAL-valued for Relation;
   cluster REAL-valued -> real-valued for Relation;
+  cluster real-valued -> REAL-valued for Relation;
+  cluster RAT-valued -> rational-valued for Relation;
+  cluster rational-valued -> RAT-valued for Relation;
+  cluster INT-valued -> integer-valued for Relation;
+  cluster integer-valued -> INT-valued for Relation;
   cluster NAT-valued -> natural-valued for Relation;
+  cluster natural-valued -> NAT-valued for Relation;
 end;
 
 definition
   let s be ManySortedSet of NAT;
   redefine attr s is constant means
 :: VALUED_0:def 20
-  ex x being set st for n being Nat holds s.n=x;
+  ex x being set st for n being Nat holds s.n = x;
 end;
 
 theorem :: VALUED_0:32
@@ -939,4 +957,66 @@ theorem :: VALUED_0:32
 registration
   let X be set;
   cluster natural-valued for ManySortedSet of X;
+end;
+
+:: Added by AK, 13.12.2022
+
+registration
+  let D be complex-membered set;
+  cluster D-valued -> COMPLEX-valued for Relation;
+end;
+
+registration
+  let D be complex-membered set;
+  cluster D-valued -> complex-valued for Relation;
+end;
+
+registration
+  let D be ext-real-membered set;
+  cluster D-valued -> ExtREAL-valued for Relation;
+end;
+
+registration
+  let D be ext-real-membered set;
+  cluster D-valued -> ext-real-valued for Relation;
+end;
+
+registration
+  let D be real-membered set;
+  cluster D-valued -> REAL-valued for Relation;
+end;
+
+registration
+  let D be real-membered set;
+  cluster D-valued -> real-valued for Relation;
+end;
+
+registration
+  let D be rational-membered set;
+  cluster D-valued -> RAT-valued for Relation;
+end;
+
+registration
+  let D be rational-membered set;
+  cluster D-valued -> rational-valued for Relation;
+end;
+
+registration
+  let D be integer-membered set;
+  cluster D-valued -> INT-valued for Relation;
+end;
+
+registration
+  let D be integer-membered set;
+  cluster D-valued -> integer-valued for Relation;
+end;
+
+registration
+  let D be natural-membered set;
+  cluster D-valued -> NAT-valued for Relation;
+end;
+
+registration
+  let D be natural-membered set;
+  cluster D-valued -> natural-valued for Relation;
 end;

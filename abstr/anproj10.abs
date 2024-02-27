@@ -2,7 +2,7 @@
 ::  by Roland Coghetto
 :: 
 :: Received February 27, 2019
-:: Copyright (c) 2019-2021 Association of Mizar Users
+:: Copyright (c) 2019-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -26,7 +26,8 @@ environ
  constructors FINSEQ_4, MONOID_0, BINOP_2, FUNCSDOM, PCOMPS_1, SRINGS_5,
       EUCLID_4;
  registrations MEMBERED, ORDINAL1, STRUCT_0, XREAL_0, MONOID_0, EUCLID,
-      VALUED_0, XCMPLX_0, NUMBERS, RLTOPSP1, RLVECT_1, RELAT_1, FINSEQ_4;
+      VALUED_0, XCMPLX_0, NUMBERS, RLTOPSP1, RLVECT_1, RELAT_1, FINSEQ_4,
+      FINSEQ_1;
  requirements REAL, SUBSET, NUMERALS, ARITHM, BOOLE;
 
 

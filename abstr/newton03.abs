@@ -2,7 +2,7 @@
 ::  by Rafa{\l} Ziobro
 :: 
 :: Received June 30, 2016
-:: Copyright (c) 2016-2021 Association of Mizar Users
+:: Copyright (c) 2016-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -160,11 +160,11 @@ registration
 end;
 
 registration
-  cluster non square for Element of NAT;
+  cluster non square for Nat;
 end;
 
 registration
-  cluster prime -> non square for Element of NAT;
+  cluster prime -> non square for Nat;
 end;
 
 registration
@@ -177,7 +177,7 @@ registration
 end;
 
 registration
-  let a be square Element of NAT;
+  let a be square Nat;
   cluster sqrt a -> natural;
 end;
 
@@ -202,6 +202,10 @@ end;
 registration
   cluster non zero for Element of NAT;
   cluster non trivial for square Element of NAT;
+end;
+
+registration
+  cluster non trivial for square Nat;
 end;
 
 registration
@@ -245,7 +249,7 @@ theorem :: NEWTON03:8
   for a,b be Integer holds a|^n lcm b|^n = (a lcm b)|^n;
 
 registration
-  let a be square Element of NAT, b be square Element of NAT;
+  let a,b be square Nat;
   cluster a gcd b -> square;
   cluster a lcm b -> square;
 end;
@@ -314,7 +318,7 @@ theorem :: NEWTON03:10
   a*b is square implies b is square;
 
 registration
-  let a be square Element of NAT, n be Nat;
+  let a be square Nat, n be Nat;
   cluster a|^n -> square;
 end;
 
@@ -329,13 +333,13 @@ registration
 end;
 
 registration
-  let a be Element of NAT;
+  let a be Nat;
   let b be even Nat;
   cluster a|^b -> square;
 end;
 
 registration
-  let a be non square Element of NAT;
+  let a be non square Nat;
   let b be odd Nat;
   cluster a|^b -> non square;
 end;
@@ -346,12 +350,12 @@ registration
 end;
 
 registration
-  let a be non zero square Element of NAT;
+  let a be non zero square Nat;
   cluster a+1 -> non square;
 end;
 
 registration
-  let a be non zero square object, b be non square Element of NAT;
+  let a be non zero square object, b be non square Nat;
   cluster a*b -> non square;
 end;
 
@@ -362,7 +366,7 @@ registration
 end;
 
 registration
-  let a be non zero square Element of NAT;
+  let a be non zero square Nat;
   let n,m be Nat;
   cluster a|^n + a|^m -> non square;
 end;
@@ -374,7 +378,7 @@ registration
 end;
 
 registration
-  let a be non trivial Element of NAT;
+  let a be non trivial Nat;
   cluster a-1 -> non zero;
 end;
 
@@ -389,12 +393,12 @@ registration
 end;
 
 registration
-  let a be non trivial square Element of NAT;
+  let a be non trivial square Nat;
   cluster a-1 -> non square;
 end;
 
 registration
-  let a be non trivial Element of NAT;
+  let a be non trivial Nat;
   cluster a*(a-1) -> non square;
 end;
 
@@ -448,7 +452,7 @@ registration
 end;
 
 registration
-  let a be Element of NAT;
+  let a be Nat;
   reduce |.a.| to a;
 end;
 
@@ -509,8 +513,7 @@ for a,p be Integer holds
 p|^(2*n+k) divides a|^2 implies p|^n divides a;
 
 theorem :: NEWTON03:19
-  for a,b be odd square Element of NAT holds
-    8 divides a - b;
+  for a,b be odd square Nat holds 8 divides a - b;
 
 theorem :: NEWTON03:20
   for a,b be odd Nat holds 4 divides a-b implies not 4 divides a|^n + b|^n;
@@ -559,11 +562,11 @@ theorem :: NEWTON03:32
   p divides (a-b) implies not p divides (a+b);
 
 theorem :: NEWTON03:33
-  for a be non zero square Element of NAT, p be prime Nat st
+  for a be non zero square Nat, p be prime Nat st
   p divides a holds not a+p is square;
 
 theorem :: NEWTON03:34
-  for a be non zero square Element of NAT, p be prime Nat holds
+  for a be non zero square Nat, p be prime Nat holds
   a+p is square implies p = 2*sqrt(a) + 1;
 
 theorem :: NEWTON03:35

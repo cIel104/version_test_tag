@@ -1,8 +1,8 @@
 :: {T}arski Geometry Axioms -- Part {III}
 ::  by Roland Coghetto and Adam Grabowski
-:: 
+::
 :: Received November 29, 2017
-:: Copyright (c) 2017-2021 Association of Mizar Users
+:: Copyright (c) 2017-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -921,7 +921,7 @@ reserve S           for non empty
                         TarskiGeometryStruct,
         a,b,c,p,q,r for POINT of S;
 
-::$ 7.25 Satz
+::$N 7.25 Satz
 theorem :: GTARSKI3:117
   c,a equiv c,b implies ex x being POINT of S st Middle a,x,b;
 

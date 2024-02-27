@@ -2,7 +2,7 @@
 ::  by Marco Riccardi
 ::
 :: Received March 3, 2009
-:: Copyright (c) 2009-2021 Association of Mizar Users
+:: Copyright (c) 2009-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -107,8 +107,8 @@ theorem :: NAT_5:15
   =m2;
 
 theorem :: NAT_5:16
-  n1 in NatDivisors n0 & m1 in NatDivisors m0 implies n1*m1 in
-  NatDivisors(n0*m0);
+  n1 in NatDivisors n0 & m1 in NatDivisors m0 implies
+  n1*m1 in NatDivisors(n0*m0);
 
 theorem :: NAT_5:17
   n0,m0 are_coprime implies k gcd n0*m0 = (k gcd n0)*(k gcd m0);

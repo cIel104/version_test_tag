@@ -2,7 +2,7 @@
 ::  by Keiichi Miyajima and Takahiro Kato
 ::
 :: Received January 12, 2010
-:: Copyright (c) 2010-2021 Association of Mizar Users
+:: Copyright (c) 2010-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -45,10 +45,9 @@ end;
 
 reserve s for set,
   i,j for Nat,
-  x,x1,x2 for Element of COMPLEX,
   c,c1,c2,c3 for Complex,
   F,F1,F2 for complex-valued FinSequence,
-  R,R1,R2 for i-element FinSequence of COMPLEX;
+  R,R1,R2 for i-element complex-valued FinSequence;
 
 definition
   func sqrcomplex -> UnOp of COMPLEX means
@@ -280,7 +279,7 @@ theorem :: RVSUM_2:49
 begin :: from EUCLID_2 (partially modified)
 
 theorem :: RVSUM_2:50
-  for x being complex-valued FinSequence holds len (-x)=len x;
+  for x being complex-valued FinSequence holds len (-x) = len x;
 
 theorem :: RVSUM_2:51
   for x1,x2 being complex-valued FinSequence st len x1=len x2 holds

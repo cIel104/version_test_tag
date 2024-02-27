@@ -2,7 +2,7 @@
 ::  by Artur Korni{\l}owicz and Christoph Schwarzweller
 :: 
 :: Received November 29, 2014
-:: Copyright (c) 2014-2021 Association of Mizar Users
+:: Copyright (c) 2014-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -25,12 +25,12 @@ environ
  notations TARSKI, XBOOLE_0, ZFMISC_1, SUBSET_1, DOMAIN_1, RELAT_1, FUNCT_1,
       SETFAM_1, RELSET_1, PARTFUN1, FUNCT_2, FUNCOP_1, BINOP_1, REALSET1,
       FINSEQ_1, VFUNCT_1, ORDINAL1, EQREL_1, XCMPLX_0, XXREAL_0, NAT_1, INT_1,
-      INT_2, INT_3, NUMBERS, VECTSP_1, VECTSP_2, QUOFIELD, STRUCT_0, ALGSTR_0,
-      GROUP_1, RLVECT_1, GCD_1, POLYNOM3, HURWITZ, IDEAL_1, GROUP_4, GROUP_6,
-      VECTSP10, MOD_4, C0SP1, RATFUNC1, RING_1;
+      WSIERP_1, INT_2, INT_3, NUMBERS, VECTSP_1, VECTSP_2, QUOFIELD, STRUCT_0,
+      ALGSTR_0, GROUP_1, RLVECT_1, GCD_1, POLYNOM3, HURWITZ, IDEAL_1, GROUP_4,
+      GROUP_6, VECTSP10, MOD_4, C0SP1, RATFUNC1, RING_1;
  constructors RING_1, C0SP1, BINOM, RELSET_1, GCD_1, QUOFIELD, BINOP_2,
       VFUNCT_1, RATFUNC1, MOD_4, GROUP_6, REALSET1, INT_3, RINGCAT1, GROUP_4,
-      HURWITZ, VECTSP10, INT_2;
+      HURWITZ, VECTSP10, INT_2, WSIERP_1;
  registrations XBOOLE_0, ORDINAL1, RELSET_1, XREAL_0, NAT_1, INT_1, MEMBERED,
       FINSEQ_1, STRUCT_0, VECTSP_1, ALGSTR_1, SUBSET_1, RELAT_1, FUNCT_2,
       ALGSTR_0, RLVECT_1, QUOFIELD, REALSET1, VFUNCT_1, RATFUNC1, IDEAL_1,

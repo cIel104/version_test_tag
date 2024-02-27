@@ -2,7 +2,7 @@
 ::  by Rafa{\l} Ziobro
 :: 
 :: Received October 18, 2016
-:: Copyright (c) 2016-2021 Association of Mizar Users
+:: Copyright (c) 2016-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -73,21 +73,6 @@ theorem :: NEWTON04:1
   for a be non zero Real, a1 be Complex st a*a1 is Real holds a1 is Real;
 
 registration
-  cluster REAL-valued -> COMPLEX-valued for Relation;
-  cluster RAT-valued -> REAL-valued for Relation;
-  cluster RAT-valued -> COMPLEX-valued for Relation;
-  cluster INT-valued -> RAT-valued for Relation;
-  cluster INT-valued -> REAL-valued for Relation;
-  cluster INT-valued -> COMPLEX-valued for Relation;
-  cluster NAT-valued -> INT-valued for Relation;
-  cluster NAT-valued -> RAT-valued for Relation;
-  cluster NAT-valued -> REAL-valued for Relation;
-  cluster NAT-valued -> COMPLEX-valued for Relation;
-  cluster real-valued -> REAL-valued for Relation;
-  cluster complex-valued -> COMPLEX-valued for Relation;
-end;
-
-registration
   let a be object;
   reduce 1*len <*a*> to 1;
 end;
@@ -152,11 +137,11 @@ registration
 end;
 
 theorem :: NEWTON04:3
-  for n be Element of NAT, D be set, f be FinSequence of D st
+  for n be Nat, D be set, f be D-valued FinSequence st
     n in dom f holds len(f|n) = n;
 
 theorem :: NEWTON04:4
-  for n be Element of NAT, D be set, f be FinSequence of D st
+  for n be Nat, D be set, f be D-valued FinSequence st
     n >= len f holds len(f|n) = len f;
 
 registration
@@ -165,7 +150,7 @@ registration
 end;
 
 registration
-  let f be FinSequence of REAL, i,j be Nat;
+  let f be real-valued FinSequence, i,j be Nat;
   reduce ((f|i)|(i+j)) to f|i;
 end;
 
@@ -210,7 +195,7 @@ registration
 end;
 
 registration
-  let f be nonnegative-yielding FinSequence of REAL, i be Nat;
+  let f be nonnegative-yielding real-valued FinSequence, i be Nat;
   cluster f.i -> non negative;
 end;
 
@@ -219,12 +204,12 @@ registration :: see TIETZE_2
 end;
 
 registration
-  let f be nonpositive-yielding FinSequence of REAL, i be Nat;
+  let f be nonpositive-yielding real-valued FinSequence, i be Nat;
   cluster f.i -> non positive;
 end;
 
 registration
-  let f be nonnegative-yielding FinSequence of REAL, i,j be Nat;
+  let f be nonnegative-yielding real-valued FinSequence, i,j be Nat;
   cluster (f|j).i -> non negative;
   cluster (f/^j).i -> non negative;
 end;
@@ -235,23 +220,23 @@ registration
 end;
 
 registration
-  let f be nonnegative-yielding FinSequence of REAL;
+  let f be nonnegative-yielding real-valued FinSequence;
   cluster Sum f -> non negative;
   cluster Product f -> non negative;
 end;
 
 registration
-  let f be nonpositive-yielding FinSequence of REAL;
+  let f be nonpositive-yielding real-valued FinSequence;
   cluster Sum f -> non positive;
 end;
 
 registration
-  let a be object,f be nonnegative-yielding FinSequence of REAL;
+  let a be object,f be nonnegative-yielding real-valued FinSequence;
   cluster f.a -> non negative;
 end;
 
 registration
-  let a be object, f be nonpositive-yielding FinSequence of REAL;
+  let a be object, f be nonpositive-yielding real-valued FinSequence;
   cluster f.a -> non positive;
 end;
 
@@ -262,7 +247,7 @@ registration
 end;
 
 registration
-  let f be FinSequence of REAL, n be Nat;
+  let f be real-valued FinSequence, n be Nat;
   cluster (f|n)/^n -> empty;
   cluster f/^(max((len f),n)) -> empty;
 end;
@@ -270,16 +255,16 @@ end;
 registration
   let D be set;
   cluster empty for FinSequence of D;
-  cluster empty -> nonnegative-yielding for FinSequence of D;
+  cluster empty -> nonnegative-yielding for D-valued FinSequence;
 end;
 
 registration
   cluster nonnegative-yielding INT-valued -> NAT-valued for FinSequence;
-  cluster nonnegative-yielding -> NAT-valued for FinSequence of INT;
+  cluster nonnegative-yielding -> NAT-valued for INT-valued FinSequence;
 end;
 
 registration
-  let f be COMPLEX-valued FinSequence;
+  let f be complex-valued Function;
   reduce f+0 to f;
   reduce f-0 to f;
 end;
@@ -326,15 +311,15 @@ theorem :: NEWTON04:12
   ex p,q be D-valued FinSequence st len p = i & len q = j & r = p^q;
 
 theorem :: NEWTON04:13
-  for f be nonnegative-yielding FinSequence of REAL holds
-    Sum f >= Sum (f|j);
+  for f be nonnegative-yielding real-valued FinSequence holds
+  Sum f >= Sum (f|j);
 
 theorem :: NEWTON04:14
-  for f be COMPLEX-valued FinSequence, x1,x2 be Complex holds
+  for f be complex-valued Function, x1,x2 be Complex holds
     f+x1+x2 = f+(x1+x2);
 
 registration
-  let f be COMPLEX-valued FinSequence, x be Complex;
+  let f be complex-valued Function, x be Complex;
   reduce f+x-x to f;
   reduce f-x+x to f;
 end;
@@ -357,13 +342,13 @@ registration
 end;
 
 registration
-  let f be nonnegative-yielding FinSequence of REAL, n be Nat;
+  let f be nonnegative-yielding real-valued FinSequence, n be Nat;
   cluster f|n -> nonnegative-yielding;
   cluster f/^n -> nonnegative-yielding;
 end;
 
 registration
-  let f be FinSequence of REAL;
+  let f be real-valued FinSequence;
   cluster f - (min f) -> nonnegative-yielding;
   cluster f - (max f) -> nonpositive-yielding;
 end;
@@ -408,7 +393,7 @@ theorem :: NEWTON04:15
     (f1 (#) f2) (#) f3 = f1 (#) (f2 (#) f3);
 
 theorem :: NEWTON04:16
-  for f,g be FinSequence of COMPLEX, i be object holds (f (#) g).i = f.i*g.i;
+  for f,g be complex-valued Function, i be object holds (f(#)g).i = f.i*g.i;
 
 theorem :: NEWTON04:17
   for x,y be Real holds max(x,y) - min(x,y)= |.x-y.|;
@@ -418,44 +403,44 @@ theorem :: NEWTON04:18
     min(x,y) + max(x,y) = x+y;
 
 theorem :: NEWTON04:19
-  for f be nonnegative-yielding FinSequence of REAL holds
-    Sum f >= Sum (f|j);
+  for f be nonnegative-yielding real-valued FinSequence holds
+  Sum f >= Sum (f|j);
 
 theorem :: NEWTON04:20 :: POLYNOM3:18:
-  for f be nonnegative-yielding FinSequence of REAL holds
+  for f be nonnegative-yielding real-valued FinSequence holds
     i >= j implies Sum (f|i) >= Sum (f|j);
 
 theorem :: NEWTON04:21
-  for f be nonnegative-yielding FinSequence of REAL holds
-    Sum f >= f.n;
+  for f be nonnegative-yielding real-valued FinSequence holds Sum f >= f.n;
 
 theorem :: NEWTON04:22
-  for f,g,h be FinSequence of COMPLEX st dom h = dom f /\ dom g holds
+  for f,g,h be complex-valued FinSequence st dom h = dom f /\ dom g holds
     len h = min (len f,len g);
 
 theorem :: NEWTON04:23
-  for f,g be FinSequence of COMPLEX holds len (f + g) = min (len f, len g);
+  for f,g be complex-valued FinSequence holds len (f + g) = min (len f,len g);
 
 theorem :: NEWTON04:24
-  for f,g be FinSequence of COMPLEX holds len (f (#) g) = min (len f, len g);
+  for f,g be complex-valued FinSequence holds len (f (#) g) = min (len f,len g)
+;
 
 theorem :: NEWTON04:25
-  for f,g be FinSequence of COMPLEX holds len (f - g) = min (len f, len g);
+  for f,g be complex-valued FinSequence holds len (f - g) = min (len f, len g);
 
 theorem :: NEWTON04:26
-  for f,g be nonnegative-yielding FinSequence of REAL holds
+  for f,g be nonnegative-yielding real-valued FinSequence holds
     (f(#)g).n <= (Sum f)*g.n;
 
 theorem :: NEWTON04:27
-  for r be Real, n be non zero Nat holds ex f be FinSequence of REAL st
-    len f = n & Sum f = r;
+  for r be Real, n be non zero Nat
+   ex f be FinSequence of REAL st len f = n & Sum f = r;
 
 theorem :: NEWTON04:28
-  for f be FinSequence of COMPLEX, x be Complex holds
+  for f be complex-valued FinSequence, x be Complex holds
     f + x = f + ((len f) |-> x);
 
 theorem :: NEWTON04:29
-  for f be FinSequence of COMPLEX, x be Complex holds
+  for f be complex-valued FinSequence, x be Complex holds
     Sum (f+x) = Sum f + x*(len f);
 
 theorem :: NEWTON04:30
@@ -463,44 +448,43 @@ theorem :: NEWTON04:30
     Sum (f-x) = Sum f - x*(len f);
 
 theorem :: NEWTON04:31
-  for f be FinSequence of REAL,
-      g be nonnegative-yielding FinSequence of REAL st
+  for f be real-valued FinSequence,
+      g be nonnegative-yielding real-valued FinSequence st
   (for x be Nat holds f.x >= g.x) holds f is nonnegative-yielding;
 
 theorem :: NEWTON04:32
-  for f,g be FinSequence of REAL st (for x be Nat holds f.x >= g.x) holds
+  for f,g be real-valued FinSequence st (for x be Nat holds f.x >= g.x) holds
     Sum f >= Sum g;
 
 theorem :: NEWTON04:33
-  for f be FinSequence of COMPLEX holds Sum (f|(1 qua Nat)) = f.(1 qua Nat);
+  for f be complex-valued FinSequence holds Sum (f|(1 qua Nat)) = f.(1 qua Nat)
+;
 
 theorem :: NEWTON04:34
-  for f be FinSequence of COMPLEX, n be Nat holds
-    Sum ((f/^n)| 1) = f.(n+1);
+  for f be complex-valued FinSequence, n be Nat holds Sum ((f/^n)| 1) = f.(n+1)
+;
 
 theorem :: NEWTON04:35
-  for f be FinSequence, a,b be Nat holds
-    (f/^a)/^b = f/^(a+b);
+  for f be FinSequence, a,b be Nat holds (f/^a)/^b = f/^(a+b);
 
 theorem :: NEWTON04:36 ::POLYNOM4:1
-  for f be FinSequence of COMPLEX holds
+  for f be complex-valued FinSequence holds
     f = (f|i)^((f/^i)|(1 qua Nat))^(f/^(i+1));
 
 theorem :: NEWTON04:37
-  for f be FinSequence of COMPLEX holds
+  for f be complex-valued FinSequence holds
     Sum f = Sum (f|i) + f.(i+1) + Sum (f/^(i+1));
 
 theorem :: NEWTON04:38
-  for f be FinSequence, i be non zero Nat holds
-    f.(n+i) = (f/^n).i;
+  for f be FinSequence, i be non zero Nat holds f.(n+i) = (f/^n).i;
 
 theorem :: NEWTON04:39
-  for f,g be FinSequence of REAL st
+  for f,g be real-valued FinSequence st
     (for x be Nat holds f.x >= g.x & ex i st f.(i+1) > g.(i+1)) holds
       Sum f > Sum g;
 
 theorem :: NEWTON04:40
-  for f,g being nonnegative-yielding FinSequence of REAL holds
+  for f,g being nonnegative-yielding real-valued FinSequence holds
     (Sum f)*(Sum g) >= Sum(f(#)g);
 
 theorem :: NEWTON04:41
@@ -624,7 +608,7 @@ registration
 end;
 
 registration
-  let f be empty-yielding FinSequence of COMPLEX;
+  let f be empty-yielding complex-valued FinSequence;
   cluster Sum f -> zero;
 end;
 
@@ -860,7 +844,7 @@ theorem :: NEWTON04:89
     ((a,b) Subnomial n).i <= ((|.a.|,|.b.|)Subnomial n).i;
 
 theorem :: NEWTON04:90
-for a be Real, n be Nat, i be odd Nat holds
+  for a be Real, n be Nat, i be odd Nat holds
   ((a,-a) Subnomial (n+i)).i = a|^(n+i);
 
 theorem :: NEWTON04:91

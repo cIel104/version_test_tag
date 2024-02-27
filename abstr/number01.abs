@@ -1,8 +1,8 @@
 :: Elementary Number Theory Problems. {P}art {I}
 ::  by Adam Naumowicz
-:: 
+::
 :: Received February 26, 2020
-:: Copyright (c) 2020-2021 Association of Mizar Users
+:: Copyright (c) 2020-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -17,16 +17,19 @@ environ
  vocabularies NUMBERS, SUBSET_1, ORDINAL1, CARD_1, XBOOLE_0, ARYTM_1, TARSKI,
       ARYTM_3, XXREAL_0, NAT_1, RELAT_1, INT_1, INT_2, SQUARE_1, NEWTON,
       COMPLEX1, FINSET_1, PBOOLE, FUNCT_1, ABIAN, EULER_1, AFINSQ_1, FINSEQ_1,
-      CARD_3, ORDINAL4, SEQ_1, SERIES_1, FINSEQ_5, RFINSEQ;
+      CARD_3, ORDINAL4, SEQ_1, SERIES_1, FINSEQ_5, RFINSEQ, NAT_3, FIB_NUM2,
+      AFINSQ_2, VALUED_0, FUNCOP_1, MEMBERED, REAL_1;
  notations TARSKI, XBOOLE_0, SUBSET_1, RELAT_1, FUNCT_1, ORDINAL1, NUMBERS,
-      XCMPLX_0, NAT_1, XXREAL_0, INT_1, INT_2, FINSEQ_1, FINSEQ_5, SEQ_1,
-      SERIES_1, SQUARE_1, NEWTON, FINSET_1, RVSUM_1, RFINSEQ, PBOOLE, ABIAN,
-      EULER_1, AFINSQ_1, AFINSQ_2;
- constructors SQUARE_1, NEWTON, NAT_D, RELSET_1, ABIAN, EULER_1, AFINSQ_2,
-      RVSUM_1, SERIES_1, FINSEQ_5, RFINSEQ;
+      VALUED_0, FUNCOP_1, XCMPLX_0, XREAL_0, NAT_1, XXREAL_0, ABSVALUE, INT_1,
+      INT_2, NAT_D, FINSEQ_1, SEQ_1, CARD_1, MEMBERED, SERIES_1, SQUARE_1,
+      NEWTON, FINSET_1, RVSUM_1, RFINSEQ, PBOOLE, ABIAN, EULER_1, AFINSQ_1,
+      AFINSQ_2, NAT_3, FIB_NUM2, VALUED_1;
+ constructors SQUARE_1, NAT_D, RELSET_1, ABIAN, EULER_1, AFINSQ_2, RVSUM_1,
+      SERIES_1, RFINSEQ, NAT_3, FIB_NUM2, RECDEF_1;
  registrations ORDINAL1, NUMBERS, XXREAL_0, XREAL_0, NAT_1, CARD_1, INT_1,
       PYTHTRIP, WSIERP_1, FOMODEL0, ABIAN, AFINSQ_1, AFINSQ_2, VALUED_0,
-      FUNCT_1, RELSET_1, NEWTON02, GR_CY_1, NEWTON04, INT_6, XBOOLE_0;
+      HILB10_2, FINSET_1, MEMBERED, FUNCT_1, RELSET_1, NEWTON02, NEWTON04,
+      INT_6, XBOOLE_0;
  requirements REAL, NUMERALS, SUBSET, BOOLE, ARITHM;
 
 
@@ -40,7 +43,7 @@ theorem :: NUMBER01:1
   for n being positive Integer holds n+1 divides n^2 + 1 iff n = 1;
 
 theorem :: NUMBER01:2
-  for i,n being Integer st |.i.|=n holds i=n or i=-n;
+  for i,n being Real st |.i.|=n holds i=n or i=-n;
 
 theorem :: NUMBER01:3
   for n being natural number st n divides 24 holds
@@ -115,9 +118,12 @@ theorem :: NUMBER01:15  :: NEWTON02:146 generalized for integers
 theorem :: NUMBER01:16
   for n,k being Nat st n is odd holds n divides k|^n + (n-k)|^n;
 
+theorem :: NUMBER01:17
+  for n being Nat st n is odd holds card (n /\ EvenNAT) = (n div 2) + 1;
+
 begin :: Problem 10
 
-theorem :: NUMBER01:17
-  for s being FinSequence of NAT, n being Nat st
-  n>1 & len s=n-1 & for i being Nat st i in dom s holds s.i=i|^n
-  holds n is odd implies n divides Sum s;
+theorem :: NUMBER01:18
+  for s being XFinSequence of NAT, n being Nat st
+  n>1 & len s=n-1 & for i being Nat st i in dom s holds s.i=(i+1)|^n
+  holds n is odd iff n divides Sum s;

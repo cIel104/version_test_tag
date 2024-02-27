@@ -2,7 +2,7 @@
 ::  by Hiroshi Yamazaki , Hiroyuki Okazaki , Kazuhisa Nakasho and Yasunari Shidama
 ::
 :: Received October 7, 2013
-:: Copyright (c) 2013-2021 Association of Mizar Users
+:: Copyright (c) 2013-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -30,7 +30,7 @@ environ
  registrations XBOOLE_0, XREAL_0, STRUCT_0, GROUP_2, MONOID_0, ORDINAL1, NAT_1,
       FUNCT_2, FUNCOP_1, GROUP_7, GROUP_3, XXREAL_0, RELSET_1, FINSEQ_1, INT_1,
       GR_CY_1, FINSET_1, NAT_3, FUNCT_1, XCMPLX_0, MEMBERED, NEWTON, VALUED_0,
-      XXREAL_2, FINSEQ_2, PBOOLE, GROUP_6, POWER;
+      XXREAL_2, FINSEQ_2, PBOOLE, GROUP_6, POWER, INT_2;
  requirements NUMERALS, REAL, BOOLE, SUBSET, ARITHM;
 
 

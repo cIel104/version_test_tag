@@ -2,7 +2,7 @@
 ::  by Grzegorz Bancerek
 ::
 :: Received January 3, 2007
-:: Copyright (c) 2007-2021 Association of Mizar Users
+:: Copyright (c) 2007-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -320,21 +320,22 @@ theorem :: NAT_D:60
 :: from INT_3, 2011.04.28, A.T.
 
 theorem :: NAT_D:61
-  for n,a,k being Integer holds (n <> 0 implies (a + n * k) div n =
-  (a div n) + k) & (a + n * k) mod n = a mod n;
+  for n,a,k being Integer holds
+  (n <> 0 implies (a + n * k) div n = (a div n) + k) &
+  (a + n * k) mod n = a mod n;
 
 theorem :: NAT_D:62
-  for n being natural Number st n > 0 for a being Integer holds
-  a mod n >= 0 & a mod n < n;
+  for n being natural Number st n > 0
+  for a being Integer holds a mod n >= 0 & a mod n < n;
 
 theorem :: NAT_D:63
   for n,a being Integer holds (0 <= a & a < n implies a mod n = a)
   & (0 > a & a >= -n implies a mod n = n + a);
 
 theorem :: NAT_D:64
-  for n,a,b being Integer holds (n <> 0 & a mod n = b mod n
-implies a,b are_congruent_mod n) & (a,b are_congruent_mod n implies a mod n = b
-  mod n);
+  for n,a,b being Integer holds
+  (n <> 0 & a mod n = b mod n implies a,b are_congruent_mod n) &
+  (a,b are_congruent_mod n implies a mod n = b mod n);
 
 theorem :: NAT_D:65
   for n being natural Number, a being Integer holds (a mod n) mod n = a mod n;
@@ -364,3 +365,8 @@ theorem :: NAT_D:71
 
 theorem :: NAT_D:72 :: NAT_D:43
   m-n >= 0 implies m-'n+n = m;
+
+:: from NTALGO_1
+
+theorem :: NAT_D:73
+  for m,n be Integer holds (m mod n) mod n = m mod n;

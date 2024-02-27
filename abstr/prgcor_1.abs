@@ -2,7 +2,7 @@
 ::  by Yatsuka Nakamura
 ::
 :: Received December 5, 2003
-:: Copyright (c) 2003-2021 Association of Mizar Users
+:: Copyright (c) 2003-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -19,9 +19,9 @@ environ
  notations TARSKI, SUBSET_1, ORDINAL1, NUMBERS, XCMPLX_0, XXREAL_0, FUNCT_1,
       FINSEQ_1, INT_1, RELSET_1, FUNCOP_1, PARTFUN1, NAT_1, NAT_D, NEWTON;
  constructors XXREAL_0, REAL_1, NAT_1, NAT_D, NEWTON, BINARITH, RELSET_1,
-      FUNCOP_1;
+      FUNCOP_1, VALUED_0;
  registrations ORDINAL1, RELSET_1, XXREAL_0, XREAL_0, NAT_1, INT_1, NEWTON,
-      VALUED_0;
+      VALUED_0, FINSEQ_1;
  requirements REAL, NUMERALS, SUBSET, ARITHM;
 
 

@@ -2,7 +2,7 @@
 ::  by Marco Riccardi
 ::
 :: Received August 13, 2007
-:: Copyright (c) 2007-2021 Association of Mizar Users
+:: Copyright (c) 2007-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -166,8 +166,8 @@ definition
   let S be non empty multMagma;
   let s be Element of S;
   let Z be non empty set;
-  func the_left_translation_of(s,Z) -> Function of [:the carrier of S,Z:],[:
-  the carrier of S,Z:] means
+  func the_left_translation_of(s,Z)
+    -> Function of [:the carrier of S,Z:],[:the carrier of S,Z:] means
 :: GROUP_10:def 6
 
   for z1 being Element of [:the carrier of S,Z
@@ -354,7 +354,7 @@ end;
 
 theorem :: GROUP_10:9
   for E being non empty finite set, G being finite Group,
-      p being prime Nat, T being LeftOperation of G, E st
+      p being Prime, T being LeftOperation of G, E st
   G is p-group
   holds card the_fixed_points_of T mod p = card E mod p;
 
@@ -377,14 +377,14 @@ end;
 
 ::$N First Sylow Theorem
 theorem :: GROUP_10:10
-  for G being finite Group, p being prime Nat ex P
+  for G being finite Group, p being Prime ex P
   being strict Subgroup of G st P is_Sylow_p-subgroup_of_prime p;
 
 :: ALG I.6.6 Corollary
 :: The Cauchy theorem
 
 theorem :: GROUP_10:11
-  for G being finite Group, p being prime Nat st p divides
+  for G being finite Group, p being Prime st p divides
   card G ex g being Element of G st ord g = p;
 
 :: ALG I.6.6 Theorem 3
@@ -392,7 +392,7 @@ theorem :: GROUP_10:11
 
 ::$N Second Sylow Theorem
 theorem :: GROUP_10:12
-  for G being finite Group, p being prime Nat holds (
+  for G being finite Group, p being Prime holds (
 for H being Subgroup of G st H is p-group holds ex P being Subgroup
   of G st P is_Sylow_p-subgroup_of_prime p & H is Subgroup of P) & (for P1,P2
   being Subgroup of G st P1 is_Sylow_p-subgroup_of_prime p & P2
@@ -409,13 +409,13 @@ end;
 
 registration
   let G be finite Group;
-  let p be prime Nat;
+  let p be Prime;
   cluster the_sylow_p-subgroups_of_prime(p,G) -> non empty finite;
 end;
 
 definition
   let G be finite Group;
-  let p be prime Nat;
+  let p be Prime;
   let H be Subgroup of G;
   let h be Element of H;
   func the_left_translation_of(h,p) -> Function of
@@ -430,7 +430,7 @@ end;
 
 definition
   let G be finite Group;
-  let p be prime Nat;
+  let p be Prime;
   let H be Subgroup of G;
   func the_left_operation_of(H,p) -> LeftOperation of H,
   the_sylow_p-subgroups_of_prime(p,G) means
@@ -444,7 +444,7 @@ end;
 
 ::$N Third Sylow Theorem
 theorem :: GROUP_10:13
-  for G being finite Group, p being prime Nat holds card
+  for G being finite Group, p being Prime holds card
   the_sylow_p-subgroups_of_prime(p,G) mod p = 1 & card
   the_sylow_p-subgroups_of_prime(p,G) divides card G;
 
@@ -456,7 +456,7 @@ theorem :: GROUP_10:14
   of Y = card Y;
 
 theorem :: GROUP_10:15
-  for n,m,r being Nat, p being prime Nat st n =
+  for n,m,r being Nat, p being Prime st n =
   p |^ r * m & not p divides m holds (n choose p|^r) mod p <> 0;
 
 theorem :: GROUP_10:16

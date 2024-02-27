@@ -2,7 +2,7 @@
 ::  by Damian Sawicki and Adam Grabowski
 ::
 :: Received June 30, 2021
-:: Copyright (c) 2021 Association of Mizar Users
+:: Copyright (c) 2021-2023 Association of Mizar Users
 ::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
 :: This code can be distributed under the GNU General Public Licence
 :: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
@@ -217,7 +217,7 @@ theorem :: LATWAL_1:17
 begin :: Distributivity Gives Associativity
 
  reserve L for non empty LattStr;
- reserve v0,v1,v2 for Element of L;
+ reserve v100,v101,v102,v0,v1,v2 for Element of L;
 
 theorem :: LATWAL_1:18  :: WAL + Distributivity -> Associativity
 (for v0 holds v0"/\"v0 = v0) &
@@ -315,7 +315,6 @@ begin :: Alternative Axioms for WAL
 :: x ^ y = y ^ x
 :: x v y = y v x
 
- reserve L for non empty LattStr;
  reserve v101,v100,v2,v1,v0,v102,v103,v3 for Element of L;
 
 theorem :: LATWAL_1:20
@@ -389,7 +388,6 @@ definition let L be non empty LattStr;
     (v1"/\"(v0"\/"v1)))"\/"v2)) = v1;
 end;
 
- reserve L for non empty LattStr;
  reserve v108,v107,v106,v101,v10,v9,v8,v7,v6,v105,v102,v100,
      v104,v103,v5,v4,v3,v2,v1,v0 for Element of L;
 
